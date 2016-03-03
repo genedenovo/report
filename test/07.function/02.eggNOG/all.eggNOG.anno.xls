@@ -1,0 +1,329 @@
+gene_id	eggNOG_levelB	query_start	query_end	subject_start	subject_end	evalue	eggNOG_levelA	eggNOG_desc
+gene_1	ENOG410XS5U	1	337	1	337	8.7e-157	G	Xylose isomerase domain protein TIM barrel
+gene_1	COG1082	9	326	820	1066	7.2e-40	G	Xylose isomerase domain protein TIM barrel
+gene_1	ENOG410ZVZQ	24	321	17	306	4e-33	G	Xylose Isomerase Domain-Containing protein
+gene_1	ENOG4111IZF	11	80	3	68	0.06	G	AP endonuclease, family 2
+gene_2	ENOG41122NH	10	202	3	195	1.6e-65	K	TetR family transcriptional Regulator
+gene_2	ENOG4111M0A	9	202	3	198	5.3e-58	K	Transcriptional regulator
+gene_2	ENOG4111Z7Z	9	200	1	194	7.5e-57	K	Bacterial regulatory proteins, tetR family
+gene_2	ENOG410ZWVJ	6	203	9	206	3.8e-55	K	Transcriptional regulator
+gene_2	ENOG410ZWD8	6	201	21	216	9.1e-50	K	Transcriptional regulator, TetR family
+gene_2	ENOG4111MNX	5	202	4	191	7.2e-42	K	Transcriptional regulator
+gene_2	ENOG410ZWWC	12	203	3	194	3.7e-32	K	Transcriptional regulator
+gene_2	ENOG410ZXAA	11	202	2	194	3e-30	K	TetR family transcriptional Regulator
+gene_2	ENOG4111HH2	13	183	3	173	5.7e-29	K	Transcriptional regulator, TetR family
+gene_2	ENOG4111SSQ	12	202	3	192	7.9e-27	K	Transcriptional regulator
+gene_2	ENOG4111ICC	11	199	2	185	8.6e-26	K	TetR family transcriptional Regulator
+gene_2	ENOG410ZVVE	13	200	5	194	1.3e-24	K	TetR family transcriptional Regulator
+gene_2	ENOG4111JKT	17	180	7	170	5.3e-24	K	Transcriptional regulator, tetR family
+gene_2	ENOG410XTPP	13	194	6	186	2.3e-22	K	Transcriptional regulator
+gene_2	ENOG4111IYW	14	203	9	199	2.6e-22	K	Transcriptional regulator, TetR family
+gene_2	ENOG410ZWM7	18	201	8	196	8.7e-22	K	Transcriptional regulator, TetR family
+gene_2	ENOG4111KEX	8	203	236	430	1.5e-20	K	Tetr family transcriptional regulator
+gene_2	COG1309	8	187	374	501	4.3e-20	K	Transcriptional regulator
+gene_2	ENOG4111GSE	7	164	8	158	6.5e-20	K	transcriptional regulator
+gene_2	ENOG4111V5M	11	203	7	191	5.4e-20	K	Tetr family transcriptional regulator
+gene_3	ENOG410Y5AE	7	100	2	101	1.1e-16	S	NA
+gene_3	ENOG410Y5DM	8	114	85	190	8e-13	S	NA
+gene_3	ENOG4111TA5	7	79	164	239	1.6e-11	S	Head binding
+gene_3	ENOG410ZNCW	4	81	51	134	2.7e-11	M	NA
+gene_5	COG0363	1	238	809	1040	1.6e-55	G	Catalyzes the reversible isomerization-deamination of glucosamine 6-phosphate (GlcN6P) to form fructose 6-phosphate (Fru6P) and ammonium ion (By similarity)
+gene_5	COG3158	9	238	991	1278	3.2e-25	P	Transport of potassium into the cell (By similarity)
+gene_5	ENOG4111G1H	2	236	27	282	7.8e-19	S	Glucosamine-6-phosphate isomerase
+gene_6	COG3158	29	651	300	984	4.6e-252	P	Transport of potassium into the cell (By similarity)
+gene_6	COG3135	39	624	372	961	8.1e-135	Q	benzoate transporter activity
+gene_6	ENOG410Z0AT	44	126	92	173	4.1e-20	S	K+ potassium transporter
+gene_7	ENOG4111HYR	13	303	6	296	2.7e-127	K	LysR family transcriptional Regulator
+gene_7	ENOG410Z409	18	306	4	294	1.6e-93	K	transcriptional Regulator LysR family
+gene_7	ENOG410XS6G	13	306	8	295	2.8e-90	K	TRANSCRIPTIONal REGULATOR, lysR family
+gene_7	ENOG4111KJN	16	306	6	298	1.1e-86	K	LysR family (Transcriptional regulator
+gene_7	ENOG4110VPY	18	305	6	292	1.2e-77	K	transcriptional regulator, lysr family
+gene_7	ENOG4111SE2	18	306	4	291	8.6e-77	K	LysR family (Transcriptional regulator
+gene_7	ENOG410Z3XZ	16	306	3	296	6.5e-76	K	nucleic acid binding transcription factor activity
+gene_7	ENOG410ZXTR	18	306	7	296	9.4e-75	K	Transcriptional regulator, LysR family
+gene_7	ENOG4111MPX	17	305	5	295	3e-71	K	Transcriptional regulator
+gene_7	ENOG410XQDQ	16	306	5	293	4.3e-71	K	Transcriptional regulator
+gene_7	ENOG4111FAV	17	303	4	292	5.2e-70	K	TRANSCRIPTIONal REGULATOR, lysR family
+gene_7	ENOG410YB70	18	308	6	297	2.8e-69	K	LysR substrate binding domain
+gene_7	ENOG4111F54	18	307	4	294	4.5e-65	K	LysR family transcriptional Regulator
+gene_7	ENOG4110NFF	18	306	6	291	5.6e-65	K	Transcriptional regulator
+gene_7	ENOG4111FGR	18	301	10	291	1.9e-62	K	LysR family (Transcriptional regulator
+gene_7	ENOG4111JU4	16	306	4	296	5.6e-62	K	Transcriptional regulator
+gene_7	ENOG410Z03E	16	307	8	304	1.2e-58	K	LysR family (Transcriptional regulator
+gene_7	ENOG4111F7E	18	305	5	288	1.5e-58	K	LysR substrate binding domain
+gene_7	ENOG4111MI4	17	303	5	293	6.5e-57	K	LysR family
+gene_7	ENOG410XSV3	16	305	3	294	1.1e-56	K	LysR family transcriptional regulator
+gene_8	COG0559	1	312	170	441	8.4e-94	E	(ABC) transporter
+gene_8	ENOG4111M19	1	315	1	290	7.8e-58	E	ABC transporter (permease)
+gene_8	ENOG41123MR	1	315	1	299	7.3e-53	E	(ABC) transporter
+gene_8	ENOG410ZAG9	5	311	2	284	1e-50	E	amino acid
+gene_8	COG4177	3	174	422	596	5.1e-21	E	(ABC) transporter
+gene_9	COG4177	15	365	716	1006	2.8e-111	E	(ABC) transporter
+gene_9	COG0559	22	363	473	781	9.1e-79	E	(ABC) transporter
+gene_9	COG0410	17	359	518	826	1.6e-76	E	amino acid transport
+gene_9	ENOG410ZKRZ	14	364	7	312	5.7e-73	E	Inner-membrane translocator
+gene_9	COG0411	17	363	634	921	1.2e-62	E	(ABC) transporter
+gene_9	ENOG4111T0M	40	362	45	336	2.9e-58	E	Branched-chain amino acid
+gene_9	ENOG41123MR	21	332	314	580	9.6e-45	E	(ABC) transporter
+gene_9	ENOG410ZM67	10	334	15	306	1.3e-36	E	inner-membrane translocator
+gene_9	ENOG410XWGH	39	360	48	322	2.1e-33	E	abc transporter permease protein
+gene_9	COG4674	16	334	19	305	5.1e-32	E	abc transporter atp-binding protein
+gene_9	ENOG410ZJYT	43	331	31	290	2e-28	S	Branched-chain amino acid transport system / permease component
+gene_9	COG1172	35	351	291	548	3.5e-24	G	(ABC) transporter
+gene_9	ENOG4111T3I	12	318	318	588	1.2e-23	E	Branched-chain amino acid transport system / permease component
+gene_9	ENOG410XRK5	15	320	25	299	3.5e-23	G	(ABC) transporter
+gene_9	ENOG410ZAG9	48	364	11	285	2.1e-20	E	amino acid
+gene_9	ENOG4111HHP	34	361	17	300	2e-19	S	Inner-membrane translocator
+gene_9	ENOG410ZQBV	22	313	321	575	2.7e-18	E	(ABC) transporter
+gene_9	ENOG4111G9K	23	83	36	95	0.0086	G	Inner-membrane translocator
+gene_10	COG0411	9	265	941	1185	7.5e-116	E	(ABC) transporter
+gene_10	COG4674	9	266	350	599	6.7e-82	E	abc transporter atp-binding protein
+gene_10	COG0410	11	263	856	1094	2.8e-77	E	amino acid transport
+gene_10	COG1129	8	260	710	952	2.2e-60	P	(ABC) transporter
+gene_10	COG0559	19	263	850	1078	2e-59	E	(ABC) transporter
+gene_10	COG4177	33	263	1018	1241	2.6e-59	E	(ABC) transporter
+gene_10	COG1137	9	263	180	419	1.8e-58	S	(ABC) transporter
+gene_10	COG3845	7	253	342	577	2.2e-57	S	(ABC) transporter
+gene_10	COG3842	9	255	523	747	5e-56	E	Part of the ABC transporter complex PotABCD involved in spermidine putrescine import. Responsible for energy coupling to the transport system (By similarity)
+gene_10	COG1118	8	255	511	744	9.3e-56	P	(ABC) transporter
+gene_10	ENOG410XNWD	12	254	6	236	6.9e-55	S	abc transporter atp-binding protein
+gene_10	COG3839	10	255	542	766	9.3e-55	G	(ABC) transporter
+gene_10	COG1131	11	254	3354	3571	3.9e-53	V	(ABC) transporter
+gene_10	COG1116	7	244	451	664	8.3e-53	P	(ABC) transporter
+gene_10	COG1135	8	254	70	306	7.4e-51	P	Part of the ABC transporter complex MetNIQ involved in methionine import. Responsible for energy coupling to the transport system (By similarity)
+gene_10	COG1122	9	255	511	736	1.4e-50	P	ATPase activity
+gene_10	ENOG410ZSAA	14	253	3	229	1.8e-50	S	(ABC) transporter
+gene_10	COG3638	7	253	24	267	2e-50	P	(ABC) transporter
+gene_10	COG1121	11	252	33	240	3.2e-50	P	(ABC) transporter
+gene_10	COG4152	8	246	515	731	2.4e-49	S	(ABC) transporter
+gene_11	COG0410	1	236	1109	1348	9.2e-114	E	amino acid transport
+gene_11	COG0411	2	237	944	1183	2.7e-72	E	(ABC) transporter
+gene_11	COG0559	1	237	842	1078	5.5e-61	E	(ABC) transporter
+gene_11	ENOG410XQ4C	4	236	6	247	4.2e-58	I	acyl-Coa dehydrogenase
+gene_11	COG1137	3	237	184	419	4.9e-52	S	(ABC) transporter
+gene_11	COG4674	1	237	352	596	3.1e-51	E	abc transporter atp-binding protein
+gene_11	COG1129	1	232	713	951	5.2e-48	P	(ABC) transporter
+gene_11	COG5441	4	236	6	234	5.7e-48	S	UPF0261 protein
+gene_11	ENOG410XQJC	5	224	58	283	2.2e-44	S	(ABC) transporter
+gene_11	COG1122	1	231	259	492	4.6e-44	P	ATPase activity
+gene_11	COG4177	32	237	1019	1241	5.5e-44	E	(ABC) transporter
+gene_11	COG3839	4	224	546	761	7.2e-44	G	(ABC) transporter
+gene_11	COG1126	2	228	475	703	5.6e-43	E	ABC transporter, (ATP-binding protein)
+gene_11	ENOG410XNNT	3	236	479	714	6.2e-43	P	(ABC) transporter
+gene_11	ENOG410XQRE	4	232	124	349	1.7e-42	S	(ABC) transporter
+gene_11	COG1120	1	234	332	557	2.6e-42	P	(ABC) transporter
+gene_11	COG3842	1	223	525	741	6.7e-42	E	Part of the ABC transporter complex PotABCD involved in spermidine putrescine import. Responsible for energy coupling to the transport system (By similarity)
+gene_11	ENOG410XNWD	2	233	6	241	9.7e-42	S	abc transporter atp-binding protein
+gene_11	COG1121	3	228	35	242	1.1e-41	P	(ABC) transporter
+gene_11	COG4152	2	220	519	731	1.4e-41	S	(ABC) transporter
+gene_12	ENOG410XP5U	10	376	7	378	8.2e-146	S	Receptor family ligand binding region
+gene_12	ENOG410XP0X	10	373	11	386	1.9e-97	E	extracellular ligand-binding receptor
+gene_12	COG0683	22	372	1836	2176	6.2e-73	E	(ABC) transporter
+gene_12	ENOG410YI6Q	11	374	8	384	2.2e-69	E	extracellular ligand-binding receptor
+gene_12	ENOG410ZNYY	10	371	14	373	4.8e-64	E	(ABC) transporter
+gene_12	ENOG410XQH4	22	373	56	411	7.2e-49	E	extracellular ligand-binding receptor
+gene_12	ENOG410XPCX	12	358	4	366	1.4e-44	E	ABC transporter substrate-binding protein
+gene_12	ENOG410YGG9	11	373	13	389	1.8e-38	E	extracellular ligand-binding receptor
+gene_12	ENOG410ZGSM	20	340	29	347	4e-36	E	extracellular ligand-binding receptor
+gene_12	ENOG411005Q	8	372	9	366	9.9e-36	E	Receptor family ligand binding region
+gene_12	ENOG410XPCZ	10	328	11	338	4.7e-29	E	amino acid ABC transporter
+gene_12	ENOG410ZHTH	11	349	9	357	9.6e-27	E	ABC transporter periplasmic substrate-binding protein
+gene_12	ENOG4111F84	12	116	27	128	9.4e-11	E	Branched-chain amino acid ABC transporter periplasmic branched-chain amino acid-binding protein
+gene_13	ENOG4111PIK	4	161	150	307	9.1e-84	S	L-2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	ENOG410YNY1	24	157	65	202	7.8e-16	S	NA
+gene_13	ENOG41122A1	84	159	150	225	2.3e-13	S	NA
+gene_13	ENOG410ZSXQ	20	154	59	199	3.9e-13	S	NA
+gene_13	ENOG410Y2G7	25	154	24	153	1.4e-12	S	NA
+gene_13	ENOG4111XHK	18	155	9	147	4.4e-12	S	NA
+gene_13	ENOG4111SV9	23	157	42	175	4.9e-11	S	NA
+gene_13	ENOG4111H00	77	157	131	209	6.4e-11	S	NA
+gene_13	ENOG4111YAV	28	156	32	165	6.1e-11	S	NA
+gene_14	COG3195	8	400	547	948	4.5e-58	S	ohcu decarboxylase
+gene_14	COG0624	7	382	736	1006	2.2e-33	E	succinyl-diaminopimelate desuccinylase activity
+gene_14	COG0411	5	407	1185	1435	4.5e-26	E	(ABC) transporter
+gene_14	COG0410	22	385	1376	1695	2.2e-21	E	amino acid transport
+gene_14	COG1473	126	400	799	1033	1.2e-18	E	amidohydrolase
+gene_14	COG2195	34	405	64	405	6.1e-16	E	Cleaves the N-terminal amino acid of tripeptides (By similarity)
+gene_15	ENOG4111RGA	6	107	7	108	2.1e-36	K	Transcriptional regulator, arsr family
+gene_15	ENOG4111W62	3	110	5	112	1.6e-35	K	Transcriptional regulator
+gene_15	ENOG41125S6	9	107	5	103	1.3e-34	K	arsR family transcriptional regulator
+gene_15	ENOG41122X0	7	104	5	103	1e-25	K	Arsr family transcriptional regulator
+gene_15	ENOG4111Z1G	6	104	6	106	3.5e-24	K	arsR family transcriptional regulator
+gene_15	ENOG4111P7X	11	105	2	100	1.7e-23	K	arsR family transcriptional regulator
+gene_15	ENOG4111XSR	6	89	306	390	1e-22	K	transcriptional regulator ArsR family
+gene_15	ENOG4111UTM	5	109	3	110	2.3e-21	K	arsR family transcriptional regulator
+gene_15	COG0640	6	98	255	336	3.6e-21	K	Transcriptional regulator, arsr family
+gene_15	ENOG4111PNM	7	103	4	101	8.4e-20	K	arsR family transcriptional regulator
+gene_15	ENOG4111Z0Q	7	110	6	110	8.4e-20	K	Transcriptional regulator
+gene_15	ENOG4111ZHQ	12	90	6	84	2.1e-18	K	Transcriptional regulator
+gene_15	ENOG4112596	8	104	7	103	7.9e-18	K	Transcriptional regulator, arsR family
+gene_15	ENOG410XUQV	7	88	209	290	1.2e-17	K	Transcriptional regulator, arsR family
+gene_15	ENOG4111Z7M	6	103	21	118	2.6e-17	K	Transcriptional regulator
+gene_15	ENOG4111Y0U	7	88	3	92	7e-17	K	ArsR family transcriptional regulator
+gene_15	ENOG41125U8	7	82	17	93	1.4e-16	K	Transcriptional regulator
+gene_15	ENOG411241J	12	79	17	84	3.6e-16	K	Transcriptional regulator, arsR family
+gene_15	ENOG411226U	10	88	12	90	3e-15	K	Transcriptional regulator, arsr family
+gene_15	ENOG410ZXG1	8	90	15	98	3.8e-15	K	Transcriptional regulator, arsR family
+gene_16	ENOG4111VV3	5	175	15	185	2e-32	S	activator of Hsp90 ATPase 1 family protein
+gene_16	COG3832	9	155	149	278	3.5e-26	S	Activator of Hsp90 ATPase 1 family protein
+gene_16	ENOG4111KVK	12	177	21	167	3.6e-23	S	activator of Hsp90 ATPase 1 family protein
+gene_16	ENOG410ZBM1	11	57	15	62	3.8e-05	S	Activator of Hsp90 ATPase 1 family protein
+gene_17	COG0598	45	339	234	484	1.8e-39	P	magnesium and cobalt transport protein CorA
+gene_17	ENOG410Z1B6	157	319	218	392	2.7e-20	S	CorA-like Mg2+ transporter protein
+gene_17	ENOG410YFRX	169	308	501	624	9.3e-12	S	CorA-like Mg2+ transporter protein
+gene_17	ENOG41107SI	236	336	394	495	5.8e-11	S	CorA-like Mg2+ transporter protein
+gene_19	ENOG410YZ1T	8	201	1	195	1.2e-65	S	NA
+gene_20	ENOG4111G9J	3	128	7	128	1.2e-22	S	Hydrolase
+gene_20	ENOG411284Q	1	136	30	165	1e-20	S	Nudix hydrolase
+gene_20	ENOG410ZQBW	9	137	31	150	2e-19	S	Nudix hydrolase
+gene_20	ENOG4111QUK	9	128	23	132	6.6e-19	S	NUDIX domain
+gene_20	ENOG410XVGS	12	132	58	161	2.6e-18	S	NUDiX hydrolase
+gene_20	ENOG410XVZ8	6	129	5	117	1.1e-17	S	Nudix hydrolase
+gene_20	ENOG4111N58	16	125	21	112	1.6e-16	S	Nudix hydrolase
+gene_20	ENOG4111WAI	2	136	45	177	3.3e-17	S	NUDiX hydrolase
+gene_20	COG1051	11	125	455	555	7.1e-17	F	NUDiX hydrolase
+gene_20	ENOG4111VQ6	10	124	79	195	2e-15	S	NUDiX hydrolase
+gene_20	ENOG411022U	10	126	14	134	2.3e-15	S	Nudix hydrolase
+gene_20	ENOG4111XKK	10	121	18	120	3.7e-13	S	mutT nudix family protein
+gene_20	ENOG4111TNB	19	75	26	84	2.5e-13	S	NUDiX hydrolase
+gene_20	ENOG410ZWYN	13	124	228	329	3.7e-13	S	Hydrolase, NUDIX family
+gene_20	ENOG4112BPY	10	134	11	128	1.1e-12	S	NUDiX hydrolase
+gene_20	ENOG41122TJ	2	124	17	131	2.5e-12	S	NUDiX hydrolase
+gene_20	ENOG410ZCV3	15	76	64	127	1.1e-12	S	Nudix hydrolase
+gene_20	ENOG4111GD8	9	82	28	95	1.7e-12	S	mutt nudix family protein
+gene_20	ENOG410ZMPW	14	132	55	180	3.2e-12	S	NUDIX domain
+gene_20	ENOG4111RXE	31	121	145	230	4e-12	S	mutt nudix family protein
+gene_21	COG1686	17	276	478	734	2.5e-79	M	Carboxypeptidase
+gene_21	COG2027	32	80	536	583	6e-10	M	D-alanyl-D-alanine carboxypeptidase
+gene_22	ENOG410XTGM	1	321	1	325	2.7e-111	S	Luciferase-like monooxygenase
+gene_22	ENOG410XNXQ	1	323	1	321	7.1e-56	S	Luciferase-like monooxygenase
+gene_22	COG2141	12	323	2761	3032	6.8e-53	C	Monooxygenase
+gene_22	ENOG41120XD	14	301	16	307	1e-29	S	Luciferase-like protein
+gene_22	ENOG410XNUM	16	148	14	143	5.5e-27	S	Luciferase-like monooxygenase
+gene_23	COG1167	12	432	699	1138	9.3e-70	K	Transcriptional regulator, gntR family
+gene_23	COG1725	12	79	107	174	1.2e-28	K	Transcriptional regulator, GntR family
+gene_23	COG0436	89	412	3094	3410	5.1e-19	E	aminotransferase
+gene_23	ENOG4111Y4X	12	76	15	79	1.7e-18	K	Transcriptional regulator, gntR family
+gene_23	COG2188	12	78	431	497	2.6e-17	K	GntR family transcriptional regulator
+gene_23	ENOG410ZSRJ	13	78	20	85	1.6e-16	K	HTH_GNTR
+gene_23	ENOG410XUPB	12	82	16	86	1.5e-16	K	GntR family transcriptional regulator
+gene_23	COG2186	11	89	174	248	4.2e-14	K	GntR family transcriptional regulator
+gene_25	COG2240	1	185	1	156	1.3e-39	H	Pyridoxal kinase
+gene_25	COG0518	15	198	655	829	8.6e-37	F	Catalyzes the synthesis of GMP from XMP (By similarity)
+gene_25	ENOG410Y1EQ	1	184	1	181	2e-18	S	GMP synthase-Glutamine amidotransferase domain-like protein
+gene_25	COG0519	86	184	468	568	3.3e-14	F	Catalyzes the synthesis of GMP from XMP (By similarity)
+gene_25	COG0512	78	111	580	612	2e-10	E	anthranilate synthase
+gene_26	COG2240	11	273	179	444	6.3e-78	H	Pyridoxal kinase
+gene_26	COG0351	87	254	526	672	1.7e-20	H	phosphomethylpyrimidine kinase
+gene_27	COG5581	3	236	19	253	2.2e-48	M	Acts as a flagellar brake, regulating swimming and swarming in a bis-(3'-5') cyclic diguanylic acid (c-di-GMP)- dependent manner. Increasing levels of c-di-GMP lead to decreased motility (By similarity)
+gene_27	ENOG410YB1Q	10	236	6	229	4.5e-44	S	PilZ domain
+gene_27	ENOG410XUDE	17	225	27	238	6.2e-20	M	Acts as a flagellar brake, regulating swimming and swarming in a bis-(3'-5') cyclic diguanylic acid (c-di-GMP)- dependent manner
+gene_28	COG3931	9	258	4	254	8.3e-100	E	N-formylglutamate amidohydrolase
+gene_28	COG3741	12	250	137	383	1.7e-20	E	N-formylglutamate amidohydrolase
+gene_29	COG3176	10	566	73	413	3.2e-97	S	Acyl-transferase
+gene_29	ENOG410YEYQ	311	567	43	301	1.1e-14	S	NA
+gene_29	ENOG4111UG6	69	158	90	180	9.9e-14	S	Phospholipid glycerol acyltransferase
+gene_29	COG0204	62	299	474	612	1.6e-12	I	Acyltransferase
+gene_29	ENOG4111K94	60	243	24	212	3.7e-10	S	Phospholipid glycerol acyltransferase
+gene_30	ENOG410ZVP8	2	552	5	559	1.9e-211	S	NA
+gene_30	ENOG410Y2ID	10	544	313	847	2.4e-115	S	PHP domain protein
+gene_30	ENOG410Y4S2	26	524	266	763	2.5e-88	S	NA
+gene_30	ENOG410XTA4	91	518	128	515	2.7e-18	S	NA
+gene_30	ENOG410Y3BH	96	355	117	339	5.2e-09	S	NA
+gene_32	ENOG410YZPH	12	410	10	416	7.1e-76	G	extracellular solute-binding protein family 1
+gene_32	ENOG410ZDMZ	12	411	9	419	3.7e-68	G	solute-binding protein
+gene_32	COG1653	11	93	390	478	1.5e-09	G	transporter activity
+gene_33	COG1175	19	306	667	933	1.6e-82	P	binding-protein-dependent transport systems inner membrane Component
+gene_33	ENOG410ZB03	22	311	22	329	4e-73	G	(ABC) transporter
+gene_33	ENOG410Y2SR	27	308	12	296	1.1e-70	P	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG410XNZU	20	305	13	305	2.3e-67	P	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG410XRGU	24	304	7	288	4.7e-58	G	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG410ZP2P	20	306	9	294	1.3e-57	G	(ABC) transporter
+gene_33	ENOG410YEW2	20	306	10	295	1.2e-56	G	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG4110EYS	27	310	3	288	4.3e-54	P	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG4111F83	18	308	23	315	9.1e-54	S	Binding-protein-dependent transport system inner membrane component
+gene_33	ENOG410XSXC	28	307	10	301	5.6e-52	G	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG4111GHG	24	309	11	298	4.3e-51	G	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG410XNT5	14	302	24	318	1e-49	P	Binding-protein-dependent transport system inner membrane component
+gene_33	ENOG4110QAQ	22	308	13	300	6.6e-49	G	ABC transporter (permease)
+gene_33	ENOG4110WFC	32	304	23	299	4.9e-48	G	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG4111FGP	20	298	30	306	3e-47	G	Binding-protein-dependent transport system inner membrane component
+gene_33	ENOG410Z5F4	20	308	21	317	1.2e-46	G	Binding-protein-dependent transport system inner membrane component
+gene_33	COG4209	28	310	85	366	1.8e-43	G	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG410YHCB	30	308	17	307	1.9e-42	S	Binding-protein-dependent transport system inner membrane component
+gene_33	ENOG410Y7BF	28	307	139	435	2.1e-40	P	Binding-protein-dependent transport systems inner membrane component
+gene_33	ENOG410YZTA	24	308	19	306	3.5e-40	P	Binding-protein-dependent transport system inner membrane component
+gene_34	COG0395	5	272	393	637	8.5e-97	G	Binding-protein-dependent transport systems inner membrane component
+gene_34	ENOG410XR8K	4	272	13	282	4.1e-80	P	binding-protein-dependent transport systems inner membrane Component
+gene_34	ENOG410YEY9	4	272	14	287	9.9e-74	G	Binding-protein-dependent transport system inner membrane component
+gene_34	ENOG4110PHZ	5	48	20	63	2.3e-07	G	sugar ABC transporter (Permease)
+gene_35	COG3839	1	364	545	868	3.6e-149	G	(ABC) transporter
+gene_35	COG3842	1	363	527	865	6.3e-125	E	Part of the ABC transporter complex PotABCD involved in spermidine putrescine import. Responsible for energy coupling to the transport system (By similarity)
+gene_35	ENOG410XSCS	1	364	1	334	1.2e-107	S	ABC transporter, (ATP-binding protein)
+gene_35	ENOG4111MEX	4	369	16	366	1.1e-96	G	Sugar ABC transporter ATP-binding protein
+gene_35	ENOG410Y8DG	2	369	2	366	5.8e-96	S	ABC transporter, (ATP-binding protein)
+gene_35	ENOG410XNNT	2	362	480	813	1.4e-95	P	(ABC) transporter
+gene_35	ENOG411010W	1	369	1	358	4.7e-92	S	ABC transporter, (ATP-binding protein)
+gene_35	COG1118	3	329	518	836	3.5e-86	P	(ABC) transporter
+gene_35	ENOG410XS8J	2	259	2	261	3.6e-86	S	NA
+gene_35	ENOG410XZW9	1	228	1	235	2.4e-77	S	ABC transporter
+gene_35	COG1116	1	230	457	671	1.9e-76	P	(ABC) transporter
+gene_35	COG1125	3	252	474	721	3.1e-76	E	(ABC) transporter
+gene_35	ENOG410XNRV	4	309	18	313	2.3e-75	E	(ABC) transporter
+gene_35	COG4175	17	240	51	276	2.8e-66	E	Glycine betaine
+gene_35	ENOG410XQJC	2	229	57	286	3.1e-64	S	(ABC) transporter
+gene_35	COG1126	2	241	477	714	3.1e-64	E	ABC transporter, (ATP-binding protein)
+gene_35	COG4525	2	216	8	213	2e-61	P	(ABC) transporter
+gene_35	COG1122	2	227	262	486	8.8e-61	P	ATPase activity
+gene_35	COG1176	8	241	50	298	3.4e-60	P	transporter activity
+gene_35	COG4148	23	327	24	326	1.4e-58	P	Part of the ABC transporter complex ModABC involved in molybdenum import. Responsible for energy coupling to the transport system (By similarity)
+gene_36	COG0673	8	411	1079	1316	6.4e-47	S	oxidoreductase
+gene_36	ENOG410YENK	5	138	548	696	2.4e-13	S	Oxidoreductase family, NAD-binding Rossmann fold
+gene_37	COG1940	4	302	488	735	2.5e-53	G	ROK family
+gene_37	ENOG4111Q1I	1	170	1	182	4.5e-19	G	ROK family
+gene_38	COG3716	2	251	3	252	3.8e-145	G	PTS system mannose fructose sorbose family iid component
+gene_38	COG3444	2	248	3	249	1.6e-132	G	pts system
+gene_38	COG1349	2	255	11	249	1.6e-86	K	transcriptional regulator DeoR family
+gene_38	ENOG410Y91S	3	253	2	257	9.4e-79	K	Galactitol utilization operon repressor
+gene_38	ENOG41127IU	5	249	14	263	5.2e-51	K	Transcriptional regulator
+gene_38	ENOG410XP2Q	6	255	3	255	1.1e-49	K	transcriptional regulator DeoR family
+gene_38	ENOG410YBRK	3	235	3	230	1.5e-29	K	deoR family transcriptional regulator
+gene_39	COG2222	3	382	4	358	7.5e-103	M	carbohydrate binding
+gene_39	COG0449	21	365	1697	2017	1.1e-17	M	Catalyzes the first step in hexosamine metabolism, converting fructose-6P into glucosamine-6P using glutamine as a nitrogen source (By similarity)
+gene_40	COG0191	2	283	1095	1378	4.5e-102	G	Aldolase
+gene_40	COG3395	7	282	1064	1340	1.6e-46	S	type III effector, Hrp-dependent
+gene_40	COG2084	15	282	1090	1328	4.6e-36	I	Dehydrogenase
+gene_40	ENOG41113MM	10	134	14	138	3.2e-13	S	Fructose-bisphosphate aldolase class-II
+gene_41	ENOG410Y0RF	8	103	8	106	2.5e-13	S	NA
+gene_42	COG0350	37	167	850	953	1.5e-47	L	Involved in the cellular defense against the biological effects of O6-methylguanine (O6-MeG) in DNA. Repairs alkylated guanine in DNA by stoichiometrically transferring the alkyl group at the O-6 position to a cysteine residue in the enzyme. This is a suicide reaction the enzyme is irreversibly inactivated (By similarity)
+gene_42	COG3695	81	168	409	493	1.2e-21	L	Methyltransferase
+gene_42	ENOG410XXVU	83	160	6	83	9.3e-18	L	methylated-DNA- protein -cysteine s-methyltransferase
+gene_42	COG2169	74	169	398	503	1.7e-17	FL	Transcriptional regulator
+gene_42	COG3601	98	151	438	491	2.3e-11	S	Membrane
+gene_42	ENOG410Y5S0	89	167	5	86	2.7e-10	L	6-O-methylguanine DNA methyltransferase, DNA binding domain
+gene_43	ENOG410XVK4	47	241	21	218	1.1e-35	T	transcriptional regulator, crp fnr family
+gene_43	ENOG4111Y53	48	240	25	215	3.3e-24	T	cyclic nucleotide-binding domain protein
+gene_43	ENOG4111VF4	32	218	16	191	3.1e-21	T	Transcriptional regulator, Crp Fnr family
+gene_43	ENOG41101GZ	36	239	20	220	1.2e-21	T	Transcription Regulator
+gene_43	ENOG410ZM2E	34	243	22	235	2.6e-21	T	transcriptional regulator, crp fnr family
+gene_43	ENOG410ZWAP	33	245	13	218	2.9e-21	K	transcriptional regulator, crp fnr family
+gene_43	ENOG4111JTK	33	215	14	186	2.4e-19	T	Transcriptional regulator, Crp Fnr family
+gene_43	ENOG410ZDRF	50	243	32	218	6e-18	T	Transcriptional regulator, Crp Fnr family
+gene_43	ENOG41123QU	42	239	30	227	7.1e-18	K	transcriptional regulator
+gene_43	ENOG410ZS2R	48	244	12	206	5.9e-17	K	crp fnr family transcriptional regulator
+gene_43	ENOG4112019	47	232	25	202	3.1e-16	T	Transcriptional regulator, Crp Fnr family
+gene_43	ENOG410YFER	29	214	13	185	3.5e-15	T	Transcriptional regulator, Crp Fnr family
+gene_43	ENOG4111N63	66	229	69	226	4.4e-15	K	Transcriptional regulator, Crp Fnr family
+gene_43	ENOG4111YJR	32	214	11	182	3.4e-14	T	cyclic nucleotide-binding domain protein
+gene_43	ENOG4111QRB	48	230	14	193	6.3e-15	K	family Transcriptional regulator
+gene_43	COG0664	26	223	6696	6865	8.2e-15	T	transcriptional regulator, crp fnr family
+gene_43	ENOG4111T51	33	214	14	185	1.7e-13	T	Transcriptional regulator, Crp Fnr family
+gene_43	ENOG4111SM1	33	214	14	185	1.6e-13	T	transcriptional regulator, crp fnr family
+gene_43	ENOG410Y13X	33	245	12	217	3.3e-13	T	HTH_CRP
+gene_43	ENOG410ZKGA	28	240	10	212	8.7e-13	T	Transcriptional regulator
+gene_44	COG0589	1	304	399	617	6.5e-29	T	Universal stress protein
+gene_44	ENOG410XURP	2	149	7	159	4.7e-08	S	universal stress protein
+gene_45	COG1282	5	463	601	1047	8.8e-278	C	The transhydrogenation between NADH and NADP is coupled to respiration and ATP hydrolysis and functions as a proton pump across the membrane (By similarity)
+gene_45	COG3288	4	462	1012	1465	3.3e-202	C	The transhydrogenation between NADH and NADP is coupled to respiration and ATP hydrolysis and functions as a proton pump across the membrane (By similarity)
+gene_46	COG3288	1	247	828	986	1.7e-97	C	The transhydrogenation between NADH and NADP is coupled to respiration and ATP hydrolysis and functions as a proton pump across the membrane (By similarity)
+gene_46	COG1282	1	138	385	514	2.1e-47	C	The transhydrogenation between NADH and NADP is coupled to respiration and ATP hydrolysis and functions as a proton pump across the membrane (By similarity)

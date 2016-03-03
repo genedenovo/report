@@ -1,0 +1,41 @@
+--------------	total	B1_1.fq.gz	B1_2.fq.gz
+total reads   	24998	24998	24998
+total reads nt	6249500	3124750	3124750
+reads len     	125+125	125	125
+Q20  number   	5918859	2968766	2950093
+Q20 percentage	94.71%	95.01%	94.41%
+Q30  number   	5603675	2814094	2789581
+Q30 percentage	89.67%	90.06%	89.27%
+GC  number    	3094304	1547845	1546459
+GC  percentage	49.51%	49.54%	49.49%
+N   number    	41	40	1
+N   percentage	0.00%	0.00%	0.00%
+
+
+before filter
+--------------	total	B1_1.fq.gz	B1_2.fq.gz
+total reads   	25000	25000	25000
+total reads nt	6250000	3125000	3125000
+reads len     	125+125	125	125
+Q20  number   	5919289	2968970	2950319
+Q20 percentage	94.71%	95.01%	94.41%
+Q30  number   	5604058	2814268	2789790
+Q30 percentage	89.66%	90.06%	89.27%
+GC  number    	3094553	1547969	1546584
+GC  percentage	49.51%	49.54%	49.49%
+N   number    	41	40	1
+N   percentage	0.00%	0.00%	0.00%
+
+
+filter step info:
+total reads before filter  :	25000
+
+1,filter adapter <y/n> : y	0	0%	2	0.01%
+2,filter small instert size <y/n> : n
+3, trimed reads 	0	0	0	0
+4, filter N , if Nrate > 0.1	0	0%
+5, filter poly A <y/n> : y	0	0%
+6, filter low quality, if (quality <= 20) rate > 0.8	0	0%
+7, filter low average quality, if average < 0	0	0%
+
+clean reads : 	24998	99.99%

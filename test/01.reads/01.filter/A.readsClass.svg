@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="450" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+text {font-family: Arial;}
+</style>
+<text x="225" y="30" text-anchor="middle" font-size="16px" stroke-width="0px" font-weight="bold">Classification of Clean Reads (A)</text>
+<path d="M 122.999999976311, 159.999622994121 L 222.999999976311, 159.999622994121 A 100 100 0 0 0 222.99999681779, 159.974489269036 z" style="fill: #7FFF00;" />
+<path d="M 122.999999905244, 159.999245988247 L 222.999996746724, 159.974112263163 A 100 100 0 0 0 222.999996746724, 159.974112263163 z" style="fill: #DC143C;" />
+<path d="M 122.999999905244, 159.999245988247 L 222.999996746724, 159.974112263163 A 100 100 0 0 0 222.999996746724, 159.974112263163 z" style="fill: #00FFFF;" />
+<path d="M 117.000000022699, 160.00036904511 L 216.999996864178, 159.975235320026 A 100 100 0 1 0 217.000000021291, 160.000899763069 z" style="fill: #00008B;" />
+<text y="60" font-size="8px" stroke-width="0.1px">
+<tspan x="233" dy="18" stroke="#7FFF00" fill="#7FFF00">&#9608;&#9608;</tspan><tspan dx="2" stroke="black" fill="black">Adaptor (2, 0.00%)</tspan>
+<tspan x="233" dy="18" stroke="#DC143C" fill="#DC143C">&#9608;&#9608;</tspan><tspan dx="2" stroke="black" fill="black">Containing N (0, 0.00%)</tspan>
+<tspan x="233" dy="18" stroke="#00FFFF" fill="#00FFFF">&#9608;&#9608;</tspan><tspan dx="2" stroke="black" fill="black">Low Quality (0, 0.00%)</tspan>
+<tspan x="233" dy="18" stroke="#00008B" fill="#00008B">&#9608;&#9608;</tspan><tspan dx="2" stroke="black" fill="black">High Quality Clean Reads (49996, 100.00%)</tspan>
+</text>
+
+</svg>

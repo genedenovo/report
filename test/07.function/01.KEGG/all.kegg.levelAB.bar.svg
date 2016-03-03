@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1150" height="431" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<line x1="580" y1="100" x2="580" y2="286" style="stroke: #000; stroke-width: 1;" />
+<line x1="580" y1="100" x2="1050" y2="100" style="stroke: #000; stroke-width: 1;" />
+<line x1="580" y1="286" x2="1050" y2="286" style="stroke: #000; stroke-width: 1;" />
+<line x1="1050" y1="100" x2="1050" y2="286" style="stroke: #000; stroke-width: 1;" />
+<text x="565" y="133" style="fill: black; text-anchor: end;" font-size="27" font-family="Arial"><tspan font-weight="bold">Metabolism</tspan></text>
+<rect x="585" y="142" width="120" height="20" style="fill:#A2CD5A;" />
+<text x="560" y="159" style="fill: #A2CD5A; text-anchor: end;" font-size="25" font-family="Arial"><tspan font-weight="bold">Metabolism of cofactors and vitamins</tspan></text>
+<text x="710" y="159" style="fill: black; text-anchor: start;" font-size="23" font-family="Arial"><tspan font-weight="bold">3</tspan></text>
+<rect x="585" y="168" width="80" height="20" style="fill:#A2CD5A;" />
+<text x="560" y="185" style="fill: #A2CD5A; text-anchor: end;" font-size="25" font-family="Arial"><tspan font-weight="bold">Carbohydrate metabolism</tspan></text>
+<text x="670" y="185" style="fill: black; text-anchor: start;" font-size="23" font-family="Arial"><tspan font-weight="bold">2</tspan></text>
+<rect x="585" y="194" width="40" height="20" style="fill:#A2CD5A;" />
+<text x="560" y="211" style="fill: #A2CD5A; text-anchor: end;" font-size="25" font-family="Arial"><tspan font-weight="bold">Nucleotide metabolism</tspan></text>
+<text x="630" y="211" style="fill: black; text-anchor: start;" font-size="23" font-family="Arial"><tspan font-weight="bold">1</tspan></text>
+<line x1="585" y1="286" x2="585" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="585" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">0</tspan></text>
+<line x1="665" y1="286" x2="665" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="665" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">2</tspan></text>
+<line x1="745" y1="286" x2="745" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="745" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">4</tspan></text>
+<line x1="825" y1="286" x2="825" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="825" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">6</tspan></text>
+<line x1="905" y1="286" x2="905" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="905" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">8</tspan></text>
+<line x1="985" y1="286" x2="985" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="985" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">10</tspan></text>
+<text x="575" y="75" style="fill: black; text-anchor: middle;" font-size="35" font-family="Arial"><tspan font-weight="bold">KEGG pathway annotation</tspan></text>
+<text x="815" y="361" style="fill: black; text-anchor: middle;" font-size="25" font-family="Arial"><tspan font-weight="bold">Number of Gene</tspan></text>
+<line x1="585" y1="286" x2="585" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="585" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">0</tspan></text>
+<line x1="665" y1="286" x2="665" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="665" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">2</tspan></text>
+<line x1="745" y1="286" x2="745" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="745" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">4</tspan></text>
+<line x1="825" y1="286" x2="825" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="825" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">6</tspan></text>
+<line x1="905" y1="286" x2="905" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="905" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">8</tspan></text>
+<line x1="985" y1="286" x2="985" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="985" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">10</tspan></text>
+<text x="575" y="75" style="fill: black; text-anchor: middle;" font-size="35" font-family="Arial"><tspan font-weight="bold">KEGG pathway annotation</tspan></text>
+<text x="815" y="361" style="fill: black; text-anchor: middle;" font-size="25" font-family="Arial"><tspan font-weight="bold">Number of Gene</tspan></text>
+<text x="565" y="237" style="fill: black; text-anchor: end;" font-size="27" font-family="Arial"><tspan font-weight="bold">Environmental Information Processing</tspan></text>
+<rect x="585" y="246" width="240" height="20" style="fill:#9F79EE;" />
+<text x="560" y="263" style="fill: #9F79EE; text-anchor: end;" font-size="25" font-family="Arial"><tspan font-weight="bold">Membrane transport</tspan></text>
+<text x="830" y="263" style="fill: black; text-anchor: start;" font-size="23" font-family="Arial"><tspan font-weight="bold">6</tspan></text>
+<line x1="585" y1="286" x2="585" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="585" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">0</tspan></text>
+<line x1="665" y1="286" x2="665" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="665" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">2</tspan></text>
+<line x1="745" y1="286" x2="745" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="745" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">4</tspan></text>
+<line x1="825" y1="286" x2="825" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="825" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">6</tspan></text>
+<line x1="905" y1="286" x2="905" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="905" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">8</tspan></text>
+<line x1="985" y1="286" x2="985" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="985" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">10</tspan></text>
+<text x="575" y="75" style="fill: black; text-anchor: middle;" font-size="35" font-family="Arial"><tspan font-weight="bold">KEGG pathway annotation</tspan></text>
+<text x="815" y="361" style="fill: black; text-anchor: middle;" font-size="25" font-family="Arial"><tspan font-weight="bold">Number of Gene</tspan></text>
+<line x1="585" y1="286" x2="585" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="585" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">0</tspan></text>
+<line x1="665" y1="286" x2="665" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="665" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">2</tspan></text>
+<line x1="745" y1="286" x2="745" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="745" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">4</tspan></text>
+<line x1="825" y1="286" x2="825" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="825" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">6</tspan></text>
+<line x1="905" y1="286" x2="905" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="905" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">8</tspan></text>
+<line x1="985" y1="286" x2="985" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="985" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">10</tspan></text>
+<text x="575" y="75" style="fill: black; text-anchor: middle;" font-size="35" font-family="Arial"><tspan font-weight="bold">KEGG pathway annotation</tspan></text>
+<text x="815" y="361" style="fill: black; text-anchor: middle;" font-size="25" font-family="Arial"><tspan font-weight="bold">Number of Gene</tspan></text>
+<line x1="585" y1="286" x2="585" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="585" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">0</tspan></text>
+<line x1="665" y1="286" x2="665" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="665" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">2</tspan></text>
+<line x1="745" y1="286" x2="745" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="745" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">4</tspan></text>
+<line x1="825" y1="286" x2="825" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="825" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">6</tspan></text>
+<line x1="905" y1="286" x2="905" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="905" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">8</tspan></text>
+<line x1="985" y1="286" x2="985" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="985" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">10</tspan></text>
+<text x="575" y="75" style="fill: black; text-anchor: middle;" font-size="35" font-family="Arial"><tspan font-weight="bold">KEGG pathway annotation</tspan></text>
+<text x="815" y="361" style="fill: black; text-anchor: middle;" font-size="25" font-family="Arial"><tspan font-weight="bold">Number of Gene</tspan></text>
+<line x1="585" y1="286" x2="585" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="585" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">0</tspan></text>
+<line x1="665" y1="286" x2="665" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="665" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">2</tspan></text>
+<line x1="745" y1="286" x2="745" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="745" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">4</tspan></text>
+<line x1="825" y1="286" x2="825" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="825" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">6</tspan></text>
+<line x1="905" y1="286" x2="905" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="905" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">8</tspan></text>
+<line x1="985" y1="286" x2="985" y2="294" style="stroke: #000; stroke-width: 2;" />
+<text x="985" y="319" style="fill: black; text-anchor: middle;" font-size="17" font-family="Arial"><tspan font-weight="bold">10</tspan></text>
+<text x="575" y="75" style="fill: black; text-anchor: middle;" font-size="35" font-family="Arial"><tspan font-weight="bold">KEGG pathway annotation</tspan></text>
+<text x="815" y="361" style="fill: black; text-anchor: middle;" font-size="25" font-family="Arial"><tspan font-weight="bold">Number of Gene</tspan></text>
+</svg>

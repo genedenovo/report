@@ -1,0 +1,833 @@
+Query_id	Subject_id	Identity	Align_length	Miss_match	Gap	Query_start	Query_end	Subject_start	Subject_end	E_value	Score	Subject_annotation
+gene_1	sers:SERRSCBI_11935	94.86	350	18	0	1	350	1	350	0.0	  696	xylose isomerase domain-containing protein
+gene_1	enl:A3UG_19155	90.00	350	35	0	1	350	1	350	0.0	  672	xylose isomerase domain-containing protein
+gene_1	ron:TE10_13215	88.00	350	42	0	1	350	1	350	0.0	  655	AP endonuclease
+gene_1	srl:SOD_c24080	86.86	350	46	0	1	350	1	350	0.0	  647	xylose isomerase domain-containing protein
+gene_1	sry:M621_13165	86.57	350	47	0	1	350	1	350	0.0	  644	AP endonuclease
+gene_1	spe:Spro_2544	86.29	350	48	0	1	350	1	350	0.0	  643	Xylose isomerase domain protein TIM barrel
+gene_1	srs:SerAS12_2549	86.29	350	48	0	1	350	1	350	0.0	  643	Xylose isomerase domain-containing protein TIM barrel
+gene_1	srr:SerAS9_2548	86.29	350	48	0	1	350	1	350	0.0	  643	Xylose isomerase domain-containing protein TIM barrel
+gene_1	sra:SerAS13_2550	86.29	350	48	0	1	350	1	350	0.0	  643	Xylose isomerase domain-containing protein TIM barrel
+gene_1	slq:M495_12645	86.00	350	49	0	1	350	1	350	0.0	  642	AP endonuclease
+gene_1	pch:EY04_03335	77.43	350	79	0	1	350	1	350	0.0	  588	AP endonuclease
+gene_1	ppro:PPC_3661	76.29	350	83	0	1	350	1	350	0.0	  575	xylose isomerase domain-containing protein
+gene_1	pprc:PFLCHA0_c35480	76.29	350	83	0	1	350	1	350	0.0	  575	AP endonuclease family 2 protein
+gene_1	pfl:PFL_3507	76.29	350	83	0	1	350	1	350	0.0	  575	AP endonuclease
+gene_1	axy:AXYL_05323	76.57	350	82	0	1	350	1	350	0.0	  573	xylose isomerase-like TIM barrel family protein
+gene_1	abad:ABD1_18050	73.71	350	92	0	1	350	1	350	0.0	  572	AP endonuclease family protein
+gene_1	pcp:JM49_26360	77.14	350	80	0	1	350	1	350	0.0	  585	AP endonuclease
+gene_1	acd:AOLE_12630	73.71	350	92	0	1	350	1	350	0.0	  572	xylose isomerase domain-containing protein
+gene_1	cbw:RR42_s1421	74.86	350	88	0	1	350	1	350	0.0	  570	Inosose isomerase (EC:5.3.99.-)
+gene_1	acc:BDGL_000572	73.71	350	92	0	1	350	1	350	0.0	  570	iolE; apurinic/apyrimidinic endonuclease
+gene_2	smw:SMWW4_v1c25230	99.49	197	1	0	9	205	1	197	1e-139	  399	TetR family transcriptional regulator
+gene_2	serf:L085_16070	96.92	195	6	0	9	203	1	195	2e-133	  383	TetR family transcriptional regulator
+gene_2	smac:SMDB11_1791	93.88	196	12	0	9	204	1	196	3e-124	  360	TetR-family transcriptional regulator
+gene_2	smar:SM39_1979	94.39	196	11	0	9	204	1	196	2e-120	  358	TetR-family transcriptional regulator
+gene_2	sers:SERRSCBI_11940	93.88	196	12	0	9	204	1	196	2e-120	  357	TetR family transcriptional regulator
+gene_2	spe:Spro_2545	81.44	194	36	0	9	202	1	194	9e-111	  325	transcriptional regulator, TetR family
+gene_2	srs:SerAS12_2550	86.67	195	26	0	9	203	1	195	3e-110	  324	regulatory protein TetR
+gene_2	srr:SerAS9_2549	86.67	195	26	0	9	203	1	195	3e-110	  324	regulatory protein TetR
+gene_2	sra:SerAS13_2551	86.67	195	26	0	9	203	1	195	3e-110	  324	regulatory protein TetR
+gene_2	sry:M621_13170	86.08	194	27	0	9	202	1	194	3e-109	  322	TetR family transcriptional regulator
+gene_2	ror:RORB6_13905	83.42	193	32	0	9	201	1	193	1e-107	  317	TetR family transcriptional regulator
+gene_2	slq:M495_12650	79.38	194	40	0	9	202	1	194	1e-106	  315	TetR family transcriptional regulator
+gene_2	ron:TE10_13220	82.90	193	33	0	9	201	1	193	1e-105	  312	TetR family transcriptional regulator
+gene_2	enl:A3UG_19160	78.06	196	43	0	9	204	1	196	3e-101	  301	TetR family transcriptional regulator
+gene_2	pch:EY04_03330	62.94	197	73	0	9	205	1	197	3e-85	  261	TetR family transcriptional regulator
+gene_2	pcp:JM49_26365	62.63	198	74	0	8	205	201	398	9e-83	  261	TetR family transcriptional regulator
+gene_2	pprc:PFLCHA0_c35460	63.21	193	70	1	9	201	1	192	3e-79	  245	ycfQ; HTH-type transcriptional regulator YcfQ
+gene_2	pfl:PFL_3505	63.21	193	70	1	9	201	1	192	3e-79	  245	TetR family transcriptional regulator
+gene_2	ppro:PPC_3659	62.69	193	71	1	9	201	1	192	1e-78	  243	TetR family transcriptional regulator
+gene_2	bur:Bcep18194_B3093	60.62	193	76	0	9	201	1	193	4e-77	  240	TetR family transcriptional regulator
+gene_3	pant:PSNIH1_15965	48.10	79	38	1	4	79	165	243	3e-10	71.6	amylovoran biosynthesis protein AmsF
+gene_3	kln:LH22_09630	45.57	79	40	1	4	79	165	243	3e-09	68.6	amylovoran biosynthesis protein AmsF
+gene_3	eay:EAM_3215	43.88	98	45	5	8	97	3	98	8e-09	67.0	amylovoran biosynthesis protein
+gene_3	pao:Pat9b_2589	50.77	65	32	0	4	68	165	229	9e-09	67.0	P22 tailspike protein head-binding protein; K16709 amylovoran biosynthesis protein AmsF
+gene_3	paj:PAJ_1792	43.04	79	42	1	4	79	165	243	7e-08	63.9	amsF; amylovoran biosynthesis protein AmsF precursor; K16709 amylovoran biosynthesis protein AmsF
+gene_3	pam:PANA_2498	43.04	79	42	1	4	79	165	243	1e-07	63.5	amsF; AmsF; K16709 amylovoran biosynthesis protein AmsF
+gene_3	plf:PANA5342_1587	43.04	79	42	1	4	79	165	243	1e-07	63.5	wceF; extracellular polysaccharide biosynthesis glycosyltransferase; K16709 amylovoran biosynthesis protein AmsF
+gene_3	paq:PAGR_g1531	43.04	79	42	1	4	79	165	243	1e-07	63.5	amylovoran biosynthesis protein AmsF; K16709 amylovoran biosynthesis protein AmsF
+gene_3	ebi:EbC_29340	40.51	79	44	1	4	79	165	243	2e-06	59.3	cpsF; exopolysaccharide biosynthesis protein AmsF; K16709 amylovoran biosynthesis protein AmsF
+gene_3	psts:E05_47900	42.11	95	48	5	8	96	3	96	3e-06	58.5	amsF; AmsF protein
+gene_3	eta:ETA_19810	41.58	101	47	6	8	99	3	100	5e-06	57.8	virulence factor
+gene_3	pant:PSNIH1_09140	40.00	95	50	4	8	96	3	96	9e-06	57.0	amylovoran biosynthesis protein AmsF
+gene_4	smw:SMWW4_v1c25250	99.07	107	1	0	1	107	1	107	4e-69	  212	cupin 2 domain-containing protein
+gene_4	serf:L085_16055	97.98	99	2	0	1	99	1	99	2e-61	  192	cupin 2 domain-containing protein
+gene_4	sers:SERRSCBI_11945	97.98	99	2	0	1	99	1	99	2e-60	  193	cupin 2 domain-containing protein
+gene_4	slq:M495_12655	78.57	98	21	0	2	99	3	100	7e-48	  158	cupin
+gene_4	spe:Spro_2546	75.51	98	24	0	2	99	12	109	2e-45	  152	Cupin 2 conserved barrel domain protein
+gene_4	sry:M621_13175	74.75	99	25	0	2	100	3	101	4e-45	  150	cupin
+gene_4	srl:SOD_c24100	74.75	99	25	0	2	100	3	101	4e-45	  150	cupin 2 domain-containing protein
+gene_4	srs:SerAS12_2551	73.74	99	26	0	2	100	3	101	8e-44	  147	Cupin 2 conserved barrel domain protein
+gene_4	srr:SerAS9_2550	73.74	99	26	0	2	100	3	101	8e-44	  147	Cupin 2 conserved barrel domain protein
+gene_4	sra:SerAS13_2552	73.74	99	26	0	2	100	3	101	8e-44	  147	Cupin 2 conserved barrel domain protein
+gene_4	eau:DI57_06830	62.24	98	37	0	2	99	3	100	2e-34	  127	cupin
+gene_4	bxb:DR64_7618	57.29	96	41	0	2	97	3	98	3e-32	  117	cupin domain protein
+gene_4	rhd:R2APBS1_3568	63.16	95	35	0	2	96	4	98	3e-32	  117	cupin domain-containing protein
+gene_4	bcon:NL30_00755	58.33	96	40	0	2	97	3	98	8e-31	  114	cupin
+gene_4	pch:EY04_24980	56.25	96	42	0	2	97	3	98	4e-30	  112	cupin
+gene_4	rpf:Rpic12D_0439	59.38	96	39	0	2	97	15	110	6e-30	  112	Cupin 2 conserved barrel domain protein
+gene_4	pfb:VO64_4223	57.29	96	41	0	2	97	34	129	7e-30	  112	Mannose-6-phosphate isomerase
+gene_4	pcp:JM49_06710	56.25	96	42	0	2	97	3	98	2e-29	  113	cupin
+gene_4	psem:TO66_25065	56.25	96	42	0	2	97	3	98	4e-29	  110	cupin
+gene_4	bcen:DM39_5511	59.38	96	39	0	2	97	3	98	5e-29	  109	cupin domain protein
+gene_5	serf:L085_16050	99.16	239	2	0	1	239	1	239	3e-173	  487	6-phosphogluconolactonase
+gene_5	kpy:KPNIH31_25785	56.30	238	103	1	1	238	1	237	2e-88	  271	6-phosphogluconolactonase
+gene_5	kpv:KPNIH29_26265	56.30	238	103	1	1	238	1	237	2e-88	  271	6-phosphogluconolactonase
+gene_5	kpb:FH42_16980	56.30	238	103	1	1	238	1	237	2e-88	  271	6-phosphogluconolactonase
+gene_5	kpt:VK055_3349	56.30	238	103	1	1	238	1	237	2e-88	  271	glucosamine-6-phosphate isomerases/6-phosphogluconolactonase family protein
+gene_5	kpw:KPNIH30_26660	55.88	238	104	1	1	238	1	237	4e-88	  271	6-phosphogluconolactonase
+gene_5	kpnu:LI86_26690	55.88	238	104	1	1	238	1	237	4e-88	  271	6-phosphogluconolactonase
+gene_5	kpne:KU54_026915	55.88	238	104	1	1	238	1	237	4e-88	  271	6-phosphogluconolactonase
+gene_5	kpg:KPNIH32_27525	55.88	238	104	1	1	238	1	237	4e-88	  271	6-phosphogluconolactonase
+gene_5	kps:KPNJ2_05441	55.88	238	104	1	1	238	8	244	5e-88	  271	Glucosamine-6-phosphate isomerase (EC:3.5.99.6)
+gene_5	kpa:KPNJ1_05483	55.88	238	104	1	1	238	8	244	5e-88	  271	Glucosamine-6-phosphate isomerase (EC:3.5.99.6)
+gene_5	kom:HR38_05130	54.81	239	105	2	1	238	1	237	1e-87	  270	6-phosphogluconolactonase
+gene_5	kpi:D364_21055	55.88	238	104	1	1	238	1	237	2e-87	  269	6-phosphogluconolactonase
+gene_5	kpx:PMK1_01625	56.12	237	103	1	1	237	1	236	2e-87	  269	nagB_1; Glucosamine-6-phosphate deaminase (EC:3.5.99.6)
+gene_5	efe:EFER_4016	53.56	239	108	2	1	238	1	237	3e-87	  268	yieK; 6-phosphogluconolactonase
+gene_5	kvq:SP68_14745	55.23	239	104	2	1	238	1	237	9e-87	  267	6-phosphogluconolactonase
+gene_5	kvd:KR75_08150	55.23	239	104	2	1	238	1	237	9e-87	  267	6-phosphogluconolactonase
+gene_5	kva:Kvar_5093	55.23	239	104	2	1	238	1	237	9e-87	  267	glucosamine/galactosamine-6-phosphate isomerase
+gene_5	lmj:LMOG_01776	54.20	238	108	1	1	238	1	237	3e-86	  266	6-phosphogluconolactonase
+gene_5	lmom:IJ09_11100	53.78	238	109	1	1	238	1	237	4e-86	  266	6-phosphogluconolactonase
+gene_6	smw:SMWW4_v1c25270	99.36	626	4	0	29	654	1	626	0.0	 1239	potassium transporter; K03549 KUP system potassium uptake protein
+gene_6	sers:SERRSCBI_11955	95.86	652	21	2	9	654	601	1252	0.0	 1239	KUP system potassium uptake protein; K03549 KUP system potassium uptake protein
+gene_6	slq:M495_12660	87.06	626	81	0	29	654	1	626	0.0	 1118	potassium transporter Kup; K03549 KUP system potassium uptake protein
+gene_6	spe:Spro_2547	87.38	626	78	1	29	654	1	625	0.0	 1105	K potassium transporter; K03549 KUP system potassium uptake protein
+gene_6	sry:M621_13180	86.42	626	85	0	29	654	1	626	0.0	 1103	potassium transporter Kup; K03549 KUP system potassium uptake protein
+gene_6	srs:SerAS12_2552	85.94	626	88	0	29	654	1	626	0.0	 1102	Low affinity potassium transport system protein kup; K03549 KUP system potassium uptake protein
+gene_6	srr:SerAS9_2551	85.94	626	88	0	29	654	1	626	0.0	 1102	Low affinity potassium transport system protein kup; K03549 KUP system potassium uptake protein
+gene_6	sra:SerAS13_2553	85.94	626	88	0	29	654	1	626	0.0	 1102	Low affinity potassium transport system protein kup; K03549 KUP system potassium uptake protein
+gene_6	ebi:EbC_29700	76.04	626	149	1	29	654	1	625	0.0	  971	Potassium transporter; K03549 KUP system potassium uptake protein
+gene_6	yin:CH53_874	72.91	609	165	0	46	654	2	610	0.0	  914	potassium uptake protein; K03549 KUP system potassium uptake protein
+gene_6	cen:LH86_14800	69.17	626	189	1	33	654	5	630	0.0	  876	potassium transporter Kup; K03549 KUP system potassium uptake protein
+gene_6	cem:LH23_15715	70.77	609	178	0	46	654	22	630	0.0	  873	potassium transporter Kup; K03549 KUP system potassium uptake protein
+gene_6	kmi:VW41_10070	68.89	630	192	1	29	654	1	630	0.0	  870	potassium transporter Kup; K03549 KUP system potassium uptake protein
+gene_6	eas:Entas_2234	68.26	627	198	1	29	654	1	627	0.0	  864	Low affinity potassium transport system protein kup; K03549 KUP system potassium uptake protein
+gene_6	ete:ETEE_0784	67.31	621	199	3	33	652	7	624	0.0	  846	potassium uptake protein; K03549 KUP system potassium uptake protein
+gene_6	edl:AAZ33_14165	67.31	621	199	3	33	652	7	624	0.0	  846	potassium transporter Kup; K03549 KUP system potassium uptake protein
+gene_6	etr:ETAE_2681	67.31	621	199	3	33	652	7	624	0.0	  845	potassium transporter; K03549 KUP system potassium uptake protein
+gene_6	etd:ETAF_2416	67.31	621	199	3	33	652	7	624	0.0	  845	Kup system potassium uptake protein; K03549 KUP system potassium uptake protein
+gene_6	etc:ETAC_12870	67.31	621	199	3	33	652	7	624	0.0	  845	potassium transporter; K03549 KUP system potassium uptake protein
+gene_6	cnt:JT31_02445	68.08	636	199	1	23	654	625	1260	0.0	  867	potassium transporter Kup; K03549 KUP system potassium uptake protein
+gene_7	serf:L085_16045	99.67	307	1	0	1	307	1	307	0.0	  629	LysR family transcriptional regulator
+gene_7	sers:SERRSCBI_11960	99.35	309	2	0	1	309	1	309	0.0	  630	LysR family transcriptional regulator
+gene_7	smw:SMWW4_v1c25280	100.00	297	0	0	13	309	1	297	0.0	  610	LysR family transcriptional regulator
+gene_7	smac:SMDB11_1793	99.31	291	2	0	13	303	1	291	0.0	  595	LysR-family transcriptional regulator
+gene_7	smar:SM39_1980	98.63	291	4	0	13	303	1	291	0.0	  591	LysR-family transcriptional regulator
+gene_7	sry:M621_13185	89.44	303	29	1	1	303	27	326	0.0	  562	LysR family transcriptional regulator
+gene_7	srl:SOD_c24120	89.44	303	29	1	1	303	27	326	0.0	  561	gcvA3; glycine cleavage system transcriptional activator
+gene_7	srs:SerAS12_2553	88.78	303	31	1	1	303	27	326	0.0	  545	transcriptional regulator, LysR family
+gene_7	srr:SerAS9_2552	88.78	303	31	1	1	303	27	326	0.0	  545	transcriptional regulator, LysR family
+gene_7	sra:SerAS13_2554	88.78	303	31	1	1	303	27	326	0.0	  545	transcriptional regulator, LysR family
+gene_7	spe:Spro_2548	85.53	304	41	1	1	304	27	327	0.0	  537	transcriptional regulator, LysR family
+gene_7	slq:M495_12665	86.47	303	38	1	1	303	1	300	0.0	  535	LysR family transcriptional regulator
+gene_7	eas:Entas_2226	76.55	290	68	0	14	303	18	307	1e-165	  473	transcriptional regulator, LysR family
+gene_7	ror:RORB6_12540	72.31	307	81	1	1	303	1	307	2e-162	  465	LysR family transcriptional regulator
+gene_7	eau:DI57_07205	76.90	290	67	0	14	303	18	307	3e-160	  471	LysR family transcriptional regulator
+gene_7	ron:TE10_08450	73.29	307	78	1	1	303	1	307	6e-160	  459	LysR family transcriptional regulator
+gene_7	pch:EY04_17860	65.98	291	99	0	11	301	4	294	1e-135	  397	LysR family transcriptional regulator
+gene_7	psem:TO66_15250	65.29	291	101	0	11	301	4	294	6e-134	  392	LysR family transcriptional regulator
+gene_7	pcz:PCL1606_30360	65.29	291	101	0	11	301	4	294	6e-134	  392	LysR family transcriptional regulator
+gene_7	bok:DM82_5029	63.89	288	104	0	14	301	7	294	1e-133	  392	bacterial regulatory helix-turn-helix , lysR family protein
+gene_8	smw:SMWW4_v1c25290	99.37	316	2	0	1	316	1	316	0.0	  607	ABC transporter; K01997 branched-chain amino acid transport system permease protein
+gene_8	serf:L085_16040	99.37	316	2	0	1	316	1	316	0.0	  607	ABC transporter; K01997 branched-chain amino acid transport system permease protein
+gene_8	smac:SMDB11_1794	98.42	316	5	0	1	316	1	316	0.0	  598	ABC transporter, permease protein; K01997 branched-chain amino acid transport system permease protein
+gene_8	smar:SM39_1981	98.73	316	4	0	1	316	1	316	0.0	  604	ABC transporter, permease protein; K01997 branched-chain amino acid transport system permease protein
+gene_8	sry:M621_13190	91.46	316	27	0	1	316	1	316	2e-176	  501	ABC transporter permease; K01997 branched-chain amino acid transport system permease protein
+gene_8	srl:SOD_c24130	91.46	316	27	0	1	316	1	316	2e-176	  501	braD1; high-affinity branched-chain amino acid transport system permease protein BraD; K01997 branched-chain amino acid transport system permease protein
+gene_8	srs:SerAS12_2554	89.66	319	30	1	1	316	1	319	3e-168	  481	ABC-type transporter, integral membrane subunit; K01997 branched-chain amino acid transport system permease protein
+gene_8	srr:SerAS9_2553	89.66	319	30	1	1	316	1	319	3e-168	  481	ABC-type transporter, integral membrane subunit; K01997 branched-chain amino acid transport system permease protein
+gene_8	sra:SerAS13_2555	89.66	319	30	1	1	316	1	319	3e-168	  481	ABC-type transporter, integral membrane subunit; K01997 branched-chain amino acid transport system permease protein
+gene_8	slq:M495_12670	93.04	316	22	0	1	316	1	316	2e-167	  479	ABC transporter permease; K01997 branched-chain amino acid transport system permease protein
+gene_8	ron:TE10_08445	76.27	316	75	0	1	316	1	316	7e-165	  472	ABC transporter permease; K01997 branched-chain amino acid transport system permease protein
+gene_8	eau:DI57_07200	75.00	316	79	0	1	316	1	316	2e-162	  477	ABC transporter permease; K01997 branched-chain amino acid transport system permease protein
+gene_8	spe:Spro_2549	91.46	316	27	0	1	316	1	316	4e-162	  465	inner-membrane translocator; K01997 branched-chain amino acid transport system permease protein
+gene_8	eas:Entas_2227	74.37	316	81	0	1	316	14	329	2e-160	  461	ABC-type transporter, integral membrane subunit; K01997 branched-chain amino acid transport system permease protein
+gene_8	bue:BRPE67_CCDS06320	69.94	316	95	0	1	316	1	316	2e-146	  425	inner-membrane translocator; K01997 branched-chain amino acid transport system permease protein
+gene_8	byi:BYI23_C005200	69.62	316	96	0	1	316	1	316	5e-146	  424	inner-membrane translocator; K01997 branched-chain amino acid transport system permease protein
+gene_8	bph:Bphy_0589	68.35	316	100	0	1	316	1	316	3e-145	  422	inner-membrane translocator; K01997 branched-chain amino acid transport system permease protein
+gene_8	reh:H16_A3029	69.09	317	91	2	1	316	1	311	4e-145	  422	livH2; ABC transporter permease; K01997 branched-chain amino acid transport system permease protein
+gene_8	rpj:N234_17295	69.09	317	91	2	1	316	1	311	8e-145	  421	ABC transporter permease; K01997 branched-chain amino acid transport system permease protein
+gene_8	cti:RALTA_A2503	68.67	316	94	1	1	316	1	311	4e-144	  419	livH2; high-affinity branched-chain amino acid transport protein,ABC superfamily, membrane component; K01997 branched-chain amino acid transport system permease protein
+gene_9	smac:SMDB11_1795	99.46	370	2	0	1	370	1	370	0.0	  714	ABC transporter, permease protein; K01998 branched-chain amino acid transport system permease protein
+gene_9	smw:SMWW4_v1c25300	99.73	370	1	0	1	370	1	370	0.0	  714	ABC transporter; K01998 branched-chain amino acid transport system permease protein
+gene_9	serf:L085_16035	99.19	370	3	0	1	370	1	370	0.0	  709	ABC transporter; K01998 branched-chain amino acid transport system permease protein
+gene_9	sers:SERRSCBI_11970	98.92	370	4	0	1	370	1	370	0.0	  705	inner-membrane translocator; K01998 branched-chain amino acid transport system permease protein
+gene_9	smar:SM39_1982	97.84	370	8	0	1	370	1	370	0.0	  700	ABC transporter, permease protein; K01998 branched-chain amino acid transport system permease protein
+gene_9	spe:Spro_2550	89.84	364	37	0	1	364	1	364	0.0	  567	inner-membrane translocator; K01998 branched-chain amino acid transport system permease protein
+gene_9	sry:M621_13195	91.48	364	31	0	1	364	1	364	0.0	  551	ABC transporter ATP-binding protein; K01998 branched-chain amino acid transport system permease protein
+gene_9	srl:SOD_c24140	91.48	364	31	0	1	364	1	364	0.0	  551	braE1; high-affinity branched-chain amino acid transport system permease protein BraE; K01998 branched-chain amino acid transport system permease protein
+gene_9	srs:SerAS12_2555	90.93	364	33	0	1	364	1	364	0.0	  549	ABC-type transporter, integral membrane subunit; K01998 branched-chain amino acid transport system permease protein
+gene_9	srr:SerAS9_2554	90.93	364	33	0	1	364	1	364	0.0	  549	ABC-type transporter, integral membrane subunit; K01998 branched-chain amino acid transport system permease protein
+gene_9	sra:SerAS13_2556	90.93	364	33	0	1	364	1	364	0.0	  549	ABC-type transporter, integral membrane subunit; K01998 branched-chain amino acid transport system permease protein
+gene_9	ron:TE10_08440	79.11	359	75	0	11	369	11	369	0.0	  547	ABC transporter ATP-binding protein; K01998 branched-chain amino acid transport system permease protein
+gene_9	eas:Entas_2228	76.69	369	85	1	1	369	1	368	0.0	  546	ABC-type transporter, integral membrane subunit; K01998 branched-chain amino acid transport system permease protein
+gene_9	slq:M495_12675	90.38	364	35	0	1	364	1	364	0.0	  545	ABC transporter ATP-binding protein; K01998 branched-chain amino acid transport system permease protein
+gene_9	ror:RORB6_12550	76.15	369	87	1	1	369	1	368	0.0	  538	ABC transporter; K01998 branched-chain amino acid transport system permease protein
+gene_9	eau:DI57_07195	76.42	369	86	1	1	369	1	368	0.0	  541	ABC transporter ATP-binding protein; K01998 branched-chain amino acid transport system permease protein
+gene_9	pch:EY04_17850	77.26	365	81	1	4	366	1	365	5e-178	  509	ABC transporter ATP-binding protein; K01998 branched-chain amino acid transport system permease protein
+gene_9	pve:UC34_19200	71.31	352	101	0	11	362	18	369	2e-177	  508	ABC transporter ATP-binding protein; K01998 branched-chain amino acid transport system permease protein
+gene_9	papi:SG18_03235	70.74	352	103	0	11	362	18	369	2e-176	  506	ABC transporter ATP-binding protein; K01998 branched-chain amino acid transport system permease protein
+gene_9	prb:X636_05010	71.02	352	102	0	11	362	19	370	3e-176	  506	ABC transporter ATP-binding protein; K01998 branched-chain amino acid transport system permease protein
+gene_10	smw:SMWW4_v1c25310	99.61	256	1	0	12	267	1	256	0.0	  518	ABC transporter-like protein; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	serf:L085_16030	99.22	256	2	0	12	267	1	256	0.0	  515	ABC transporter-like protein; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	smac:SMDB11_1796	97.66	256	6	0	12	267	1	256	3e-180	  506	ABC transporter, ATP-binding protein; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	smar:SM39_1983	96.88	256	8	0	12	267	1	256	6e-175	  503	ABC transporter, ATP-binding protein; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	srl:SOD_c24150	91.80	256	21	0	12	267	1	256	7e-171	  483	livG; high-affinity branched-chain amino acid transport ATP-binding protein LivG; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	slq:M495_12680	91.02	256	23	0	12	267	1	256	1e-170	  482	ABC transporter; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	sry:M621_13200	91.80	256	21	0	12	267	1	256	2e-170	  482	livG; amino acid ABC transporter ATP-binding protein; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	srs:SerAS12_2556	92.19	256	20	0	12	267	1	256	3e-170	  481	Monosaccharide-transporting ATPase (EC:3.6.3.17); K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	srr:SerAS9_2555	92.19	256	20	0	12	267	1	256	3e-170	  481	Monosaccharide-transporting ATPase (EC:3.6.3.17); K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	sra:SerAS13_2557	92.19	256	20	0	12	267	1	256	3e-170	  481	Monosaccharide-transporting ATPase (EC:3.6.3.17); K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	sers:SERRSCBI_11975	96.88	256	8	0	12	267	1	256	3e-168	  486	monosaccharide-transporting ATPase; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	spe:Spro_2551	90.23	256	25	0	12	267	1	256	6e-167	  473	ABC transporter-related protein; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	ron:TE10_08435	76.68	253	59	0	15	267	3	255	6e-139	  402	ABC transporter; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	ror:RORB6_12555	75.10	253	63	0	15	267	3	255	7e-137	  397	ABC transporter-like protein; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	eas:Entas_2229	75.89	253	61	0	15	267	3	255	6e-136	  394	ABC transporter related protein; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	eau:DI57_07190	75.89	253	61	0	15	267	3	255	3e-134	  399	ABC transporter; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	pfn:HZ99_00725	71.65	254	72	0	14	267	4	257	3e-129	  377	ABC transporter; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	pch:EY04_17845	71.65	254	72	0	14	267	4	257	1e-125	  368	ABC transporter; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	pcz:PCL1606_30330	71.83	252	71	0	14	265	4	255	3e-125	  367	amino acid ABC transporter ATP-binding protein; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_10	psem:TO66_15265	71.43	252	72	0	14	265	4	255	1e-124	  365	ABC transporter; K01995 branched-chain amino acid transport system ATP-binding protein
+gene_11	smw:SMWW4_v1c25320	100.00	237	0	0	1	237	1	237	4e-168	  474	ABC transporter-like protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	serf:L085_16025	97.89	237	5	0	1	237	1	237	1e-163	  462	ABC transporter-like protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	smac:SMDB11_1797	96.20	237	9	0	1	237	1	237	2e-160	  454	ABC transporter, ATP-binding protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	sers:SERRSCBI_11980	97.05	237	7	0	1	237	1	237	9e-159	  459	ABC transporter-like protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	smar:SM39_1984	95.36	237	11	0	1	237	1	237	4e-155	  450	ABC transporter, ATP-binding protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	srl:SOD_c24160	89.87	237	24	0	1	237	1	237	4e-147	  421	livF4; high-affinity branched-chain amino acid transport ATP-binding protein LivF; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	sry:M621_13205	89.45	237	25	0	1	237	1	237	6e-147	  420	amino acid ABC transporter ATPase; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	slq:M495_12685	88.19	237	28	0	1	237	1	237	6e-146	  417	amino acid ABC transporter ATPase; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	srs:SerAS12_2557	88.61	237	27	0	1	237	1	237	2e-145	  416	ABC transporter related protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	srr:SerAS9_2556	88.61	237	27	0	1	237	1	237	2e-145	  416	ABC transporter related protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	sra:SerAS13_2558	88.61	237	27	0	1	237	1	237	2e-145	  416	ABC transporter related protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	spe:Spro_2552	87.34	237	30	0	1	237	1	237	8e-145	  415	ABC transporter-related protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	bmu:Bmul_0800	60.92	238	92	1	1	237	1	238	2e-105	  315	ABC transporter-like protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	bmul:NP80_2638	60.92	238	92	1	1	237	1	238	2e-105	  315	ABC transporter family protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	bmk:DM80_2468	60.92	238	92	1	1	237	1	238	2e-105	  315	ABC transporter family protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	bmj:BMULJ_02459	60.92	238	92	1	1	237	1	238	2e-105	  315	livF; branched-chain amino acid transport system ATP-binding protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	bgo:BM43_694	61.34	238	91	1	1	237	1	238	2e-105	  314	ABC transporter family protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	bgd:bgla_1g31980	61.34	238	91	1	1	237	1	238	2e-105	  314	ABC transporter related protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	btz:BTL_2913	60.92	238	92	1	1	237	1	238	4e-105	  314	ABC transporter family protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_11	btq:BTQ_808	60.92	238	92	1	1	237	1	238	4e-105	  314	ABC transporter family protein; K01996 branched-chain amino acid transport system ATP-binding protein
+gene_12	serf:L085_16020	99.48	383	2	0	1	383	1	383	0.0	  769	extracellular ligand-binding receptor; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	smw:SMWW4_v1c25330	99.48	383	2	0	1	383	1	383	0.0	  768	extracellular ligand-binding receptor; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	smac:SMDB11_1798	98.17	383	7	0	1	383	1	383	0.0	  760	ABC transporter, substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	sers:SERRSCBI_11985	98.43	383	6	0	1	383	1	383	0.0	  763	ABC transporter substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	smar:SM39_1985	97.39	383	10	0	1	383	1	383	0.0	  754	ABC transporter, substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	srs:SerAS12_2558	90.93	386	32	1	1	383	1	386	0.0	  710	Extracellular ligand-binding receptor; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	srr:SerAS9_2557	90.93	386	32	1	1	383	1	386	0.0	  710	Extracellular ligand-binding receptor; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	sra:SerAS13_2559	90.93	386	32	1	1	383	1	386	0.0	  710	Extracellular ligand-binding receptor; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	sry:M621_13210	94.48	362	20	0	22	383	25	386	0.0	  699	amino acid ABC transporter substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	srl:SOD_c24170	94.68	357	19	0	27	383	30	386	0.0	  692	braC; leucine-, isoleucine-, valine-, threonine-, and alanine-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	spe:Spro_2553	93.92	362	22	0	22	383	25	386	0.0	  691	Extracellular ligand-binding receptor; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	slq:M495_12690	90.16	386	35	1	1	383	1	386	0.0	  685	amino acid ABC transporter substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	eas:Entas_2231	80.99	384	70	2	3	383	2	385	0.0	  634	Extracellular ligand-binding receptor; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	ron:TE10_08425	85.03	354	53	0	27	380	29	382	0.0	  621	amino acid ABC transporter substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	eau:DI57_07180	81.68	382	65	1	7	383	4	385	0.0	  635	amino acid ABC transporter substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	pfn:HZ99_00735	77.38	367	83	0	15	381	13	379	0.0	  564	amino acid ABC transporter substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	psem:TO66_15275	77.29	361	82	0	23	383	25	385	0.0	  564	amino acid ABC transporter substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	pcz:PCL1606_30310	77.01	361	83	0	23	383	25	385	0.0	  563	ABC transporter; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	pch:EY04_17835	76.62	355	83	0	29	383	31	385	0.0	  553	amino acid ABC transporter substrate-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_12	pses:PSCI_4600	73.49	381	99	1	1	379	1	381	0.0	  547	high-affinity branched-chain amino acid ABC transporter, periplasmic amino acid-binding protein; K01999 branched-chain amino acid transport system substrate-binding protein
+gene_13	serf:L085_16015	98.77	163	2	0	1	163	1	163	3e-116	  336	L-2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	smw:SMWW4_v1c25340	98.16	163	3	0	1	163	1	163	3e-115	  333	L-2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	smac:SMDB11_1799	95.71	163	7	0	1	163	1	163	5e-112	  325	L-2-Amino-thiazoline-4-carboxylic acidhydrolase
+gene_13	smar:SM39_1986	96.32	163	6	0	1	163	1	163	5e-111	  329	L-2-Amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	srl:SOD_c24180	91.41	163	14	0	1	163	1	163	5e-106	  310	L-2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	sry:M621_13215	90.80	163	15	0	1	163	1	163	2e-105	  309	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	slq:M495_12695	88.96	163	18	0	1	163	1	163	1e-102	  301	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	ron:TE10_08420	81.05	153	29	0	5	157	4	156	1e-87	  263	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	eau:DI57_07175	82.67	150	26	0	5	154	4	153	2e-85	  264	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	pfn:HZ99_00740	75.16	157	39	0	1	157	1	157	6e-80	  244	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	psem:TO66_15280	73.89	157	41	0	1	157	1	157	2e-78	  240	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	pcz:PCL1606_30300	73.89	157	41	0	1	157	1	157	3e-78	  239	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	pch:EY04_17830	73.25	157	42	0	1	157	1	157	4e-78	  239	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	pses:PSCI_4601	70.70	157	46	0	1	157	1	157	5e-75	  237	L-2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	bcon:NL30_06505	69.33	150	46	0	5	154	14	163	1e-70	  221	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	bceo:I35_5067	69.33	150	46	0	5	154	14	163	2e-70	  220	L-2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	bced:DM42_3870	69.33	150	46	0	5	154	14	163	2e-70	  220	L-2-amino-thiazoline-4-carboxylic acid hydrolase family protein
+gene_13	bpyr:ABD05_30050	68.67	150	47	0	5	154	14	163	2e-69	  217	2-amino-thiazoline-4-carboxylic acid hydrolase
+gene_13	bcen:DM39_3779	69.39	147	45	0	8	154	16	162	5e-68	  214	L-2-amino-thiazoline-4-carboxylic acid hydrolase family protein
+gene_13	bmul:NP80_4128	68.00	150	48	0	5	154	14	163	6e-68	  214	L-2-amino-thiazoline-4-carboxylic acid hydrolase family protein
+gene_14	serf:L085_16010	98.53	408	6	0	1	408	1	408	0.0	  819	amidase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	smw:SMWW4_v1c25350	97.79	408	9	0	1	408	1	408	0.0	  815	amidase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	sers:SERRSCBI_11995	94.12	408	24	0	1	408	1	408	0.0	  781	hydantoinase/carbamoylase amidase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	sry:M621_13220	83.82	408	66	0	1	408	1	408	0.0	  713	allantoate amidohydrolase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	srl:SOD_c24190	83.58	408	67	0	1	408	1	408	0.0	  713	amaB; N-carbamoyl-L-amino acid hydrolase AmaB (EC:3.5.1.87); K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	srs:SerAS12_2560	83.58	408	67	0	1	408	1	408	0.0	  711	amidase, hydantoinase/carbamoylase family (EC:3.5.1.87); K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	srr:SerAS9_2559	83.58	408	67	0	1	408	1	408	0.0	  711	amidase, hydantoinase/carbamoylase family (EC:3.5.1.87); K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	sra:SerAS13_2561	83.58	408	67	0	1	408	1	408	0.0	  711	amidase, hydantoinase/carbamoylase family (EC:3.5.1.87); K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	spe:Spro_2555	82.35	408	72	0	1	408	1	408	0.0	  701	amidase, hydantoinase/carbamoylase family (EC:3.5.1.87); K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	slq:M495_12700	82.11	408	73	0	1	408	1	408	0.0	  697	allantoate amidohydrolase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	psem:TO66_15285	69.44	409	124	1	1	408	3	411	0.0	  578	allantoate amidohydrolase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	pcz:PCL1606_30290	69.44	409	124	1	1	408	3	411	0.0	  577	allantoate amidohydrolase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	pch:EY04_17825	69.36	408	124	1	1	407	3	410	0.0	  576	allantoate amidohydrolase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	pfn:HZ99_00745	68.66	402	125	1	4	404	6	407	0.0	  569	allantoate amidohydrolase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	bph:Bphy_1536	65.26	403	139	1	5	406	18	420	0.0	  549	amidase, hydantoinase/carbamoylase family (EC:3.5.1.87); K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	bgo:BM43_5491	65.35	404	139	1	4	406	3	406	0.0	  543	amidase, hydantoinase/carbamoylase family protein; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	bgd:bgla_2g17650	65.35	404	139	1	4	406	27	430	0.0	  542	allantoate amidohydrolase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	pses:PSCI_4602	66.83	404	133	1	4	406	6	409	0.0	  554	allantoate amidohydrolase; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	bgf:BC1003_1071	64.29	406	144	1	2	406	25	430	0.0	  538	amidase (EC:3.5.1.87); K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_14	bfn:OI25_2719	64.04	406	145	1	2	406	16	421	0.0	  536	amidase, hydantoinase/carbamoylase family protein; K06016 N-carbamoyl-L-amino-acid hydrolase [EC:3.5.1.87]
+gene_15	smw:SMWW4_v1c25360	100.00	115	0	0	1	115	1	115	1e-77	  234	ArsR family transcriptional regulator
+gene_15	smac:SMDB11_1801	100.00	115	0	0	1	115	1	115	1e-77	  234	ArsR-family transcriptional regulator
+gene_15	serf:L085_16005	100.00	115	0	0	1	115	1	115	1e-77	  234	ArsR family transcriptional regulator
+gene_15	smar:SM39_1988	100.00	115	0	0	1	115	1	115	6e-76	  234	ArsR-family transcriptional regulator
+gene_15	sers:SERRSCBI_12000	100.00	115	0	0	1	115	1	115	6e-76	  234	ArsR family transcriptional regulator
+gene_15	slq:M495_12705	89.57	115	12	0	1	115	1	115	3e-68	  211	ArsR family transcriptional regulator
+gene_15	spe:Spro_2556	88.70	115	13	0	1	115	1	115	3e-67	  208	transcriptional regulator, ArsR family
+gene_15	sry:M621_13225	88.70	115	13	0	1	115	1	115	4e-67	  207	ArsR family transcriptional regulator
+gene_15	srs:SerAS12_2561	88.70	115	13	0	1	115	1	115	4e-67	  207	transcriptional regulator, ArsR family
+gene_15	srr:SerAS9_2560	88.70	115	13	0	1	115	1	115	4e-67	  207	transcriptional regulator, ArsR family
+gene_15	srl:SOD_c24200	88.70	115	13	0	1	115	1	115	4e-67	  207	transcriptional regulator, ArsR family
+gene_15	sra:SerAS13_2562	88.70	115	13	0	1	115	1	115	4e-67	  207	transcriptional regulator, ArsR family
+gene_15	mfu:LILAB_15390	69.09	110	34	0	1	110	5	114	2e-48	  160	ArsR family transcriptional regulator
+gene_15	axs:LH59_22465	72.16	97	27	0	1	97	1	97	3e-45	  152	ArsR family transcriptional regulator
+gene_15	axo:NH44784_034671	72.16	97	27	0	1	97	1	97	3e-45	  152	Transcriptional regulator, ArsR family
+gene_15	vap:Vapar_3232	68.57	105	33	0	1	105	1	105	1e-44	  150	ArsR family transcriptional regulator
+gene_15	dji:CH75_13890	63.87	119	38	2	1	115	1	118	3e-44	  153	ArsR family transcriptional regulator
+gene_15	mms:mma_1896	68.18	110	35	0	1	110	1	110	6e-44	  149	ArsR family transcriptional regulator
+gene_15	axn:AX27061_4897	73.63	91	24	0	7	97	3	93	9e-44	  148	Transcriptional regulator, ArsR family
+gene_15	vpd:VAPA_1c33360	68.57	105	33	0	1	105	1	105	9e-44	  148	transcriptional regulator, ArsR family
+gene_16	smw:SMWW4_v1c25370	100.00	177	0	0	1	177	1	177	8e-128	  367	activator of Hsp90 ATPase 1 family protein
+gene_16	serf:L085_16000	100.00	177	0	0	1	177	1	177	8e-128	  367	activator of Hsp90 ATPase 1 family protein
+gene_16	sers:SERRSCBI_12005	99.44	177	1	0	1	177	1	177	6e-124	  363	activator of Hsp90 ATPase 1 family protein
+gene_16	spe:Spro_2557	90.96	177	16	0	1	177	1	177	8e-114	  331	Activator of Hsp90 ATPase 1 family protein
+gene_16	slq:M495_12710	87.57	177	22	0	1	177	1	177	5e-109	  319	ATPase
+gene_16	srl:SOD_c24210	85.88	177	25	0	1	177	1	177	1e-105	  310	activator of Hsp90 ATPase 1 family protein
+gene_16	sry:M621_13230	85.31	177	26	0	1	177	1	177	3e-105	  309	ATPase
+gene_16	srs:SerAS12_2562	82.49	177	31	0	1	177	1	177	2e-102	  302	Activator of Hsp90 ATPase 1 family protein
+gene_16	srr:SerAS9_2561	82.49	177	31	0	1	177	1	177	2e-102	  302	Activator of Hsp90 ATPase 1 family protein
+gene_16	sra:SerAS13_2563	82.49	177	31	0	1	177	1	177	2e-102	  302	Activator of Hsp90 ATPase 1 family protein
+gene_16	sfo:Z042_25030	72.88	177	48	0	1	177	1	177	9e-88	  271	ATPase
+gene_16	axy:AXYL_05092	51.41	177	85	1	1	177	1	176	9e-58	  189	activator of Hsp90 ATPase family protein 3
+gene_16	axs:LH59_22470	50.28	177	87	1	1	177	1	176	1e-53	  178	ATPase
+gene_16	shg:Sph21_2793	52.00	175	75	3	1	173	1	168	1e-52	  176	activator of Hsp90 ATPase 1 family protein
+gene_16	msd:MYSTI_07011	52.27	176	81	2	2	177	7	179	9e-52	  173	Aha1 domain-containing protein
+gene_16	mxa:MXAN_0676	49.14	175	88	1	2	176	9	182	5e-51	  171	Aha1 domain-containing protein
+gene_16	ote:Oter_1306	49.44	178	88	2	1	177	6	182	6e-49	  166	activator of Hsp90 ATPase 1 family protein
+gene_16	mfu:LILAB_05415	49.14	175	88	1	2	176	4	177	2e-48	  165	Aha1 domain-containing protein
+gene_16	msc:BN69_1468	49.43	176	81	3	2	177	8	175	6e-47	  161	activator of Hsp90 ATPase 1 family protein
+gene_16	mes:Meso_4050	50.30	169	80	2	5	173	10	174	4e-46	  159	activator of Hsp90 ATPase-like protein
+gene_17	smw:SMWW4_v1c25380	100.00	342	0	0	1	342	1	342	0.0	  697	Mg2 transporter protein CorA family protein; K16074 zinc transporter
+gene_17	serf:L085_15995	98.25	342	6	0	1	342	1	342	0.0	  681	Mg2 transporter protein CorA family protein; K16074 zinc transporter
+gene_17	srl:SOD_c24220	90.94	342	31	0	1	342	1	342	0.0	  639	transporter; K16074 zinc transporter
+gene_17	sry:M621_13235	90.64	342	32	0	1	342	1	342	0.0	  638	magnesium transporter CorA; K16074 zinc transporter
+gene_17	srs:SerAS12_2563	90.64	342	32	0	1	342	1	342	0.0	  609	Mg2 transporter protein CorA family protein; K16074 zinc transporter
+gene_17	srr:SerAS9_2562	90.64	342	32	0	1	342	1	342	0.0	  609	Mg2 transporter protein CorA family protein; K16074 zinc transporter
+gene_17	sra:SerAS13_2564	90.64	342	32	0	1	342	1	342	0.0	  609	Mg2 transporter protein CorA family protein; K16074 zinc transporter
+gene_17	slq:M495_12715	88.60	342	39	0	1	342	1	342	0.0	  601	magnesium transporter CorA; K16074 zinc transporter
+gene_17	spe:Spro_2558	88.01	342	41	0	1	342	1	342	0.0	  593	Mg2 transporter protein CorA family protein; K16074 zinc transporter
+gene_17	sers:SERRSCBI_12010	97.31	297	8	0	46	342	294	590	0.0	  586	Mg2 transporter protein CorA family protein; K16074 zinc transporter
+gene_17	ror:RORB6_05180	72.73	341	93	0	1	341	1	341	7e-157	  454	Mg2 transporter protein CorA family protein; K16074 zinc transporter
+gene_17	ron:TE10_16025	70.97	341	99	0	1	341	1	341	1e-153	  446	magnesium transporter CorA; K16074 zinc transporter
+gene_17	kpv:KPNIH29_11990	71.26	341	98	0	1	341	1	341	2e-152	  442	magnesium transporter CorA; K16074 zinc transporter
+gene_17	kvd:KR75_19920	70.97	341	99	0	1	341	1	341	6e-152	  441	magnesium transporter CorA; K16074 zinc transporter
+gene_17	kvq:SP68_00955	70.97	341	99	0	1	341	1	341	1e-151	  441	magnesium transporter CorA; K16074 zinc transporter
+gene_17	kva:Kvar_2849	70.97	341	99	0	1	341	1	341	1e-151	  441	Mg2 transporter protein CorA family protein; K16074 zinc transporter
+gene_17	kpe:KPK_2949	70.97	341	99	0	1	341	1	341	1e-151	  441	Mg2+ transporter, CorA family; K16074 zinc transporter
+gene_17	kpy:KPNIH31_11615	70.97	341	99	0	1	341	1	341	2e-151	  440	magnesium transporter CorA; K16074 zinc transporter
+gene_17	kpx:PMK1_03828	70.97	341	99	0	1	341	1	341	2e-151	  440	zntB_2; Zinc transport protein ZntB; K16074 zinc transporter
+gene_17	kpp:A79E_2727	70.97	341	99	0	1	341	1	341	2e-151	  440	Mg2+ and Co2+ transporter; K16074 zinc transporter
+gene_18	yal:AT01_368	69.85	481	140	1	1	476	1	481	0.0	  711	SH3 domain of SH3b2 type family protein
+gene_18	see:SNSL254_A2102	60.64	470	183	2	9	476	8	477	0.0	  603	cell wall-associated hydrolase
+gene_18	seeb:SEEB0189_009775	60.64	470	183	2	9	476	8	477	0.0	  603	cell wall-associated hydrolase
+gene_18	senn:SN31241_30400	60.64	470	183	2	9	476	10	479	0.0	  603	NLP/P60 domain-containing protein
+gene_18	sene:IA1_09645	60.64	470	183	2	9	476	8	477	0.0	  602	cell wall-associated hydrolase
+gene_18	sens:Q786_05510	60.64	470	183	2	9	476	8	477	0.0	  602	cell wall-associated hydrolase
+gene_18	sbv:N643_08655	60.17	472	182	3	9	476	8	477	0.0	  602	cell wall-associated hydrolase
+gene_18	seec:CFSAN002050_16515	60.43	470	184	2	9	476	8	477	0.0	  602	cell wall-associated hydrolase
+gene_18	senc:SEET0819_16710	60.43	470	184	2	9	476	8	477	0.0	  602	cell wall hydrolase
+gene_18	seep:I137_08290	60.43	470	184	2	9	476	8	477	0.0	  601	cell wall-associated hydrolase
+gene_18	senv:AU39_05505	60.21	470	185	2	9	476	8	477	0.0	  600	cell wall hydrolase
+gene_18	senq:AU40_06200	60.21	470	185	2	9	476	8	477	0.0	  600	cell wall hydrolase
+gene_18	seno:AU37_05505	60.21	470	185	2	9	476	8	477	0.0	  600	cell wall hydrolase
+gene_18	senl:IY59_05615	60.21	470	185	2	9	476	8	477	0.0	  600	cell wall hydrolase
+gene_18	sena:AU38_05515	60.21	470	185	2	9	476	8	477	0.0	  600	cell wall hydrolase
+gene_18	senh:CFSAN002069_22130	60.21	470	185	2	9	476	8	477	0.0	  599	cell wall-associated hydrolase
+gene_18	setc:CFSAN001921_07365	60.21	470	185	2	9	476	8	477	0.0	  598	cell wall-associated hydrolase
+gene_18	seni:CY43_10225	60.21	470	185	2	9	476	8	477	0.0	  598	cell wall hydrolase
+gene_18	seen:SE451236_15645	60.21	470	185	2	9	476	8	477	0.0	  598	cell wall-associated hydrolase
+gene_18	stm:STM1940	60.21	470	185	2	9	476	10	479	0.0	  598	cell wall-associated hydrolase
+gene_19	sens:Q786_03295	29.79	188	129	2	8	194	1	186	3e-16	81.3	membrane protein
+gene_19	seec:CFSAN002050_09975	29.26	188	130	2	8	194	1	186	6e-16	80.5	membrane protein
+gene_19	shb:SU5_01363	29.26	188	130	2	8	194	1	186	6e-16	80.5	Conserved inner membrane protein
+gene_19	senh:CFSAN002069_05480	29.26	188	130	2	8	194	1	186	6e-16	80.5	membrane protein
+gene_19	senv:AU39_03280	29.26	188	130	2	8	194	1	186	1e-15	79.7	membrane protein
+gene_19	senq:AU40_03615	29.26	188	130	2	8	194	1	186	1e-15	79.7	membrane protein
+gene_19	seno:AU37_03275	29.26	188	130	2	8	194	1	186	1e-15	79.7	membrane protein
+gene_19	senl:IY59_03330	29.26	188	130	2	8	194	1	186	1e-15	79.7	membrane protein
+gene_19	sena:AU38_03280	29.26	188	130	2	8	194	1	186	1e-15	79.7	membrane protein
+gene_19	seep:I137_10420	29.26	188	130	2	8	194	1	186	1e-15	79.7	membrane protein
+gene_19	stm:STM0672	28.72	188	131	2	8	194	1	186	1e-15	79.3	inner membrane protein
+gene_19	sey:SL1344_0661	28.72	188	131	2	8	194	1	186	1e-15	79.3	hypothetical exported protein
+gene_19	setc:CFSAN001921_13670	28.72	188	131	2	8	194	1	186	1e-15	79.3	membrane protein
+gene_19	seni:CY43_03650	28.72	188	131	2	8	194	1	186	1e-15	79.3	membrane protein
+gene_19	seen:SE451236_09385	28.72	188	131	2	8	194	1	186	1e-15	79.3	membrane protein
+gene_19	senc:SEET0819_10330	28.72	188	131	2	8	194	1	186	3e-15	78.6	membrane protein
+gene_19	senn:SN31241_16780	28.72	188	131	2	8	194	1	186	1e-14	76.6	inner membrane protein
+gene_20	serf:L085_15980	100.00	141	0	0	1	141	1	141	5e-100	  293	nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	smw:SMWW4_v1c25410	98.58	141	2	0	1	141	1	141	3e-99	  291	nudI; nucleoside triphosphatase; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	sers:SERRSCBI_12030	98.58	141	2	0	1	141	1	141	2e-96	  289	nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	smar:SM39_1993	98.58	141	2	0	1	141	1	141	3e-96	  289	predicted NUDIX hydrolase; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	smac:SMDB11_1806	95.74	141	6	0	1	141	1	141	3e-96	  283	predicted NUDIX hydrolase; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	sfo:Z042_25035	82.98	141	24	0	1	141	1	141	3e-84	  258	nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	ear:CCG28960	77.30	141	32	0	1	141	1	141	5e-75	  229	Pyrimidine deoxynucleoside triphosphate (dYTP) pyrophosphohydrolase YfoO; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	eae:EAE_24290	77.30	141	32	0	1	141	1	141	5e-75	  229	nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	kva:Kvar_1396	75.89	141	34	0	1	141	1	141	7e-75	  229	NUDIX hydrolase; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	sew:SeSA_A2523	77.30	141	32	0	1	141	1	141	1e-74	  229	hydrolase, nudix family; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	senj:CFSAN001992_22105	77.30	141	32	0	1	141	1	141	1e-74	  229	nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	stm:STM2295	77.30	141	32	0	1	141	1	141	1e-74	  229	nudI; nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	setu:STU288_07850	77.30	141	32	0	1	141	1	141	1e-74	  229	nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	setc:CFSAN001921_05320	77.30	141	32	0	1	141	1	141	1e-74	  229	nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	seni:CY43_12300	77.30	141	32	0	1	141	1	141	1e-74	  229	nucleoside triphosphatase; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	senb:BN855_23760	77.30	141	32	0	1	141	1	141	1e-74	  229	SBOV23551; hydrolase, nudix family; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	sem:STMDT12_C23160	77.30	141	32	0	1	141	1	141	1e-74	  229	hydrolase, nudix family protein; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	seeb:SEEB0189_008095	77.30	141	32	0	1	141	1	141	1e-74	  229	nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	sed:SeD_A2639	77.30	141	32	0	1	141	1	141	1e-74	  229	hydrolase, nudix family; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_20	sbv:N643_10190	76.60	141	33	0	1	141	1	141	1e-74	  229	nucleoside triphosphatase NudI; K12944 nucleoside triphosphatase [EC:3.6.1.-]
+gene_21	smw:SMWW4_v1c25420	98.92	278	3	0	1	278	1	278	0.0	  560	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	serf:L085_15975	97.84	278	2	1	1	278	1	274	0.0	  549	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	sers:SERRSCBI_12035	95.31	277	13	0	1	277	1	277	3e-178	  513	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	spe:Spro_2561	82.67	277	47	1	1	277	44	319	8e-161	  460	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	sry:M621_13245	82.46	268	46	1	10	277	10	276	6e-160	  456	peptidase S11; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	srs:SerAS12_2566	81.34	268	49	1	10	277	10	276	2e-158	  453	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	srr:SerAS9_2565	81.34	268	49	1	10	277	10	276	2e-158	  453	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	sra:SerAS13_2567	81.34	268	49	1	10	277	10	276	2e-158	  453	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	slq:M495_12730	79.78	277	55	1	1	277	1	276	4e-158	  452	peptidase S11; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	srl:SOD_c24250	81.34	268	49	1	10	277	10	276	6e-158	  451	pbpG; D-alanyl-D-alanine endopeptidase PbpG (EC:3.4.21.-); K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	smaf:D781_2179	75.85	265	64	0	13	277	9	273	3e-143	  414	D-alanyl-D-alanine carboxypeptidase; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	bug:BC1001_2300	57.26	248	106	0	30	277	126	373	5e-94	  293	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	bpx:BUPH_02876	57.26	248	106	0	30	277	126	373	7e-94	  292	D-alanyl-D-alanine endopeptidase; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	bpy:Bphyt_2587	55.65	248	110	0	30	277	130	377	1e-93	  291	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	bgf:BC1003_1158	57.26	248	106	0	30	277	128	375	2e-93	  291	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	bfn:OI25_2843	55.65	248	110	0	30	277	132	379	5e-93	  290	D-alanyl-D-alanine carboxypeptidase family protein; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	bxe:Bxe_A1545	55.65	248	110	0	30	277	124	371	1e-92	  289	murein-DD-endopeptidase (EC:3.4.99.-); K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	bxb:DR64_3706	55.65	248	110	0	30	277	124	371	1e-92	  289	D-alanyl-D-alanine carboxypeptidase family protein; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	bge:BC1002_1899	55.24	248	111	0	30	277	139	386	8e-92	  287	peptidase S11 D-alanyl-D-alanine carboxypeptidase 1; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_21	bps:BPSL2297	55.24	248	111	0	30	277	95	342	1e-91	  285	peptidase; K07262 D-alanyl-D-alanine endopeptidase (penicillin-binding protein 7) [EC:3.4.21.-]
+gene_22	serf:L085_15970	99.70	328	1	0	1	328	1	328	0.0	  654	luciferase family protein
+gene_22	sers:SERRSCBI_12040	93.60	328	21	0	1	328	1	328	0.0	  566	luciferase family protein
+gene_22	smw:SMWW4_v1c25430	95.12	328	16	0	1	328	1	328	0.0	  550	luciferase family protein
+gene_22	spe:Spro_2562	84.16	322	51	0	1	322	1	322	0.0	  542	luciferase family protein
+gene_22	srs:SerAS12_2567	84.62	325	50	0	1	325	1	325	0.0	  534	luciferase family oxidoreductase, group 1
+gene_22	srr:SerAS9_2566	84.62	325	50	0	1	325	1	325	0.0	  534	luciferase family oxidoreductase, group 1
+gene_22	sra:SerAS13_2568	84.62	325	50	0	1	325	1	325	0.0	  534	luciferase family oxidoreductase, group 1
+gene_22	sry:M621_13250	84.31	325	51	0	1	325	1	325	0.0	  532	alkane 1-monooxygenase
+gene_22	srl:SOD_c24260	84.31	325	51	0	1	325	1	325	0.0	  532	ytmO; YtmO
+gene_22	slq:M495_12735	84.52	310	48	0	1	310	1	310	3e-180	  512	alkane 1-monooxygenase
+gene_22	eta:ETA_12410	66.87	326	103	1	1	321	1	326	1e-142	  417	luciferase-like monooxygenase
+gene_22	ara:Arad_7712	58.56	333	133	1	1	328	1	333	2e-127	  378	oxidoreductase
+gene_22	epy:EpC_13010	64.72	326	110	1	1	321	1	326	3e-125	  372	luciferase-like monooxygenase
+gene_22	epr:EPYR_01388	64.72	326	110	1	1	321	1	326	3e-125	  372	yhbW; alkanal monooxygenase subunit alpha (EC:1.14.14.3)
+gene_22	eno:ECENHK_11590	59.57	329	129	2	1	326	1	328	2e-124	  370	protein YtmO
+gene_22	ecln:ECNIH4_11180	59.57	329	129	2	1	326	1	328	2e-124	  370	alkane 1-monooxygenase
+gene_22	eec:EcWSU1_02378	59.27	329	130	2	1	326	1	328	2e-123	  368	ytmO; YtmO
+gene_22	eclx:LI66_11310	58.97	329	131	2	1	326	1	328	2e-122	  365	alkane 1-monooxygenase
+gene_22	paq:PAGR_g0755	58.28	326	131	1	1	321	1	326	1e-121	  363	bacterial luciferase family protein YtmO
+gene_22	pam:PANA_3325	58.28	326	131	1	1	321	1	326	1e-121	  363	ytmO; YtmO
+gene_23	serf:L085_15965	98.62	434	6	0	1	434	1	434	0.0	  843	GntR family transcriptional regulator
+gene_23	smac:SMDB11_1809	94.70	434	23	0	1	434	1	434	0.0	  779	GntR-family transcriptional regulator
+gene_23	smw:SMWW4_v1c25440	95.39	434	20	0	1	434	1	434	0.0	  779	GntR family transcriptional regulator
+gene_23	sers:SERRSCBI_12045	94.24	434	25	0	1	434	1	434	0.0	  766	transcriptional regulator
+gene_23	smar:SM39_1996	94.47	434	24	0	1	434	1	434	0.0	  743	GntR-family transcriptional regulator
+gene_23	spe:Spro_2563	75.51	437	101	2	1	434	1	434	0.0	  621	transcriptional regulator, GntR family with aminotransferase domain
+gene_23	slq:M495_12740	74.37	437	106	2	1	434	1	434	0.0	  612	transcriptional regulator
+gene_23	sry:M621_13255	73.91	437	108	2	1	434	1	434	0.0	  611	transcriptional regulator
+gene_23	srl:SOD_c24270	74.14	437	107	2	1	434	1	434	0.0	  606	ptsJ; transcriptional regulatory protein PtsJ
+gene_23	srs:SerAS12_2568	74.14	437	107	2	1	434	1	434	0.0	  604	transcriptional regulator, GntR family with aminotransferase domain
+gene_23	srr:SerAS9_2567	74.14	437	107	2	1	434	1	434	0.0	  604	transcriptional regulator, GntR family with aminotransferase domain
+gene_23	sra:SerAS13_2569	74.14	437	107	2	1	434	1	434	0.0	  604	transcriptional regulator, GntR family with aminotransferase domain
+gene_23	prh:LT40_14130	46.65	433	224	3	1	429	1	430	7e-111	  356	GntR family transcriptional regulator
+gene_23	aaa:Acav_0027	49.31	436	207	6	7	432	4	435	5e-109	  339	GntR family transcriptional regulator
+gene_23	psc:A458_20215	45.79	428	220	6	6	428	5	425	6e-107	  333	GntR family transcriptional regulator
+gene_23	aav:Aave_0017	47.34	433	210	6	1	421	1	427	2e-103	  325	GntR family transcriptional regulator
+gene_23	tmo:TMO_c0282	41.61	435	236	7	5	428	3	430	8e-93	  297	ptsJ; GntR family transcriptional regulator
+gene_23	ajs:Ajs_4162	46.90	452	199	11	1	428	1	435	8e-85	  276	GntR family transcriptional regulator
+gene_23	dia:Dtpsy_0018	46.68	452	200	11	1	428	1	435	4e-84	  275	GntR family transcriptional regulator
+gene_23	sna:Snas_4186	38.75	431	247	8	7	428	8	430	9e-74	  247	GntR family transcriptional regulator
+gene_25	serf:L085_15955	98.74	238	3	0	1	238	1	238	4e-171	  481	glutamine amidotransferase; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	smw:SMWW4_v1c25460	98.32	238	4	0	1	238	1	238	2e-170	  479	glutamine amidotransferase; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	sers:SERRSCBI_12055	94.09	237	14	0	1	237	1	237	2e-151	  441	glutamine amidotransferase class-I; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	spe:Spro_2565	83.19	238	39	1	1	238	1	237	3e-135	  390	glutamine amidotransferase class-I; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	srl:SOD_c24290	82.70	237	40	1	1	237	1	236	2e-132	  384	yfeJ; glutamine amidotransferase-like protein YfeJ; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	sry:M621_13265	81.86	237	42	1	1	237	1	236	2e-131	  380	glutamine amidotransferase (EC:6.3.5.2); K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	srs:SerAS12_2570	81.01	237	44	1	1	237	1	236	2e-130	  378	glutamine amidotransferase class-I; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	srr:SerAS9_2569	81.01	237	44	1	1	237	1	236	2e-130	  378	glutamine amidotransferase class-I; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	sra:SerAS13_2571	81.01	237	44	1	1	237	1	236	2e-130	  378	glutamine amidotransferase class-I; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	slq:M495_12750	80.59	237	45	1	1	237	1	236	2e-129	  375	glutamine amidotransferase (EC:6.3.5.2); K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	cvi:CV_3746	56.71	231	96	1	1	231	1	227	4e-82	  255	glutamine amidotransferase (EC:6.3.5.2); K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	adn:Alide_3410	57.94	233	94	1	3	235	4	232	5e-80	  250	glutamine amidotransferase class-I; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	adk:Alide2_1025	57.94	233	94	1	3	235	4	232	5e-80	  250	glutamine amidotransferase; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	tmz:Tmz1t_0983	57.02	235	97	2	1	235	1	231	7e-79	  247	glutamine amidotransferase class-I; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	hse:Hsero_0509	54.47	235	103	1	1	235	1	231	1e-77	  244	glutamine amidotransferase (EC:6.3.-.-); K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	axy:AXYL_05769	53.68	231	103	2	3	233	4	230	7e-74	  234	glutamine amidotransferase class-I family protein 2; K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	pfg:AB870_01265	56.28	231	97	1	2	232	8	234	8e-74	  234	glutamine amidotransferase (EC:6.3.5.2); K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	bhz:ACR54_00502	52.34	235	108	1	1	235	1	231	5e-73	  232	guaA_1; GMP synthase (EC:6.3.5.2); K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	papi:SG18_22320	54.55	231	101	1	2	232	8	234	5e-72	  229	glutamine amidotransferase (EC:6.3.5.2); K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_25	axs:LH59_19210	55.41	231	98	2	3	232	4	230	1e-71	  228	glutamine amidotransferase (EC:6.3.5.2); K01951 GMP synthase (glutamine-hydrolysing) [EC:6.3.5.2]
+gene_26	smw:SMWW4_v1c25470	98.93	280	3	0	1	280	1	280	0.0	  568	pdxK; pyridoxal-pyridoxamine kinase/hydroxymethylpyrimidine kinase; K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	serf:L085_15950	98.93	280	3	0	1	280	1	280	0.0	  568	pyridoxal-pyridoxamine kinase/hydroxymethylpyrimidine kinase; K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	sers:SERRSCBI_12060	96.07	280	11	0	1	280	1	280	0.0	  553	pyridoxal kinase; K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	sry:M621_13270	82.80	279	48	0	1	279	1	279	9e-172	  486	pyridoxal kinase; K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	srl:SOD_c24300	82.80	279	48	0	1	279	1	279	2e-171	  486	pdxK; pyridoxine kinase PdxK (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	srs:SerAS12_2571	81.72	279	51	0	1	279	1	279	5e-170	  482	pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	srr:SerAS9_2570	81.72	279	51	0	1	279	1	279	5e-170	  482	pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	sra:SerAS13_2572	81.72	279	51	0	1	279	1	279	5e-170	  482	pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	spe:Spro_2566	80.29	279	55	0	1	279	1	279	1e-166	  474	pyridoxal kinase; K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	slq:M495_12755	79.93	279	56	0	1	279	1	279	2e-165	  470	pyridoxal kinase; K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	smaf:D781_2178	66.79	277	92	0	1	277	1	277	3e-130	  381	pyridoxal kinase; K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	bpt:Bpet2897	46.89	273	145	0	1	273	1	273	7e-73	  234	pdxK; pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	cfd:CFNIH1_23530	43.77	265	147	1	8	272	17	279	7e-70	  227	pdxK; pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	kpnu:LI86_07215	46.79	265	139	1	8	272	17	279	3e-69	  226	pdxK; pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	kpne:KU54_007210	46.79	265	139	1	8	272	17	279	3e-69	  226	pdxK; pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	kpm:KPHS_38340	46.79	265	139	1	8	272	17	279	3e-69	  226	pyridoxal kinase; K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	kpj:N559_1489	46.79	265	139	1	8	272	17	279	3e-69	  226	pyridoxal kinase; K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	kpg:KPNIH32_19715	46.79	265	139	1	8	272	17	279	3e-69	  226	pdxK; pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	kpb:FH42_09950	46.79	265	139	1	8	272	17	279	3e-69	  226	pdxK; pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_26	ron:TE10_20785	44.15	265	146	1	8	272	17	279	3e-69	  225	pdxK; pyridoxal kinase (EC:2.7.1.35); K00868 pyridoxine kinase [EC:2.7.1.35]
+gene_27	smw:SMWW4_v1c25480	99.58	237	1	0	1	237	1	237	1e-173	  488	ycgR; flagellar velocity braking protein, c-di-GMP-regulated
+gene_27	serf:L085_15945	98.73	236	3	0	1	236	1	236	4e-171	  482	flagellar velocity braking protein, c-di-GMP-regulated
+gene_27	sers:SERRSCBI_12065	97.47	237	6	0	1	237	1	237	2e-165	  476	YcgR family protein
+gene_27	spe:Spro_2567	82.70	237	41	0	1	237	1	237	9e-147	  420	YcgR family protein
+gene_27	srs:SerAS12_2572	84.39	237	37	0	1	237	1	237	5e-139	  400	type IV pilus assembly PilZ
+gene_27	srr:SerAS9_2571	84.39	237	37	0	1	237	1	237	5e-139	  400	type IV pilus assembly PilZ
+gene_27	sra:SerAS13_2573	84.39	237	37	0	1	237	1	237	5e-139	  400	type IV pilus assembly PilZ
+gene_27	srl:SOD_c24310	83.97	237	38	0	1	237	1	237	2e-138	  399	ycgR; flagellar brake protein YcgR
+gene_27	slq:M495_12760	81.01	237	45	0	1	237	1	237	4e-135	  390	flagellar brake protein YcgR
+gene_27	cen:LH86_17625	36.36	242	148	4	1	237	1	241	3e-44	  158	flagellar brake protein
+gene_27	cem:LH23_18945	35.95	242	149	4	1	237	1	241	8e-44	  157	flagellar brake protein
+gene_27	cnt:JT31_22275	37.19	242	146	4	1	237	1	241	2e-43	  161	flagellar brake protein
+gene_27	kmi:VW41_12905	36.78	242	147	4	1	237	1	241	4e-43	  160	flagellar brake protein
+gene_27	enr:H650_00735	33.76	234	150	2	9	237	8	241	5e-41	  150	flagellar brake protein YcgR
+gene_27	eec:EcWSU1_02712	34.22	225	143	3	9	228	8	232	4e-40	  147	ycgR; Flagellar brake protein YcgR
+gene_27	cama:F384_08500	33.88	242	154	4	1	237	1	241	1e-39	  146	flagellar brake protein
+gene_27	ksa:C813_01400	33.33	234	151	2	9	237	8	241	3e-39	  150	flagellar brake protein
+gene_27	efe:EFER_1761	34.67	225	142	3	9	228	8	232	6e-39	  144	ycgR; regulator
+gene_27	senn:SN31241_28830	31.22	237	158	2	6	237	5	241	1e-38	  143	Flagellar brake protein YcgR
+gene_27	eno:ECENHK_13320	33.33	225	145	3	9	228	8	232	2e-38	  142	flagellar brake protein YcgR
+gene_28	smw:SMWW4_v1c25490	98.46	260	4	0	1	260	1	260	0.0	  518	N-formylglutamate amidohydrolase
+gene_28	serf:L085_15940	98.46	260	4	0	1	260	1	260	0.0	  518	N-formylglutamate amidohydrolase
+gene_28	sers:SERRSCBI_12070	98.85	260	3	0	1	260	1	260	0.0	  521	N-formylglutamate amidohydrolase
+gene_28	srs:SerAS12_2573	89.23	260	28	0	1	260	1	260	2e-168	  476	N-formylglutamate amidohydrolase
+gene_28	srr:SerAS9_2572	89.23	260	28	0	1	260	1	260	2e-168	  476	N-formylglutamate amidohydrolase
+gene_28	sra:SerAS13_2574	89.23	260	28	0	1	260	1	260	2e-168	  476	N-formylglutamate amidohydrolase
+gene_28	sry:M621_13280	89.62	260	27	0	1	260	1	260	2e-167	  474	N-formylglutamate amidohydrolase
+gene_28	srl:SOD_c24320	89.62	260	27	0	1	260	1	260	2e-167	  474	N-formylglutamate amidohydrolase
+gene_28	spe:Spro_2568	83.08	260	44	0	1	260	1	260	8e-146	  419	N-formylglutamate amidohydrolase
+gene_28	slq:M495_12765	82.69	260	45	0	1	260	1	260	1e-143	  414	N-formylglutamate amidohydrolase
+gene_28	yef:FORC2_2094	65.74	251	86	0	8	258	8	258	3e-113	  337	N-formylglutamate amidohydrolase
+gene_28	yew:CH47_1507	65.34	251	87	0	8	258	8	258	4e-112	  334	N-formylglutamate amidohydrolase family protein
+gene_28	ykr:CH54_382	62.93	259	96	0	1	259	1	259	6e-112	  333	N-formylglutamate amidohydrolase family protein
+gene_28	yfr:AW19_1280	62.93	259	96	0	1	259	1	259	6e-112	  333	N-formylglutamate amidohydrolase family protein
+gene_28	yet:CH48_3748	65.85	246	84	0	9	254	9	254	5e-111	  331	N-formylglutamate amidohydrolase family protein
+gene_28	yin:CH53_4021	62.89	256	95	0	1	256	1	256	2e-110	  329	N-formylglutamate amidohydrolase family protein
+gene_28	pao:Pat9b_4523	55.82	249	110	0	8	256	14	262	3e-91	  281	N-formylglutamate amidohydrolase
+gene_28	kpk:A593_26040	54.62	249	113	0	8	256	4	252	1e-90	  287	N-formylglutamate amidohydrolase
+gene_28	sod:Sant_3065	59.11	247	100	1	13	259	13	258	2e-87	  280	N-formylglutamate amidohydrolase
+gene_28	gdj:Gdia_3383	53.78	251	114	1	9	259	16	264	3e-85	  265	N-formylglutamate amidohydrolase
+gene_29	smw:SMWW4_v1c25500	100.00	573	0	0	1	573	1	573	0.0	 1172	phospholipid/glycerol acyltransferase
+gene_29	serf:L085_15935	100.00	573	0	0	1	573	1	573	0.0	 1172	phospholipid/glycerol acyltransferase
+gene_29	sers:SERRSCBI_12075	98.78	573	7	0	1	573	1	573	0.0	 1161	phospholipid/glycerol acyltransferase
+gene_29	sry:M621_13285	95.61	570	25	0	1	570	1	570	0.0	 1084	acyltransferase
+gene_29	srl:SOD_c24330	95.61	570	25	0	1	570	1	570	0.0	 1084	phospholipid/glycerol acyltransferase
+gene_29	slq:M495_12770	95.44	570	26	0	1	570	1	570	0.0	 1084	acyltransferase
+gene_29	srs:SerAS12_2574	95.26	570	27	0	1	570	1	570	0.0	 1083	phospholipid/glycerol acyltransferase
+gene_29	srr:SerAS9_2573	95.26	570	27	0	1	570	1	570	0.0	 1083	phospholipid/glycerol acyltransferase
+gene_29	sra:SerAS13_2575	95.26	570	27	0	1	570	1	570	0.0	 1083	phospholipid/glycerol acyltransferase
+gene_29	spe:Spro_2569	94.19	568	33	0	1	568	1	568	0.0	 1070	phospholipid/glycerol acyltransferase
+gene_29	srl:SOD_c24340	91.93	570	46	0	1	570	37	606	0.0	 1036	phospholipid/glycerol acyltransferase
+gene_29	psx:DR96_634	83.39	566	94	0	1	566	1	566	0.0	  967	acyltransferase family protein
+gene_29	psi:S70_12680	83.39	566	94	0	1	566	1	566	0.0	  967	phospholipid/glycerol acyltransferase
+gene_29	dda:Dd703_0321	73.71	563	148	0	1	563	1	563	0.0	  882	phospholipid/glycerol acyltransferase
+gene_29	serr:Ser39006_0849	73.00	563	152	0	1	563	1	563	0.0	  880	phospholipid/glycerol acyltransferase
+gene_29	ced:LH89_14295	73.36	563	150	0	1	563	1	563	0.0	  879	acyltransferase
+gene_29	pct:PC1_3909	72.29	563	156	0	1	563	1	563	0.0	  877	phospholipid/glycerol acyltransferase
+gene_29	dzc:W909_18575	72.82	563	153	0	1	563	1	563	0.0	  876	acyltransferase
+gene_29	ddc:Dd586_3819	72.82	563	153	0	1	563	1	563	0.0	  876	phospholipid/glycerol acyltransferase
+gene_29	dze:Dd1591_0241	73.13	562	151	0	1	562	1	562	0.0	  874	phospholipid/glycerol acyltransferase
+gene_30	pak:HMPREF0675_5018	34.82	448	280	6	72	519	24	459	5e-65	  229	Neuraminidase NanP
+gene_30	pacn:TIA1EST1_09650	35.11	450	276	8	72	519	68	503	5e-65	  231	Neuraminidase NanP
+gene_30	eft:M395_04975	23.75	299	198	10	235	517	239	523	2e-07	62.0	Neuraminidase NanP
+gene_32	smw:SMWW4_v1c25520	99.28	417	3	0	1	417	1	417	0.0	  849	extracellular solute-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	smac:SMDB11_1817	98.80	417	5	0	1	417	1	417	0.0	  844	ABC transporter, substrate-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	slq:M495_12780	89.93	417	42	0	1	417	1	417	0.0	  781	ABC transporter substrate-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	spe:Spro_2571	89.21	417	45	0	1	417	1	417	0.0	  775	extracellular solute-binding protein family 1; K02027 multiple sugar transport system substrate-binding protein
+gene_32	serf:L085_15925	99.69	324	1	0	94	417	1	324	0.0	  660	extracellular solute-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	pao:Pat9b_1897	69.65	402	122	0	16	417	20	421	0.0	  608	extracellular solute-binding protein family 1; K02027 multiple sugar transport system substrate-binding protein
+gene_32	esc:Entcl_0571	54.63	421	181	7	1	417	1	415	6e-156	  457	extracellular solute-binding protein family 1; K02027 multiple sugar transport system substrate-binding protein
+gene_32	cama:F384_17195	54.81	416	174	7	11	417	9	419	5e-153	  450	ABC transporter substrate-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	bbe:BBR47_17110	35.19	395	241	5	28	417	37	421	3e-82	  269	ABC transporter substrate-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	hpk:Hprae_0369	33.42	401	242	8	31	417	25	414	3e-72	  242	carbohydrate ABC transporter substrate-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	bcz:BCZK1634	32.13	389	248	6	30	411	33	412	2e-69	  234	sugar ABC transporter sugar-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	bcer:BCK_25510	32.13	389	248	6	30	411	33	412	2e-69	  234	sugar ABC transporter sugar-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	bcef:BcrFT9_01496	32.13	389	248	6	30	411	33	412	3e-69	  234	sugar ABC transporter sugar-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	sagi:MSA_5290	33.42	389	244	9	34	417	41	419	1e-64	  223	N-Acetyl-D-glucosamine ABC transport system,sugar-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	sgc:A964_0459	33.42	389	244	9	34	417	41	419	3e-64	  221	sugar ABC transporter substrate-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	sak:SAK_0532	33.42	389	244	9	34	417	41	419	3e-64	  221	sugar ABC transporter sugar-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	sagg:EN73_02595	33.42	389	244	9	34	417	41	419	3e-64	  221	sugar ABC transporter substrate-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	cpr:CPR_0476	30.87	392	251	8	32	411	40	423	6e-64	  221	ABC transporter, substrate-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	sagr:SAIL_5410	33.42	389	244	9	34	417	41	419	1e-63	  220	N-Acetyl-D-glucosamine ABC transport system,sugar-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_32	paeq:R50912_13140	32.32	393	247	9	28	415	54	432	2e-63	  219	sugar ABC transporter substrate-binding protein; K02027 multiple sugar transport system substrate-binding protein
+gene_33	smac:SMDB11_1818	100.00	313	0	0	1	313	1	313	0.0	  625	ABC transporter, permease protein; K02025 multiple sugar transport system permease protein
+gene_33	serf:L085_15920	99.36	313	2	0	1	313	1	313	0.0	  621	ABC transporter, permease protein; K02025 multiple sugar transport system permease protein
+gene_33	smw:SMWW4_v1c25530	99.04	313	3	0	1	313	1	313	0.0	  619	ABC transporter, permease protein; K02025 multiple sugar transport system permease protein
+gene_33	spe:Spro_2572	91.37	313	26	1	1	313	1	312	0.0	  530	binding-protein-dependent transport systems inner membrane component; K02025 multiple sugar transport system permease protein
+gene_33	slq:M495_12785	90.73	313	28	1	1	313	1	312	0.0	  523	sugar ABC transporter permease; K02025 multiple sugar transport system permease protein
+gene_33	pao:Pat9b_1896	76.74	301	69	1	13	313	12	311	3e-153	  442	binding-protein-dependent transport systems inner membrane component; K02025 multiple sugar transport system permease protein
+gene_33	esc:Entcl_0570	63.46	312	113	1	1	311	1	312	3e-142	  414	binding-protein-dependent transport systems inner membrane component; K02025 multiple sugar transport system permease protein
+gene_33	cama:F384_17200	62.50	312	116	1	1	311	1	312	1e-139	  408	sugar ABC transporter permease; K02025 multiple sugar transport system permease protein
+gene_33	gym:GYMC10_4294	42.86	308	175	1	3	309	1	308	7e-82	  260	binding-protein-dependent transport systems inner membrane component; K02025 multiple sugar transport system permease protein
+gene_33	cpas:Clopa_0698	42.76	304	159	5	16	309	2	300	3e-81	  258	permease component of ABC-type sugar transporter; K02025 multiple sugar transport system permease protein
+gene_33	cpr:CPR_0477	42.17	313	175	4	1	309	1	311	4e-81	  258	ABC transporter, permease protein; K02025 multiple sugar transport system permease protein
+gene_33	csh:Closa_0996	41.55	296	171	2	15	309	2	296	3e-80	  256	binding-protein-dependent transport system inner membrane protein; K02025 multiple sugar transport system permease protein
+gene_33	bbe:BBR47_17120	43.32	307	166	2	11	309	8	314	5e-80	  256	ABC transporter permease; K02025 multiple sugar transport system permease protein
+gene_33	bcz:BCZK1635	46.29	283	149	2	29	309	27	308	5e-77	  248	sugar ABC transporter permease; K02025 multiple sugar transport system permease protein
+gene_33	bcer:BCK_25505	45.94	283	150	2	29	309	27	308	5e-77	  248	sugar ABC transporter permease; K02025 multiple sugar transport system permease protein
+gene_33	bcef:BcrFT9_01497	46.29	283	149	2	29	309	27	308	5e-77	  248	N-Acetyl-D-glucosamine ABC transport system, permease protein 1; K02025 multiple sugar transport system permease protein
+gene_33	csr:Cspa_c23060	38.59	311	180	3	1	309	5	306	8e-77	  247	yesP; ABC transporter permease protein YesP; K02025 multiple sugar transport system permease protein
+gene_33	sals:SLNWT_7227	41.37	307	155	5	21	309	24	323	6e-76	  246	binding-protein-dependent transporter inner membrane component; K02025 multiple sugar transport system permease protein
+gene_33	paee:R70331_07500	43.62	298	161	3	14	309	6	298	3e-75	  243	sugar ABC transporter permease; K02025 multiple sugar transport system permease protein
+gene_33	lba:Lebu_1495	42.14	299	166	2	15	309	2	297	8e-75	  242	binding-protein-dependent transport system inner membrane protein; K02025 multiple sugar transport system permease protein
+gene_34	smac:SMDB11_1819	99.63	272	1	0	1	272	1	272	0.0	  540	ABC transporter, permease protein; K02026 multiple sugar transport system permease protein
+gene_34	spe:Spro_2573	94.12	272	16	0	1	272	1	272	0.0	  517	binding-protein-dependent transport systems inner membrane component; K02026 multiple sugar transport system permease protein
+gene_34	slq:M495_12790	94.12	272	16	0	1	272	1	272	0.0	  516	sugar ABC transporter permease; K02026 multiple sugar transport system permease protein
+gene_34	pao:Pat9b_1895	78.36	268	58	0	5	272	22	289	3e-154	  442	binding-protein-dependent transport systems inner membrane component; K02026 multiple sugar transport system permease protein
+gene_34	esc:Entcl_0569	69.49	272	83	0	1	272	3	274	4e-140	  406	binding-protein-dependent transport systems inner membrane component; K02026 multiple sugar transport system permease protein
+gene_34	cama:F384_17205	68.38	272	86	0	1	272	1	272	8e-138	  400	sugar ABC transporter permease; K02026 multiple sugar transport system permease protein
+gene_34	csh:Closa_0997	49.82	271	136	0	2	272	5	275	3e-94	  289	binding-protein-dependent transport system inner membrane protein; K02026 multiple sugar transport system permease protein
+gene_34	hpk:Hprae_0371	49.08	271	138	0	2	272	8	278	3e-90	  279	carbohydrate ABC transporter membrane protein 2; K02026 multiple sugar transport system permease protein
+gene_34	cpas:Clopa_0699	48.72	273	138	1	2	272	3	275	3e-89	  276	ABC-type sugar transport system, permease component; K02026 multiple sugar transport system permease protein
+gene_34	bbe:BBR47_17130	48.06	258	132	1	16	271	14	271	3e-88	  273	ABC transporter permease; K02026 multiple sugar transport system permease protein
+gene_34	bcer:BCK_25500	45.90	268	145	0	4	271	11	278	3e-86	  268	sugar ABC transporter permease; K02026 multiple sugar transport system permease protein
+gene_34	bcz:BCZK1636	45.90	268	145	0	4	271	10	277	3e-86	  268	sugar ABC transporter permease; K02026 multiple sugar transport system permease protein
+gene_34	sals:SLNWT_7225	47.91	263	137	0	10	272	18	280	2e-85	  266	sugar ABC transporter; K02026 multiple sugar transport system permease protein
+gene_34	pjd:Pjdr2_5273	45.66	265	144	0	8	272	12	276	5e-85	  265	binding-protein-dependent transport system inner membrane protein; K02026 multiple sugar transport system permease protein
+gene_34	bcef:BcrFT9_01498	45.52	268	146	0	4	271	11	278	6e-85	  265	sugar ABC transporter, permease protein; K02026 multiple sugar transport system permease protein
+gene_34	bca:BCE_1901	45.52	268	146	0	4	271	10	277	7e-85	  265	sugar ABC transporter, permease protein; K02026 multiple sugar transport system permease protein
+gene_34	cpat:CLPA_c05580	47.97	271	141	0	2	272	5	275	4e-84	  271	araQ1; L-arabinose transport system permease protein AraQ; K02026 multiple sugar transport system permease protein
+gene_34	cpae:CPAST_c05580	47.97	271	141	0	2	272	5	275	4e-84	  271	araQ1; L-arabinose transport system permease protein AraQ; K02026 multiple sugar transport system permease protein
+gene_34	cai:Caci_7904	47.91	263	136	1	9	271	10	271	6e-84	  263	binding-protein-dependent transporters inner membrane component; K02026 multiple sugar transport system permease protein
+gene_34	cpr:CPR_0478	47.66	256	134	0	16	271	19	274	1e-83	  262	ABC transporter, permease protein; K02026 multiple sugar transport system permease protein
+gene_35	smw:SMWW4_v1c25550	100.00	370	0	0	1	370	1	370	0.0	  764	ABC transporter-like protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	serf:L085_15910	100.00	370	0	0	1	370	1	370	0.0	  764	ABC transporter-like protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	smac:SMDB11_1820	99.19	370	3	0	1	370	1	370	0.0	  760	sn-glycerol-3-phosphate ABC transporter, ATP-binding protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	slq:M495_12795	91.89	370	30	0	1	370	1	370	0.0	  713	sugar ABC transporter ATP-binding protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	spe:Spro_2574	91.35	370	32	0	1	370	1	370	0.0	  705	ABC transporter-related protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	pao:Pat9b_1894	65.95	370	126	0	1	370	1	370	1e-177	  509	ABC transporter related protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	cama:F384_17210	66.40	369	122	1	1	369	1	367	1e-172	  496	sugar ABC transporter ATP-binding protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	esc:Entcl_0568	63.69	369	132	2	1	369	1	367	8e-169	  486	ABC transporter related protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	amt:Amet_0894	55.68	370	162	2	1	369	1	369	1e-149	  437	ABC transporter-like protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ipo:Ilyop_2229	56.49	370	156	2	1	369	1	366	6e-148	  433	sugar ABC transporter ATP-binding protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	vsp:VS_2586	57.68	371	155	2	1	369	1	371	9e-148	  433	ABC transporter; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ypi:YpsIP31758_0525	54.86	370	164	3	1	369	1	368	1e-145	  427	ABC transporter, ATP-binding protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ypy:YPK_0586	54.86	370	164	3	1	369	1	368	4e-145	  426	ABC transporter-like protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ypw:CH59_1256	54.86	370	164	3	1	369	1	368	4e-145	  426	ABC transporter family protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ypv:BZ15_2967	54.86	370	164	3	1	369	1	368	4e-145	  426	ABC transporter family protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ypu:BZ21_2766	54.86	370	164	3	1	369	1	368	4e-145	  426	ABC transporter family protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ypr:BZ20_2668	54.86	370	164	3	1	369	1	368	4e-145	  426	ABC transporter family protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ypo:BZ17_3159	54.86	370	164	3	1	369	1	368	4e-145	  426	ABC transporter family protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ypl:CH46_309	54.86	370	164	3	1	369	1	368	4e-145	  426	ABC transporter family protein; K10112 multiple sugar transport system ATP-binding protein
+gene_35	ypj:CH55_2203	54.86	370	164	3	1	369	1	368	4e-145	  426	ABC transporter family protein; K10112 multiple sugar transport system ATP-binding protein
+gene_36	smw:SMWW4_v1c25560	98.59	427	6	0	1	427	1	427	0.0	  878	oxidoreductase domain-containing protein
+gene_36	serf:L085_15905	97.89	427	9	0	1	427	1	427	0.0	  871	oxidoreductase domain-containing protein
+gene_36	spe:Spro_2575	86.42	427	58	0	1	427	1	427	0.0	  776	oxidoreductase domain protein
+gene_36	slq:M495_12800	85.01	427	64	0	1	427	1	427	0.0	  766	oxidoreductase
+gene_36	cama:F384_17215	66.02	415	139	1	12	424	4	418	0.0	  591	oxidoreductase
+gene_36	esc:Entcl_0567	66.75	415	136	1	12	424	4	418	0.0	  586	oxidoreductase domain protein
+gene_36	sna:Snas_4983	55.15	408	182	1	14	421	4	410	1e-144	  429	oxidoreductase domain-containing protein
+gene_36	acan:ACA1_035530	48.93	421	190	7	12	424	10	413	1e-136	  408	oxidoreductase domain containing protein
+gene_36	sro:Sros_4990	53.27	413	190	2	14	424	3	414	2e-134	  403	oxidoreductase domain-containing protein
+gene_36	ase:ACPL_7695	51.69	414	196	3	14	424	5	417	6e-129	  389	oxidoreductase domain-containing protein
+gene_36	paef:R50345_09945	44.74	418	221	5	12	424	2	414	1e-118	  363	oxidoreductase
+gene_36	actn:L083_2624	49.87	379	186	3	41	416	1	378	1e-118	  361	oxidoreductase domain-containing protein
+gene_36	afs:AFR_22485	49.03	414	207	3	14	425	2	413	4e-118	  361	oxidoreductase domain-containing protein
+gene_36	strc:AA958_33535	48.59	426	207	5	3	424	2	419	1e-117	  360	oxidoreductase
+gene_36	pjd:Pjdr2_5277	45.12	410	212	5	12	416	2	403	5e-117	  359	oxidoreductase
+gene_36	dth:DICTH_0108	42.42	422	218	9	12	424	2	407	6e-112	  345	oxidoreductase, streptomycin biosynthesis protein
+gene_36	gym:GYMC10_3318	42.45	417	218	7	12	418	8	412	2e-111	  344	oxidoreductase domain-containing protein
+gene_36	dtu:Dtur_0370	42.31	416	227	8	12	424	2	407	7e-110	  340	oxidoreductase domain-containing protein
+gene_36	paej:H70737_06650	43.03	416	228	4	12	424	2	411	6e-109	  338	oxidoreductase
+gene_36	paef:R50345_06835	43.03	416	228	4	12	424	2	411	8e-109	  338	oxidoreductase
+gene_37	smw:SMWW4_v1c25570	98.04	306	6	0	1	306	1	306	0.0	  607	ROK family protein; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	serf:L085_15900	97.71	306	7	0	1	306	1	306	0.0	  604	ROK family protein; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	smac:SMDB11_1822	95.68	301	13	0	6	306	1	301	0.0	  558	ROK-family protein; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	spe:Spro_2576	83.11	302	51	0	1	302	1	302	3e-174	  495	ROK family protein
+gene_37	slq:M495_12805	83.84	297	48	0	6	302	1	297	3e-170	  484	ROK family transcriptional regulator; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	pao:Pat9b_1893	62.75	298	111	0	6	303	1	298	5e-121	  360	ROK family protein; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	cama:F384_17220	51.85	297	143	0	6	302	1	297	1e-100	  308	ROK family transcriptional regulator; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	esc:Entcl_0566	53.18	299	140	0	6	304	1	299	1e-93	  290	ROK family protein
+gene_37	pin:Ping_1332	46.31	298	160	0	6	303	1	298	1e-78	  251	ROK family protein
+gene_37	smz:SMD_4002	48.23	282	145	1	8	288	10	291	4e-77	  248	ROK domain containing protein; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	smt:Smal_3816	47.87	282	146	1	8	288	10	291	2e-76	  246	ROK family protein; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	buj:BurJV3_3863	47.87	282	146	1	8	288	10	291	4e-76	  245	N-acetylglucosamine kinase (EC:2.7.1.59); K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	xsa:SB85_15825	49.29	282	142	1	8	288	10	291	4e-72	  243	ROK family transcriptional regulator; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	psx:DR96_1853	42.28	298	171	1	6	302	1	298	2e-68	  225	glucokinase family protein; K00847 fructokinase [EC:2.7.1.4]
+gene_37	psi:S70_07010	42.28	298	171	1	6	302	1	298	2e-68	  225	NagC/XylR (ROK) family kinase/transcriptional regulator; K00847 fructokinase [EC:2.7.1.4]
+gene_37	vcy:IX92_07725	40.00	300	178	1	6	303	1	300	4e-68	  224	N-acetylglucosamine kinase (EC:2.7.1.59); K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	vsp:VS_1507	40.33	300	177	1	6	303	1	300	1e-67	  223	N-acetyl-D-glucosamine kinase; K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	ddd:Dda3937_01936	42.95	298	169	1	6	302	1	298	5e-67	  221	mak; manno(fructo)kinase (EC:2.7.1.-); K00847 fructokinase [EC:2.7.1.4]
+gene_37	cro:ROD_11861	39.80	299	178	1	6	302	1	299	8e-67	  221	nagK; N-acetyl-D-glucosamine kinase (EC:2.7.1.59); K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_37	kin:AB182_09695	40.47	299	176	1	6	302	1	299	1e-66	  220	N-acetylglucosamine kinase (EC:2.7.1.59); K00884 N-acetylglucosamine kinase [EC:2.7.1.59]
+gene_38	serf:L085_15895	99.61	256	1	0	1	256	1	256	0.0	  526	DeoR family transcriptional regulator
+gene_38	smw:SMWW4_v1c25580	98.83	256	3	0	1	256	1	256	0.0	  523	DeoR family transcriptional regulator
+gene_38	smac:SMDB11_1823	97.27	256	7	0	1	256	1	256	0.0	  516	DeoR-family trancriptional regulator
+gene_38	spe:Spro_2577	89.84	256	26	0	1	256	1	256	4e-170	  480	transcriptional regulator, DeoR family; K02081 DeoR family transcriptional regulator, aga operon transcriptional repressor
+gene_38	slq:M495_12810	89.45	256	27	0	1	256	1	256	2e-169	  479	DeoR faimly transcriptional regulator
+gene_38	smw:SMWW4_v1c39680	75.29	255	63	0	2	256	3	257	5e-142	  409	DeoR family transcriptional regulator
+gene_38	serf:L085_08850	75.29	255	63	0	2	256	3	257	5e-142	  409	DeoR family transcriptional regulator
+gene_38	spe:Spro_3849	74.12	255	66	0	2	256	3	257	2e-140	  405	transcriptional regulator, DeoR family; K02081 DeoR family transcriptional regulator, aga operon transcriptional repressor
+gene_38	slq:M495_20090	74.12	255	66	0	2	256	3	257	2e-140	  405	DeoR faimly transcriptional regulator
+gene_38	sers:SERRSCBI_19220	74.90	255	64	0	2	256	3	257	9e-138	  408	DeoR family transcriptional regulator
+gene_38	hav:AT03_17800	72.05	254	71	0	2	255	3	256	5e-134	  389	DeoR faimly transcriptional regulator
+gene_38	pao:Pat9b_1892	71.09	256	74	0	1	256	1	256	2e-132	  385	transcriptional regulator, DeoR family
+gene_38	ptt:VY86_03600	72.83	254	69	0	2	255	3	256	5e-132	  393	DeoR faimly transcriptional regulator
+gene_38	sod:Sant_3748	75.00	256	64	0	1	256	1	256	2e-127	  382	DeoR family transcriptional regulator
+gene_38	ete:ETEE_2443	71.26	254	73	0	2	255	3	256	2e-127	  372	Transcriptional repressor of aga operon
+gene_38	edw:QY76_16915	71.26	254	73	0	2	255	3	256	2e-127	  372	DeoR faimly transcriptional regulator
+gene_38	edl:AAZ33_03205	71.26	254	73	0	2	255	3	256	2e-127	  372	DeoR faimly transcriptional regulator
+gene_38	eic:NT01EI_0774	70.87	254	74	0	2	255	3	256	2e-126	  370	transcriptional regulator, DeoR family; K02081 DeoR family transcriptional regulator, aga operon transcriptional repressor
+gene_38	etr:ETAE_0677	70.47	254	75	0	2	255	3	256	2e-125	  367	hypothetical GlpR, transcriptional regulator of sugar metabolism; K02081 DeoR family transcriptional regulator, aga operon transcriptional repressor
+gene_38	etc:ETAC_03270	70.47	254	75	0	2	255	3	256	2e-125	  367	GlpR, transcriptional regulator of sugar metabolism
+gene_39	smw:SMWW4_v1c25590	99.23	388	3	0	1	388	1	388	0.0	  791	agaS; tagatose-6-phosphate ketose/aldose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	serf:L085_15890	98.71	388	5	0	1	388	1	388	0.0	  788	agaS; tagatose-6-phosphate ketose/aldose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	sers:SERRSCBI_12085	95.36	388	18	0	1	388	1	388	0.0	  736	sugar isomerase AgaS; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	spe:Spro_2578	87.01	385	50	0	1	385	1	385	0.0	  693	Sugar isomerase AgaS; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	slq:M495_12815	86.49	385	52	0	1	385	1	385	0.0	  691	tagatose-6-phosphate ketose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	hav:AT03_17790	65.28	386	131	1	1	386	1	383	5e-177	  509	tagatose-6-phosphate ketose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	ptt:VY86_03610	63.90	385	136	1	1	385	1	382	1e-167	  499	tagatose-6-phosphate ketose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	sod:Sant_3746	64.74	380	133	1	1	380	1	379	3e-164	  491	agaS2; Tagatose-6-phosphate ketose/aldose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	ete:ETEE_2444	61.36	383	144	1	2	384	3	381	2e-160	  467	Galactosamine-6-phosphate isomerase (EC:5.3.1.-); K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	sod:Sant_0727	61.72	384	143	2	1	383	1	381	6e-160	  479	Tagatose-6-phosphate ketose/aldose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	edw:QY76_16910	61.36	383	142	1	2	384	3	379	7e-160	  465	tagatose-6-phosphate ketose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	psi:S70_08825	57.07	389	156	4	1	385	1	382	7e-154	  450	tagatose-6-phosphate ketose/aldose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	etc:ETAC_03275	61.56	385	140	3	2	384	3	381	5e-153	  448	agaS; tagatose-6-phosphate ketose/aldose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	etd:ETAF_0620	61.10	383	145	1	2	384	3	381	1e-152	  447	Predicted galactosamine-6-phosphate isomerase (EC:5.3.1.-); K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	sod:Sant_0025	56.62	385	167	0	1	385	1	385	5e-135	  415	agaS1; Tagatose-6-phosphate ketose/aldose isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	vvl:VV93_v1c44190	52.97	387	170	4	1	383	1	379	3e-130	  390	phosphosugar isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	vvm:VVMO6_04416	52.97	387	170	4	1	383	1	379	4e-130	  389	tagatose-6-phosphate kinase AgaZ (EC:5.3.1.-); K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	vvy:VVA1515	52.97	387	170	4	1	383	14	392	7e-130	  389	predicted phosphosugar isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	vfu:vfu_A02331	52.48	383	178	1	1	383	1	379	1e-126	  380	phosphosugar isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_39	ppr:PBPRB0142	47.55	387	197	2	1	383	1	385	2e-117	  357	phosphosugar isomerase; K02082 tagatose-6-phosphate ketose/aldose isomerase [EC:5.-.-.-]
+gene_40	smac:SMDB11_1825	98.94	284	3	0	1	284	1	284	0.0	  574	D-tagatose 1,6-bisphosphate aldolase 2,catalytic subunit; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	smw:SMWW4_v1c25600	98.94	284	3	0	1	284	1	284	0.0	  573	gatY; D-tagatose 1,6-bisphosphate aldolase 2, catalytic subunit; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	serf:L085_15885	98.24	284	5	0	1	284	1	284	0.0	  570	gatY; tagatose-bisphosphate aldolase (EC:4.1.2.40); K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	sers:SERRSCBI_12090	98.94	284	3	0	1	284	1	284	0.0	  573	gatY; tagatose-bisphosphate aldolase (EC:4.1.2.40); K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	spe:Spro_2579	95.07	284	14	0	1	284	1	284	0.0	  558	class II aldolase, tagatose bisphosphate family (EC:4.1.2.13); K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	smar:SM39_2006	98.24	284	5	0	1	284	1	284	0.0	  569	D-tagatose 1,6-bisphosphate aldolase 2, catalytic subunit; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	slq:M495_12820	94.72	284	15	0	1	284	1	284	0.0	  556	gatY; fructose-bisphosphate aldolase (EC:4.1.2.2); K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	hav:AT03_17765	79.93	284	57	0	1	284	1	284	1e-166	  474	kbaY; tagatose-bisphosphate aldolase; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	pay:PAU_00779	80.63	284	55	0	1	284	1	284	2e-165	  471	gatY; tagatose-bisphosphate aldolase (EC:4.1.2.-); K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	plu:plu0839	79.58	284	58	0	1	284	1	284	8e-164	  467	gatY; Tagatose-bisphosphate aldolase GatY; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	rah:Rahaq_3467	78.17	284	62	0	1	284	1	284	4e-162	  462	class II aldolase, tagatose bisphosphate family (EC:4.1.2.40); K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	raa:Q7S_17455	78.17	284	62	0	1	284	1	284	4e-162	  462	gatY; tagatose-bisphosphate aldolase (EC:4.1.2.40); K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	ptt:VY86_03635	79.58	284	58	0	1	284	1	284	7e-160	  468	kbaY; tagatose-bisphosphate aldolase; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	sod:Sant_3745	78.87	284	60	0	1	284	1	284	2e-159	  466	gatY; Tagatose-bisphosphate aldolase; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	raq:Rahaq2_3543	76.06	284	68	0	1	284	1	284	2e-158	  453	class II aldolase, tagatose bisphosphate family; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	psx:DR96_1421	74.65	284	72	0	1	284	1	284	1e-157	  451	class II aldolase, tagatose bisphosphate family; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	psi:S70_08795	74.65	284	72	0	1	284	1	284	1e-157	  451	gatY; tagatose-bisphosphate aldolase (EC:4.1.2.40); K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	vni:VIBNI_A0971	71.48	284	81	0	1	284	1	284	2e-151	  435	kbaY; D-tagatose-1,6-bisphosphate aldolase subunit kbaY (EC:4.1.2.40); K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	vfu:vfu_A02324	72.89	284	77	0	1	284	1	284	3e-151	  435	Fructose/tagatose bisphosphate aldolase; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_40	vvy:VVA1509	72.54	284	78	0	1	284	1	284	1e-149	  431	fructose/tagatose bisphosphate aldolase; K08302 tagatose 1,6-diphosphate aldolase GatY/KbaY [EC:4.1.2.40]
+gene_42	smw:SMWW4_v1c25620	99.43	174	1	0	1	174	1	174	9e-124	  356	ogt; O-6-alkylguanine-DNA:cysteine-protein methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	smac:SMDB11_1827	98.85	174	2	0	1	174	1	174	3e-123	  355	ogt; O6-methylguanine-DNA-alkyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	serf:L085_15875	98.85	174	2	0	1	174	1	174	3e-123	  355	methylated-DNA--protein-cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	smar:SM39_2008	98.28	174	3	0	1	174	1	174	1e-119	  352	ogt; O6-methylguanine-DNA-alkyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	sers:SERRSCBI_12100	98.25	171	3	0	4	174	170	340	7e-118	  347	methylated-DNA--protein-cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	srs:SerAS12_2576	87.93	174	21	0	1	174	1	174	7e-112	  326	methylated-DNA/protein-cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	srr:SerAS9_2575	87.93	174	21	0	1	174	1	174	7e-112	  326	methylated-DNA/protein-cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	sra:SerAS13_2577	87.93	174	21	0	1	174	1	174	7e-112	  326	methylated-DNA/protein-cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	sry:M621_13295	87.93	174	21	0	1	174	1	174	3e-111	  324	methylated-DNA--protein-cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	srl:SOD_c24350	86.78	174	23	0	1	174	1	174	4e-109	  319	ogt; methylated-DNA--protein-cysteine methyltransferase Ogt (EC:2.1.1.63); K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	slq:M495_12830	86.78	174	23	0	1	174	1	174	6e-109	  318	methylated-DNA--protein-cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	spe:Spro_2581	85.63	174	25	0	1	174	25	198	8e-108	  317	methylated-DNA--protein-cysteine methyltransferase (EC:2.1.1.63); K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	sfo:Z042_25090	86.21	174	24	0	1	174	1	174	3e-107	  321	methylated-DNA--protein-cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	smaf:D781_2175	81.61	174	32	0	1	174	1	174	5e-103	  303	O-6-methylguanine DNA methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	yef:FORC2_2095	79.29	169	35	0	1	169	1	169	1e-95	  285	cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	yen:YE2074	79.29	169	35	0	1	169	1	169	2e-95	  284	ogt; methylated-DNA--protein-cysteine methyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	yel:LC20_02784	78.70	169	36	0	1	169	1	169	2e-95	  284	ogt; O-6-methylguanine-DNA-alkyltransferase; K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	yet:CH48_3747	79.29	169	35	0	1	169	1	169	2e-95	  284	ogt; methylated-DNA--protein-cysteine methyltransferase (EC:2.1.1.63); K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	ykr:CH54_381	78.70	169	36	0	1	169	1	169	3e-95	  283	methylated-DNA--[]-cysteine S-methyltransferase family protein (EC:2.1.1.63); K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_42	yfr:AW19_1281	78.70	169	36	0	1	169	1	169	3e-95	  283	ogt; methylated-DNA--protein-cysteine methyltransferase (EC:2.1.1.63); K00567 methylated-DNA-[protein]-cysteine S-methyltransferase [EC:2.1.1.63]
+gene_43	smw:SMWW4_v1c25630	100.00	254	0	0	1	254	1	254	0.0	  521	fnr; DNA-binding transcriptional dual regulator, global regulator of anaerobic growth; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	smac:SMDB11_1828	100.00	254	0	0	1	254	1	254	0.0	  521	fnr; fumarate and nitrate reduction regulatoryprotein; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	serf:L085_15870	100.00	254	0	0	1	254	1	254	0.0	  521	fumarate/nitrate reduction transcriptional regulator; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	spe:Spro_2582	99.61	254	1	0	1	254	1	254	0.0	  520	transcriptional regulator, Crp/Fnr family; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	slq:M495_12835	99.61	254	1	0	1	254	1	254	0.0	  520	fumarate/nitrate reduction transcriptional regulator; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	sry:M621_13300	99.21	254	2	0	1	254	1	254	0.0	  519	fumarate/nitrate reduction transcriptional regulator; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	srs:SerAS12_2577	99.21	254	2	0	1	254	1	254	0.0	  519	transcriptional regulator, Crp/Fnr family; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	srr:SerAS9_2576	99.21	254	2	0	1	254	1	254	0.0	  519	transcriptional regulator, Crp/Fnr family; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	srl:SOD_c24360	99.21	254	2	0	1	254	1	254	0.0	  519	fnr; fumarate and nitrate reduction regulatory protein Fnr; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	sra:SerAS13_2578	99.21	254	2	0	1	254	1	254	0.0	  519	transcriptional regulator, Crp/Fnr family; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	sers:SERRSCBI_12105	100.00	254	0	0	1	254	1	254	0.0	  522	fumarate/nitrate reduction transcriptional regulator; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	smar:SM39_2009	99.61	254	1	0	1	254	1	254	0.0	  521	fnr; fumarate and nitrate reduction regulatory protein; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	smaf:D781_2174	96.83	252	8	0	1	252	1	252	1e-178	  502	cAMP-binding protein; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	sfo:Z042_25115	96.46	254	9	0	1	254	1	254	3e-175	  503	fumarate/nitrate reduction transcriptional regulator; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	hav:AT03_10965	93.93	247	15	0	1	247	1	247	3e-171	  483	transcriptional regulator; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	yel:LC20_02785	92.40	250	19	0	1	250	1	250	2e-170	  481	fnr; Fumarate and nitrate reduction regulatory protein; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	cfd:CFNIH1_18485	93.93	247	15	0	1	247	15	261	2e-170	  481	transcriptional regulator; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	cama:F384_07765	93.93	247	15	0	1	247	15	261	2e-170	  481	transcriptional regulator; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	ebf:D782_2078	93.93	247	15	0	1	247	1	247	2e-170	  481	cAMP-binding protein; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_43	seni:CY43_08485	93.93	247	15	0	1	247	1	247	3e-170	  480	transcriptional regulator; K01420 CRP/FNR family transcriptional regulator, anaerobic regulatory protein
+gene_44	smw:SMWW4_v1c25640	100.00	320	0	0	1	320	1	320	0.0	  662	uspE; stress-induced protein; K14055 universal stress protein E
+gene_44	smac:SMDB11_1829	100.00	320	0	0	1	320	1	320	0.0	  662	uspE; universal stress protein; K14055 universal stress protein E
+gene_44	serf:L085_15865	100.00	320	0	0	1	320	1	320	0.0	  662	universal stress protein UspE; K14055 universal stress protein E
+gene_44	sers:SERRSCBI_12110	100.00	320	0	0	1	320	1	320	0.0	  662	universal stress protein UspE; K14055 universal stress protein E
+gene_44	srl:SOD_c24370	97.19	320	9	0	1	320	1	320	0.0	  649	uspE; universal stress protein UspE; K14055 universal stress protein E
+gene_44	smar:SM39_2010	99.69	320	1	0	1	320	1	320	0.0	  661	uspE; universal stress protein; K14055 universal stress protein E
+gene_44	sry:M621_13305	96.88	320	10	0	1	320	1	320	0.0	  647	universal stress protein E; K14055 universal stress protein E
+gene_44	srs:SerAS12_2578	96.56	320	11	0	1	320	1	320	0.0	  646	UspA domain-containing protein; K14055 universal stress protein E
+gene_44	srr:SerAS9_2577	96.56	320	11	0	1	320	1	320	0.0	  646	UspA domain-containing protein; K14055 universal stress protein E
+gene_44	sra:SerAS13_2579	96.56	320	11	0	1	320	1	320	0.0	  646	UspA domain-containing protein; K14055 universal stress protein E
+gene_44	smaf:D781_2173	97.19	320	9	0	1	320	1	320	0.0	  644	universal stress protein UspA-like protein; K14055 universal stress protein E
+gene_44	spe:Spro_2583	96.10	308	12	0	1	308	1	308	0.0	  618	UspA domain protein; K14055 universal stress protein E
+gene_44	slq:M495_12840	95.78	308	13	0	1	308	1	308	0.0	  617	universal stress protein E; K14055 universal stress protein E
+gene_44	sfo:Z042_25120	94.16	308	18	0	1	308	1	308	0.0	  609	universal stress protein E; K14055 universal stress protein E
+gene_44	ykr:CH54_379	86.26	313	43	0	1	313	1	313	0.0	  581	universal stress family protein; K14055 universal stress protein E
+gene_44	yfr:AW19_1283	86.26	313	43	0	1	313	1	313	0.0	  581	uspE; universal stress protein E; K14055 universal stress protein E
+gene_44	yew:CH47_1510	85.71	315	45	0	1	315	1	315	0.0	  578	uspE; universal stress protein E; K14055 universal stress protein E
+gene_44	yen:YE2076	85.71	315	45	0	1	315	1	315	0.0	  578	universal stress protein UspE; K14055 universal stress protein E
+gene_44	yin:CH53_4024	86.03	315	44	0	1	315	1	315	0.0	  577	uspE; universal stress protein E; K14055 universal stress protein E
+gene_44	yef:FORC2_2097	85.94	313	44	0	1	313	1	313	0.0	  577	universal stress protein UspE; K14055 universal stress protein E
+gene_45	smw:SMWW4_v1c25650	99.78	464	1	0	1	464	1	464	0.0	  931	pntB; pyridine nucleotide transhydrogenase, beta subunit; K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	serf:L085_15860	99.78	464	1	0	1	464	1	464	0.0	  931	pntB; pyridine nucleotide transhydrogenase (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	sers:SERRSCBI_12115	99.35	464	3	0	1	464	1	464	0.0	  928	pntB; pyridine nucleotide transhydrogenase (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	smar:SM39_2011	98.71	464	6	0	1	464	1	464	0.0	  924	pntB; pyridine nucleotide transhydrogenase, beta subunit; K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	smac:SMDB11_1830	98.71	464	6	0	1	464	1	464	0.0	  923	pntB; pyridine nucleotide transhydrogenase, beta subunit; K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	srl:SOD_c24380	96.33	463	17	0	1	463	1	463	0.0	  904	pntB; NAD(p) transhydrogenase PntB (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	sry:M621_13310	96.11	463	18	0	1	463	1	463	0.0	  902	pntB; pyridine nucleotide transhydrogenase (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	sfo:Z042_25130	94.59	462	25	0	1	462	1	462	0.0	  885	pntB; pyridine nucleotide transhydrogenase (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	srs:SerAS12_2579	95.69	464	20	0	1	464	1	464	0.0	  879	NAD(P)(+) transhydrogenase (AB-specific) (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	srr:SerAS9_2578	95.69	464	20	0	1	464	1	464	0.0	  879	NAD(P)(+) transhydrogenase (AB-specific) (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	sra:SerAS13_2580	95.69	464	20	0	1	464	1	464	0.0	  879	NAD(P)(+) transhydrogenase (AB-specific) (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	spe:Spro_2584	95.90	463	19	0	1	463	1	463	0.0	  877	NAD(P)(+) transhydrogenase (AB-specific) (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	smaf:D781_2171	93.29	462	31	0	1	462	1	462	0.0	  869	NAD/NADP transhydrogenase beta subunit; K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	yin:CH53_4025	92.01	463	36	1	1	462	1	463	0.0	  861	pntB; NAD(P) transhydrogenase subunit beta (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	yet:CH48_3744	91.79	463	37	1	1	462	1	463	0.0	  860	pntB; NAD(P) transhydrogenase subunit beta (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	yee:YE5303_19231	91.58	463	38	1	1	462	1	463	0.0	  859	pntB; NAD(P) transhydrogenase subunit beta; K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	yew:CH47_1511	91.58	463	38	1	1	462	1	463	0.0	  858	pntB; NAD(P) transhydrogenase subunit beta (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	yen:YE2077	91.58	463	38	1	1	462	1	463	0.0	  858	pntB; pyridine nucleotide transhydrogenase (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	yef:FORC2_2098	91.58	463	38	1	1	462	1	463	0.0	  858	pyridine nucleotide transhydrogenase; K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_45	yal:AT01_392	91.36	463	39	1	1	462	1	463	0.0	  858	pntB; NAD(P) transhydrogenase subunit beta (EC:1.6.1.2); K00325 NAD(P) transhydrogenase subunit beta [EC:1.6.1.2]
+gene_46	serf:L085_15855	99.60	248	1	0	1	248	262	509	3e-177	  508	pntA; NAD(P) transhydrogenase subunit alpha (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	smw:SMWW4_v1c25660	99.60	248	1	0	1	248	262	509	3e-177	  508	pntA; pyridine nucleotide transhydrogenase, alpha subunit; K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	smac:SMDB11_1831	98.39	248	4	0	1	248	262	509	2e-175	  503	pntA; pyridine nucleotide transhydrogenase, alpha subunit; K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	smar:SM39_2012	99.19	248	2	0	1	248	262	509	3e-170	  506	pntA; pyridine nucleotide transhydrogenase, alpha subunit; K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	sers:SERRSCBI_12120	99.19	248	2	0	1	248	262	509	6e-170	  506	pntA; NAD(P) transhydrogenase subunit alpha (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	slq:M495_12850	95.56	248	11	0	1	248	262	509	2e-164	  475	pntA; NAD(P) transhydrogenase subunit alpha (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	smaf:D781_2170	91.94	248	19	1	1	247	262	509	1e-161	  468	NAD(P) transhydrogenase, alpha subunit; K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	pct:PC1_2108	89.52	248	26	0	1	248	262	509	2e-160	  465	NAD(P) transhydrogenase, alpha subunit (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	rah:Rahaq_2256	89.11	248	27	0	1	248	262	509	1e-159	  463	NAD(P) transhydrogenase, alpha subunit; K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	raa:Q7S_11410	89.11	248	27	0	1	248	262	509	1e-159	  463	pntA; NAD(P) transhydrogenase subunit alpha (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	yro:CH64_623	91.13	248	21	1	1	248	262	508	2e-159	  462	pntA; NAD(P)(+) transhydrogenase (AB-specific), alpha subunit (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	raq:Rahaq2_2364	88.71	248	28	0	1	248	262	509	3e-159	  462	NAD(P) transhydrogenase, alpha subunit; K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	pcc:PCC21_021500	87.90	248	30	0	1	248	253	500	6e-158	  458	NAD(P) transhydrogenase subunit alpha; K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	ykr:CH54_377	89.52	248	25	1	1	248	262	508	2e-156	  455	pntA; NAD(P)(+) transhydrogenase (AB-specific), alpha subunit (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	yfr:AW19_1285	89.52	248	25	1	1	248	262	508	2e-156	  455	pntA; NAD(P)(+) transhydrogenase (AB-specific), alpha subunit (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	spe:Spro_2585	94.76	248	13	0	1	248	262	509	2e-156	  455	NAD(P) transhydrogenase, alpha subunit (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	yin:CH53_4026	89.52	248	25	1	1	248	262	508	3e-156	  454	pntA; NAD(P)(+) transhydrogenase (AB-specific), alpha subunit (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	plu:plu2167	87.50	248	31	0	1	248	262	509	8e-156	  453	pntA; NAD(P) transhydrogenase subunit alpha (pyridine nucleotide transhydrogenase subunit alpha) (nicotinamide nucleotide transhydrogenase subunit alpha); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	sry:M621_13315	93.95	248	15	0	1	248	262	509	2e-155	  452	pntA; NAD(P) transhydrogenase subunit alpha (EC:1.6.1.2); K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]
+gene_46	srs:SerAS12_2580	93.95	248	15	0	1	248	262	509	2e-155	  452	NAD(P) transhydrogenase, alpha subunit; K00324 NAD(P) transhydrogenase subunit alpha [EC:1.6.1.2]

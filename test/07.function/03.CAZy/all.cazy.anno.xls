@@ -1,0 +1,44 @@
+gene_id	gene_start	gene_end	identity	evalue	subject_id	description	CAZy_levelB
+gene_3	8	79	42.67	3e-06	AGQ37890.1	hypothetical protein J450_01565 [Mannheimia haemolytica D171]	GH58
+gene_5	1	239	23.81	8e-10	AFR70723.1	putative N-acetylglucosamine 6 phosphate deacetylase [Brachyspira pilosicoli B2904]	CE9
+gene_5	1	239	23.81	2e-09	CCG56996.1	putative N-acetylglucosamine 6 phosphate deacetylase [Brachyspira pilosicoli WesB]	CE9
+gene_5	1	239	23.81	2e-09	AGA65840.1	putative N-acetylglucosamine 6 phosphate deacetylase [Brachyspira pilosicoli P43/6/78]	CE9
+gene_5	1	239	23.81	2e-09	ADK30104.1	putative N-acetylglucosamine 6 phosphate deacetylase [Brachyspira pilosicoli 95/1000]	CE9
+gene_5	1	239	22.13	4e-09	ACN85082.1	putative N-acetylglucosamine-6-phosphate deacetylase [Brachyspira hyodysenteriae WA1]	CE9
+gene_5	1	239	21.34	8e-08	AEM21481.1	putative N-acetylglucosamine-6-phosphate deacetylase [Brachyspira intermedia PWS/A]	CE9
+gene_5	1	239	21.34	4e-07	ADG70601.1	N-acetylglucosamine-6-phosphate deacetylase [Brachyspira murdochii DSM 12563]	CE9
+gene_10	31	252	24.77	7e-14	AAO41659.1	CG33173 [Drosophila melanogaster]	CBM14
+gene_11	6	234	27.85	4e-10	AAO41659.1	CG33173 [Drosophila melanogaster]	CBM14
+gene_14	4	384	35.49	1e-58	EAA61743.1	hypothetical protein AN7372.2 [Aspergillus nidulans FGSC A4]	GH31
+gene_30	1	556	99.10	0.0	AGE18348.1	hypothetical protein SMWW4_v1c25510 [Serratia marcescens WW4]	GH0
+gene_30	1	556	96.58	0.0	AIA48605.1	hypothetical protein L085_15930 [Serratia sp. FS14]	GH0
+gene_30	1	556	94.96	0.0	CDG12391.1	hypothetical protein SMDB11_1815 [Serratia marcescens subsp. marcescens Db11]	GH0
+gene_30	1	556	95.32	0.0	AKL43836.1	hypothetical protein AB188_26425 [Serratia marcescens]	GH0
+gene_30	1	554	78.88	0.0	ABV41671.1	conserved hypothetical protein [Serratia proteamaculans 568]	GH0
+gene_30	1	553	77.76	0.0	AKE10330.1	hypothetical protein XJ20_10740 [Serratia liquefaciens]	GH0
+gene_30	1	553	77.03	0.0	AKG71483.1	hypothetical protein WN53_21460 [Serratia fonticola]	GH0
+gene_30	36	553	78.76	0.0	AGQ31301.1	hypothetical protein M495_12775 [Serratia liquefaciens ATCC 27592]	GH0
+gene_30	30	549	49.91	4e-175	AJY74756.1	hypothetical protein VN24_09365 [Paenibacillus beijingensis]	GH0
+gene_30	10	553	46.57	7e-171	AET61024.1	hypothetical protein HPL003_21470 [Paenibacillus terrae HPL-003]	GH0
+gene_30	9	553	44.77	3e-169	ALC91502.1	hypothetical protein AM500_18205 [Bacillus sp. FJAT-18017]	GH0
+gene_30	30	549	44.93	5e-159	AIQ22560.1	hypothetical protein H70737_06655 [Paenibacillus sp. FSL H7-0737]	GH123
+gene_30	30	551	44.57	5e-159	AIQ34360.1	hypothetical protein R50345_06840 [Paenibacillus sp. FSL R5-0345]	GH0
+gene_30	25	550	43.36	2e-136	BAQ32336.1	conserved hypothetical protein [Bifidobacterium scardovii JCM 12489 = DSM 13734]	GH0
+gene_30	63	545	42.57	8e-126	ALE93862.1	hypothetical protein AOC05_00590 [Arthrobacter alpinus]	GH0
+gene_30	71	545	40.24	8e-123	AEF80684.1	conserved hypothetical protein [Treponema azotonutricium ZAS-9]	GH0
+gene_30	55	549	41.25	4e-121	AIY03750.1	hypothetical protein ART_4151 [Arthrobacter sp. PAMC25486]	GH0
+gene_30	69	545	41.29	4e-116	AJE48719.1	hypothetical protein P73_4004 [Celeribacter indicus]	GH0
+gene_30	1	547	35.56	2e-89	AHU89673.1	hypothetical protein CQ11_06450 [Trueperella pyogenes]	GH0
+gene_30	1	550	35.38	3e-89	AJC68936.1	hypothetical protein X956_01260 [Trueperella pyogenes TP8]	GH0
+gene_34	3	271	31.32	1e-34	BAS15972.1	L-arabinose transport system permease protein AraQ [Arthrobacter sp. Hiyo8]	GH130
+gene_34	2	271	25.44	4e-21	BAS16140.1	beta-galactosidase [Arthrobacter sp. Hiyo8]	GH42
+gene_34	151	267	32.20	5e-12	AGB19346.1	ABC-type sugar transport system, permease component [Thermoanaerobacterium thermosaccharolyticum M0795]	GH43
+gene_36	13	422	25.70	1e-23	AHF92902.1	oxidoreductase [Opitutaceae bacterium TAV5]	GH0
+gene_36	14	215	26.61	9e-10	ADY52006.1	oxidoreductase domain protein [Pseudopedobacter saltans DSM 12145]	GH0
+gene_36	4	188	29.19	3e-08	AFK03985.1	oxidoreductase domain protein [Emticicia oligotrophica DSM 17448]	GH0
+gene_36	14	215	28.77	1e-07	ADQ16988.1	oxidoreductase domain protein [Leadbetterella byssophila DSM 17132]	GH0
+gene_36	4	180	28.14	2e-07	ACU58310.1	oxidoreductase domain protein [Chitinophaga pinensis DSM 2588]	GH0
+gene_36	14	204	27.05	8e-07	AGA79850.1	putative dehydrogenase [Echinicola vietnamensis DSM 17526]	GH0
+gene_36	1	210	25.64	1e-06	ADF54523.1	probable oxidoreductase [Zunongwangia profunda SM-A87]	GH0
+gene_36	14	204	26.89	4e-06	AHM58758.1	putative dehydrogenase [Flammeovirgaceae bacterium 311]	GH0
+gene_42	10	166	35.03	2e-22	AGX07948.1	hypothetical protein BRDCF_04625 [Bacteroides sp. CF50]	GT19

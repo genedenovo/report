@@ -1,0 +1,130 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>all</title>
+<style type="text/css">
+	a {
+		text-decoration: none;
+		outline: none;
+		hide-focus: expression(this.hideFocus=true);
+	}
+	a:hover {
+		color:#FF0000;
+		text-decoration:none;
+		outline:none;
+		hide-focus: expression(this.hideFocus=true);
+	}
+	body {
+		font-size: 12px;
+		font-family: "Microsoft YaHei","微软雅黑","雅黑宋体","新宋体","宋体","Microsoft JhengHei","华文细黑",STHeiti,MingLiu;
+		background-color: #FFFFFF;
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+	table {
+		width: 100%;
+		border: 0px;
+		border-top: 4px #009933 solid;
+		border-bottom: 4px #009933 solid;
+		text-align: center;
+		border-collapse: collapse;
+		caption-side: top;
+	}
+	th {
+		border-bottom: 2px #009933 solid;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	td {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	table caption{
+		font-weight: bold;
+		font-size: 16px;
+		color: #009933;
+		margin-bottom: 8px;
+	}
+	#backtop{
+		font-size: 16px;
+		position: fixed;
+		bottom: 5%;
+		right: 2%;
+	}
+</style>
+<script type="text/javascript">
+<!--
+function reSize2() {
+	try {
+		parent.document.getElementsByTagName("iframe")[0].style.height = document.body.scrollHeight + 10;
+		parent.parent.document.getElementsByTagName("iframe")[0].style.height = parent.document.body.scrollHeight;
+	} catch(e) {}
+}
+
+preRow = null;
+preColor = null;
+function colorRow(trObj) {
+	if (preRow != null) {
+		preRow.style.backgroundColor = preColor;
+	}
+	preRow = trObj;
+	preColor = trObj.style.backgroundColor;
+	trObj.style.backgroundColor = "FF9900";
+}
+
+function diffColor(tables) {
+	color = ["#FFFFFF", "#CCFF99"];
+	for (i = 0; i < tables.length; i++) {
+		trObj = tables[i].getElementsByTagName("tr");
+		for (j = 1; j < trObj.length; j++) {
+			trObj[j].style.backgroundColor = color[j % color.length];
+		}
+	}
+}
+
+function markColor(table) {
+	trs = table.getElementsByTagName("tr");
+		for (i = 1; i < trs.length; i++) {
+			if(table.rows[i].cells.length > 4){
+				if(table.rows[i].cells[5].innerHTML < 0.05){
+					//trs[i].style.fontWeight = "500";
+					table.rows[i].cells[5].style.color = "#FF0000";
+					table.rows[i].cells[5].style.fontWeight = "900";
+				}
+				if(table.rows[i].cells[4].innerHTML < 0.05){
+					table.rows[i].cells[4].style.color = "#FF0000";
+				}
+			}
+		}
+}
+
+function showPer(tableObj) {
+	trObj = tableObj.getElementsByTagName("tr");
+	if (trObj.length < 2) {
+		return;
+	}
+	sum1 = trObj[0].cells[2].innerHTML.replace(/^.*\(([\d]+)\).*$/, "$1");
+	if (trObj[0].cells.length > 4) {
+		sum2 = trObj[0].cells[3].innerHTML.replace(/^.*\(([\d]+)\).*$/, "$1");
+	}
+	if (trObj[0].cells.length > 4) {
+		trObj[0].cells[2].innerHTML = "DEGs genes with pathway annotation (" + sum1 + ")";
+		trObj[0].cells[3].innerHTML = "All genes with pathway annotation (" + sum2 + ")";
+	}else{
+		trObj[0].cells[2].innerHTML = "All genes with pathway annotation (" + sum1 + ")";
+	}
+	for (i = 1; i < trObj.length; i++) {
+		trObj[i].cells[2].innerHTML += " (" + (Math.round(trObj[i].cells[2].innerHTML * 10000/ sum1) / 100) + "%)";
+		if (trObj[0].cells.length > 4) {
+			trObj[i].cells[3].innerHTML += " (" + (Math.round(trObj[i].cells[3].innerHTML * 10000/ sum2) / 100) + "%)";
+		}
+	}
+}
+
+window.onload = function() {
+	setTimeout("reSize2()", 1);
+}
+//-->
+</script>
+</head><body><table><caption>all Pathway Enrichment</caption><tr><th>#</th><th>Pathway</th><th>Count (12)</th><th>Pathway ID</th></tr><tr><td>1</td><td style="text-align: left;"><a href='#gene1' title='click to view genes' onclick='javascript: colorRow(document.getElementsByTagName("table")[1].rows[1]);'>ABC transporters</a></td><td>6</td><td>ko02010</td></tr><tr><td>2</td><td style="text-align: left;"><a href='#gene2' title='click to view genes' onclick='javascript: colorRow(document.getElementsByTagName("table")[1].rows[2]);'>Nicotinate and nicotinamide metabolism</a></td><td>2</td><td>ko00760</td></tr><tr><td>3</td><td style="text-align: left;"><a href='#gene3' title='click to view genes' onclick='javascript: colorRow(document.getElementsByTagName("table")[1].rows[3]);'>Vitamin B6 metabolism</a></td><td>1</td><td>ko00750</td></tr><tr><td>4</td><td style="text-align: left;"><a href='#gene4' title='click to view genes' onclick='javascript: colorRow(document.getElementsByTagName("table")[1].rows[4]);'>Amino sugar and nucleotide sugar metabolism</a></td><td>1</td><td>ko00520</td></tr><tr><td>5</td><td style="text-align: left;"><a href='#gene5' title='click to view genes' onclick='javascript: colorRow(document.getElementsByTagName("table")[1].rows[5]);'>Purine metabolism</a></td><td>1</td><td>ko00230</td></tr><tr><td>6</td><td style="text-align: left;"><a href='#gene6' title='click to view genes' onclick='javascript: colorRow(document.getElementsByTagName("table")[1].rows[6]);'>Galactose metabolism</a></td><td>1</td><td>ko00052</td></tr></table><p><br /></p><table><caption>Pathway Detail</caption><tr><th>#</th><th>Pathway</th><th>Genes</th></tr><tr><td>1</td><td style="text-align: left;"><a href='all_map/map02010.html' title='click to view map' target='_blank'>ABC transporters</a></td><td style="text-align: left;"><a name='gene1'></a>gene_10, gene_11, gene_12, gene_35, gene_8, gene_9</td></tr><tr><td>2</td><td style="text-align: left;"><a href='all_map/map00760.html' title='click to view map' target='_blank'>Nicotinate and nicotinamide metabolism</a></td><td style="text-align: left;"><a name='gene2'></a>gene_45, gene_46</td></tr><tr><td>3</td><td style="text-align: left;"><a href='all_map/map00750.html' title='click to view map' target='_blank'>Vitamin B6 metabolism</a></td><td style="text-align: left;"><a name='gene3'></a>gene_26</td></tr><tr><td>4</td><td style="text-align: left;"><a href='all_map/map00520.html' title='click to view map' target='_blank'>Amino sugar and nucleotide sugar metabolism</a></td><td style="text-align: left;"><a name='gene4'></a>gene_37</td></tr><tr><td>5</td><td style="text-align: left;"><a href='all_map/map00230.html' title='click to view map' target='_blank'>Purine metabolism</a></td><td style="text-align: left;"><a name='gene5'></a>gene_25</td></tr><tr><td>6</td><td style="text-align: left;"><a href='all_map/map00052.html' title='click to view map' target='_blank'>Galactose metabolism</a></td><td style="text-align: left;"><a name='gene6'></a>gene_40</td></tr></table><div id="backtop"><a href="#">Back Top</a></div><script type='text/javascript'>showPer(document.getElementsByTagName('table')[0]);
+diffColor([document.getElementsByTagName('table')[0], document.getElementsByTagName('table')[1]]);markColor(document.getElementsByTagName('table')[0]);</script></body></html>
