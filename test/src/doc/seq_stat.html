@@ -1,0 +1,264 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!-- 基本信息 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<title>基迪奥生物 WGCNA富集分析 帮助文档</title>
+		
+		<!-- CSS文档 -->
+		<link rel="stylesheet" type="text/css" href="../css/help_document.css" />
+		
+	</head>
+	<body>
+		<div>
+			<h3>测序评估</h3>
+			<p>测序得到的原始图像数据经 base calling 转化为序列数据，我们称之为 raw data 或 raw reads，结果以 FASTQ 文件格式存储，包含 reads 的序列以及碱基的测序质量。在 FASTQ 格式文件中每个 read 由四行描述，如下：</p>
+			<pre>
+@A80GVTABXX:4:1:2587:1979#ACAGTGAT/1
+NTTTGATATGTGTGAGGACGTCTGCAGCGTCACCTTTATCGGCCATGGT
++
+BTTMKZXUUUdddddddddddddddddddddddddddadddddd^WYYU
+			</pre>
+			<p>每个序列共有4行，第1行和第3行是序列名称（有的fq文件为了节省存储空间会省略第三行“＋”后面的序列名称），由测序仪产生；第2行是序列；第4行是序列的测序质量，每个字符对应第2行每个碱基，第四行每个字符对应的ASCII值减去64，即为该碱基的测序质量值，比如c对应的ASCII值为99，那么其对应的碱基质量值是35。从Illumina GA Pipeline v1.5开始，碱基质量值范围为2到41。下表为Illumina HiSeq<sup>TM</sup> 2500测序错误率与测序质量值简明对应关系。如果测序错误率用E表示，碱基质量值用SQ表示，则有下列关系：</p>
+			<div class="help_img">
+				<a href="../image/seqqua_formula.jpg" target="_blank"><img class="formula" src="../image/seqqua_formula.jpg"/></a>
+			</div>
+			<p><br /></p>
+			<table>
+				<caption>Illumina HiSeq<sup>TM</sup> 2000 测序错误率与测序质量值简明对应关系</caption>
+				<tr><th>测序错误率</th><th>测序质量</th><th>对应字符</th></tr>
+				<tr><td >1%</td><td>20</td><td >T</td></tr>
+				<tr><td >0.1%</td><td >30</td><td >^</td></tr>
+				<tr><td >0.01%</td><td >40</td><td >h</td></tr>
+			</table>
+			<h5 id="sub_1">测序质量评估</h5>
+			<table class="pic_table">
+				<tr>
+					<td style="width: 50%"><a href="../image/test_pie_1.png" target="_blank"><img src="../image/test_pie_1.png" /></td>
+					<td class="pic_table_desc" style="width: 50%">
+						<p>左图为样品 Test 中各类 reads 所占比例分布的情况。
+							<ul>
+								<li>“Adaptor” 表示只含有接头序列的 reads 数占总 reads 数的比例</li>
+								<li>“High_N_rate” 表示含未知碱基的 reads 数占 reads 总数的比例</li>
+								<li>“Low_quality” 表示低质量的 reads 数占 reads 总数的比例</li>
+								<li>“High_quality_clean” 是原始序列数据经过去除杂质后得到的数据占 reads 总数的比例</li>
+							</ul>
+						<p>
+					</td>
+				</tr>
+			</table>
+			<h5 id="sub_2">数据过滤</h5>
+			<p>为了保证数据质量，要在信息分析前对原始数据进行质控，并且通过数据过滤来减少数据噪音。我们对下机的 clean reads 再进行更严格的过滤，得到 High quality clean reads，用于后续的信息分析。过滤的步骤如下:</p>
+			<ol type="i">
+				<li>去除含 adapter 的 reads</li>
+				<li>去除含 N 比例大于 10% 的reads</li>
+				<li>去除低质量 reads (质量值 Q≤10 的碱基数占整条 read 的 40％ 以上)</li>
+			</ol>
+			<h5 id="sub_3">碱基组成与质量分析</h5>
+			<table class="pic_table">
+				<tr>
+					<td style="width: 50%"><a href="../image/test_base.png" target="_blank"><img src="../image/test_base.png" /></td>
+					<td class="pic_table_desc" style="width: 50%">
+						<p>我们也会对过滤后的数据画碱基组成和质量值分布图，来直观地看数据质量情况。左图中，X轴上，1-125bp 代表 read1 的碱基位置，126-250bp 代表 read2 的碱基位置。A、T、C、G曲线各代表每个位置A、T、C、G碱基的比例，碱基组成平衡的情况下，A、T 曲线重合，G、C 曲线重合。如果测序中出现不正常的情况，碱基组成就可能不平衡。N 曲线代表每个位置未被测到的碱基的比例。mean 曲线表示碱基在每个位置的平均质量。Q20和Q30曲线分别代表碱基在每个位置的质量值>=Q20或者>=Q30的碱基比例。<p>
+					</td>
+				</tr>
+			</table>
+			<h5 id="sub_4">过滤信息统计</h5>
+			<p id="sub_4_1">过滤前后碱基信息统计表说明</p>
+			<ul>
+				<li>Clean Data (PE) = Clean Reads1 Num x Read1 length + Clean Reads2 Num x Read2 length</li>
+				<li>Clean Data (SE) = Clean Reads1 Num x Read1 length</li>
+				<li>HQ Clean Data (PE) = HQ Clean Reads1 Num x Read1 length + HQ Clean Reads2 Num x Read2 length</li>
+				<li>HQ Clean Data (SE) = HQ Clean Reads1 Num x Read1 length</li>
+			</ul>
+			<p id="sub_4_2">Reads 过滤信息统计表说明</p>
+			<ul>
+				<li>Clean Reads Num (PE) = Clean Reads1 + Clean Reads2</li>
+				<li>HQ Clean Reads Num (PE) = HQ Clean Reads1 + HQ Clean Reads2</li>
+				<li>Clean Reads Num (SE) = Clean Reads1</li>
+				<li>HQ Clean Reads Num (SE) = HQ Clean Reads1</li>
+				<li>Adapter ：Clean reads 中含有 adapter 的 reads 数目</li>
+				<li>Low Quality ：Clean reads 中含有低质量碱基达到一定程度的 reads 数目</li>
+				<li>Poly A ：Clean reads 中含有 poly A 的 reads 数目</li>
+				<li>N ：Clean reads 中含有 N 达到一定程度的 reads 数目</li>
+			</ul>
+			<h3 id="sub_5">宿主过滤</h3>
+			<p>为了避免宿主的污染对组装产生的影响，将HQ clean Reads与宿主的参考基因组进行比对，所用软件为Bwa（版本：0.7.5a-r405，参数：默认）。 
+			将有一端能够比对上宿主的HQ clean Reads整对过滤掉。得到的最终Reads叫做Last HQ Clean Reads.</p>
+			<p id="sub_5_1">HQ clean data 与 宿主 的比对统计表说明</p>
+			<ul>
+				<li>Sample: 样本名称</li>
+				<li>Sum HQ Clean Reads Num：全部HQ Clean Reads数</li>
+				<li>Sum Host Mapped Reads: 比对上宿主的Reads数</li>
+				<li>Sum Last Clean Reads: 过滤宿主后剩余可用的HQ clean Reads数</li>
+			</ul>
+			
+			<h3 id="sub_6">宏基因组组装</h3>
+			<h5 id="sub_6_1">单样本组装</h5>
+			<p>经过数据质控后的得到的HQ Clean Data，使用SOAP denovo（版本: 2-src-r240）组装软件进行组装。 对于单个样品，首先选取不同的Kmer（默认选取55,59,63）进行组装，
+			再从中选取N50的最大的scaffolds组装结果作为该样品的最终组装结果。 将组装得到的scaffolds从N连接处打断，得到不含N的序列片段，成为scaftig。</p>
+			<h5 id="sub_6_2">多样本组装结果合并</h5>
+			<p>为了便于对多个样品之间进行比较，需要将多个样品的组装结果合并在一起，去冗余，然后再进行下面的分析。 
+			采用Uclust（版本：1.2.22，默认选择参数：-id 0.90，-id为相似性的意思，即相似性达到90%就聚在一起）软件对各个样品组装得到的所有Scaftigs进行去冗。</p>
+			<p id="sub_6_2_1">组装结果Scaftigs统计表说明</p>
+			<ul>
+				<li>SampleID or Flag：其中SampleID为样本的名称，Flag有两个值"All of Uclust filter"(Uclust去冗余后得到的Scaftigs)和
+					"All of Abundance filter"（经过丰度过滤后得到的Scaftigs，在丰度分析中会说明具体的方法）；</li>
+				<li>Number：Scaftigs的总数；</li>
+				<li>Total len.(bp)：Scaftigs的总长；</li>
+				<li>Average Len.(bp)：Scaftigs的平均长度；</li>
+				<li>N50 Len.(bp)：表示将 Scaftigs 按照长度进行排序，然后由长到短加和，当加和值达到 scaftigs 总长的 50%时的 Scaftigs 的长度值；</li>
+				<li>N90 Len.(bp)：表示将 Scaftigs 按照长度进行排序，然后由长到短加和，当加和值达到 scaftigs 总长的 90%时的 Scaftigs 的长度值；</li>
+				<li>Max Len.(bp)：最长Scaftigs的长度；</li>
+				<li>Min Len.(bp)：最短Scaftigs的长度；</li>
+				<li>GC(%)：全部Scaftigs序列的平均GC含量</li>
+			</ul>
+			
+			<h3 id="sub_7">物种注释及丰度分析</h3>
+			<h5 id="sub_7_1">丰度分析</h5>
+			<p>为了进一步分析样本中各个Scaftigs相对丰度的含量，将经过质控和宿主过滤（如果存在）后的数据（HQ Clean Data）与非冗余的参考Scaftigs集合， 
+			用BWA（版本：0.7.5a-r405，参数：默认）软件进行比对，然后统计各个Scaftigs在各个样品中的深度情况， 
+			过滤掉在各个样品中深度之和为0的Scaftigs，得到最终的参考Scaftigs集合及其中各个Scaftig在各个样品中的深度表，即丰度表。</p>
+			<h5 id="sub_7_2">物种注释</h5>
+			<p>将经过丰度过滤后得到的参考Scaftigs集合与微生物NT库，使用BLAST+（版本：2.2.29，参数：-evalue 1e-5）进行比对。 
+			由于每条序列可能对应多个比对结果，会得到多个不同的分类级别，所以采用LCA算法（使用BioPerl实现）， 
+			将出现第一个分支前的分类级别，作为该序列的最终物种注释结果。</p>
+			<p><b>备注：微生物NT库是从NCBI的NT（版本：20151021）数据库中抽提出来的，抽提的物种包括细菌，真菌，古菌和病毒。</b></p>
+			<p id="sub_7_2_1">Scaftigs丰度和物种注释总表说明</p>
+			<p>该表主要有两部分组成，Scaftigs丰度表和物种注释信息，丰度表又包括绝对丰度和相对丰度，其中绝对丰度即使Scaftigs在该样本中Reads的平均覆盖深度。</p>
+			<ul>
+				<li>Scaftig_id：Scaftig序列的id</li>
+				<li>XXX_avgDepth：Scaftigs在XXX样品中的绝对丰度（平均深度）</li>
+				<li>XXX_relativeAbundance：Scaftigs在XXX样品中的相对丰度</li>
+				<li>Kingdom：Scaftigs在界水平上的物种分类</li>
+				<li>Phylum：Scaftigs在门水平上的物种分类</li>
+				<li>Class：Scaftigs在纲水平上的物种分类</li>
+				<li>Order：Scaftigs在目水缴系奈镏址掷�</li>
+				<li>Family：Scaftigs在科水平上的物种分类</li>
+				<li>Genus：Scaftigs在属水平上的物种分类</li>
+				<li>Species：Scaftigs在种水平上的物种分类</li>
+			</ul>
+			<h5 id="sub_7_3">物种丰度统计</h5>
+			<p>根据Scaftigs物种注释的结果，结合其丰度信息，可以获取各个分类层级（界门纲目科属种）上的相对丰度表。 然后从门水平的相对丰度表出发，
+			选取出在各个样品中的最大相对丰度排名前10的门分类，将其余的物种设置为Others， 其中还有一些Scaftigs没有NT库注释，统一设置为Unassigned，
+			在绘制出各个样品对应的物种注释结果在门水平上的统计柱状图。</p>
+			<h5>物种丰度聚类</h5>
+			<p>根据所有样品在属水平的物种注释及丰度信息，选取丰度排名前 35 的属及它们在每个样品中的丰度信息绘制热图，并从分类信息和样品间差异两个层面进行聚类。</p>
+			
+			<h3 id="sub_8">基因预测及丰度分析</h3>
+			<h5 id="sub_8_1">基因预测</h5>
+			<p>选取长度不小于（>=）300bp的Scaftigs数据，使用MetaGeneMark（版本：3.26，参数：默认参数）软件进行基因预测。 
+			MetaGeneMark采用启发式算法，并且拥有宏基因组数据预测训练模型，因此更加适用于 宏基因组 和未知原核生物的基因预测。</p>
+			<h5 id="sub_8_2">基因去冗余</h5>
+			<p>采用CD-HIT（版本：version 4.6，默认选择参数：-c 0.90，-c参数为相似性的意思，即相似性达到90%就聚在一起）软件对MetaGeneMark预测得到的基因的蛋白序列进行聚类，
+			选取最长的序列为每类的代表性序列，然后最为最终的去冗余基因集（非冗余基因集）。</p>
+			<h5 id="sub_8_3">基因长度分布图</h5>
+			<p>统计CD-HIT过滤前后的基因长度分布情况。</p>
+			<h5 id="sub_8_4">基因丰度分析</h5>
+			<p>为了进一步分析各个样品中基因的丰度信息，根据基因来源的Scaftigs在各个样本中的单碱基位点深度及基因的位置信息， 
+			可以得到各个非冗余基因在各个样品中所对应的深度表，即丰度表。</p>
+			
+			<h3 id="sub_9">功能注释及其丰度分析</h3>
+			<p>功能注释主要是基于功能同源的序列往往具有序列相似性的原理，将去冗余后的基因蛋白序列，与不同的蛋白功能数据库进行序列比对， 
+			然后用比对到的序列的功能作为目标序列的功能。 在比对的过程中，由于每一条序列比对结果可能有很多个，为了保证后续分析的生物学意义，
+			使用阈值evalue&lt;=1e-5进行过滤， 然后再从每条序列的比对结果中筛选出 score值最高的20条作为该序列的比对结果。
+			然后根据各个数据库的特点进行统计汇总， 并结合去冗余基因的丰度表，进行功能丰度分析。</p>
+			<p>目前注释的数据库主要有：</p>
+			<h5 id="sub_9_1">KEGG</h5>
+			<p>KEGG，全称Kyoto Encyclopedia of Genes and Genomes，是一个关于基因功能注释方面的综合性数据库，
+			包括基因的功能，分类，代谢通路(KEGG Pathway数据库， 是KEGG最核心的数据库)等诸多方面的信息。</p>
+			<p>KEGG Pathway数据库将生物代谢通路划分为6大类(A级分类)，分别为：新陈代谢（Metabolism）、遗传信息处理（Genetic Information Processing）、 
+			环境信息处理（Environmental Information Processing）、细胞过程（Cellular Processes）、生物体系统（Organismal Systems）、 
+			人类疾病（Human Diseases），其中每大类又被系统分类为B、C、D3个级别。 其中B级分类目前包括有 43 种子功能；
+			C级分类即为代谢通路图；D级分类为每个代谢通路图的具体注释信息。</p>
+			<p>目前注释所用的KEGG数据库版本为：Release 76.0, October 1, 2015，比对软件使用BLAST+（版本：2.2.29，参数: -evalue 1e-5）。</p>
+			<p id="sub_9_1_1">blast 比对 KEGG 结果表说明</p>
+			<ul>
+				<li>gene_id：基因ID</li>
+				<li>kegg_id：KEGG数据库中的ID</li>
+				<li>identity：相似性</li>
+				<li>match_length：比对长度</li>
+				<li>mismatch：错配数</li>
+				<li>gap：空位数</li>
+				<li>query_start：目标基因的起始位置</li>
+				<li>query_end：目标基因的终止位置</li>
+				<li>subject_start：数据库中被比对上序列的起始位置</li>
+				<li>subject_end：数据库中被比对上序列的终止位置</li>
+				<li>evalue：期望值</li>
+				<li>score：BLAST的打分值</li>
+				<li>description：功能描述</li>
+			</ul>
+			<p id="sub_9_1_2">基因的 Pathway 列表说明</p>
+			<ul>
+				<li>KEGG_A_class：KEGG的A级分类</li>
+				<li>KEGG_B_class：KEGG的B级分类</li>
+				<li>#Pathway：通路名称，级C级分类</li>
+				<li>Count(xxx)：该通路上注释到的基因数</li>
+				<li>Pathway ID：通路的ID</li>
+				<li>Genes：该通路注释到的基因列表</li>
+				<li>KOs：该通路注释到的KO(KEGG Orthology)列表</li>
+			</ul>			
+			<h5 id="sub_9_2">eggNOG</h5>
+			<p>eggNOG 数据库是利用 Smith-Waterman 比对算法对构建的基因直系同源簇 (Orthologous Groups) 进行功能注释， eggNOG（v4.5）目前涵盖了2031个物种，构建了包含25个大类，约19万个直系同源簇。</p>
+			<p>目前eggNOG的最新版本为4.5，比对所用的软件为HMMER（版本：3.1b2，参数：-E 1e-5）。</p>
+			<p id="sub_9_2_1">eggNOG注释结果表说明</p>
+			<ul>
+				<li>gene_id：基因ID</li>
+				<li>eggNOG_levelC：eggNOG B级分类</li>
+				<li>query_start：基因的起始位置</li>
+				<li>query_end：基因的终止位置</li>
+				<li>subject_start：eggNOG数据库中序列的起始位置</li>
+				<li>subject_end：eggNOG数据库中序列的终止位置</li>
+				<li>evalue：期望值</li>
+				<li>eggNOG_levelA：eggNOG A级分类</li>
+				<li>eggNOG_desc：eggNOG中的描述信息</li>
+			</ul>					
+			<h5 id="sub_9_3">CAZy</h5>
+			<p>CAZy 数据库是研究碳水化合物酶的专业级数据库，主要涵盖 6 大功能类：糖苷水解酶（Glycoside Hydrolases ，GHs）， 
+			糖基转移酶（Glycosyl Transferases，GTs），多糖裂合酶（Polysaccharide Lyases，PLs），碳水化合物酯酶（Carbohydrate Esterases，CEs）， 
+			辅助氧化还原酶(Auxiliary Activities , AAs)和碳水化合物结合模块（Carbohydrate-Binding Modules， CBMs）。 
+			其中每一个大类有可以分类很多小的家族，比如CE1，CE2等等，注释结果中的CE0表示没有小家族分类的结果。</p>
+			<p>注释所用的CAZy的版本为：20151020，比对所用的软件为BLAST+（版本：2.2.29，参数: -evalue 1e-5）</p>
+			<p id="sub_9_3_1">CAZy注释结果表说明</p>
+			<ul>
+				<li>gene_id：基因ID</li>
+				<li>gene_start：基因的起始位置</li>
+				<li>gene_end：基因的终止位置</li>
+				<li>identity：相似度</li>
+				<li>evalue：期望值</li>
+				<li>subject_id：比对上的序列ID</li>
+				<li>description：功能描述</li>
+				<li>CAZy_levelB：CAZy B级分类</li>
+			</ul>
+			
+			<h3 id="sub_10">多样品间比较分析</h3>
+			<h5 id="sub_10_1">物种PCA分析</h5>
+			<p>根据各个样品中各个物种分类的丰度信息，进行PCA分析，从而判断样品之间的分类关系。这里选取门水平上的丰度信息来进行PCA分析。</p>
+			<h5 id="sub_10_2">功能PCA分析</h5>
+			<p>根据所有样品在各个数据库中的功能注释和丰度信息，选取全部某级功能分类中全部的分类及他们在每个样品中的丰度信息，
+			先对每个分类在各个样品中的数据进行Z值均一化， 然后再进行PCA分析（KEGG 选取第二层级进行，eggNOG 选取第三层级进行，CAZy 选取第二层级进行）。</p>
+			<h5 id="sub_10_3">物种聚类分析</h5>
+			<p>根据所有样品在某个分类水平上的相对丰度信息，我们可以计算样品间的Bray距离，然后根据Bray距离进行分层聚类，
+			这样可以判断样品在门分类水平上的相似性。 同时为了便于理解，将门水平上的物种分类堆叠图与Bray距离的聚类结果结合在一起展示</p>
+			<h5 id="sub_10_4">功能聚类分析</h5>
+			<p>根据所有样品在各个数据库1级分类水平上的相对丰度信息，我们可以计算样品间的Bray距离，然后根据Bray距离进行分层聚类，
+			这样可以判断样品在门分类水平上的相似性。同时为了便于理解，将1级功能分类堆叠图与Bray距离的聚类结果结合在一起展示。</p>
+			<h5 id="sub_10_5">功能注释统计</h5>
+			<p>综合各个数据库的注释结果，分别统计其注释基因个数及比率，然后绘制柱状图和韦恩图，并生成基因注释总表。</p>
+			<p id="sub_10_5_1">基因功能注释总表说明</p>
+			<ul>
+				<li>GENEID：基因ID；</li>
+				<li>length：基因的长度；</li>
+				<li>scaftigs_id：Scaftigs ID；</li>
+				<li>start：基因在Scaftigs上的起始位置；</li>
+				<li>end：基因在Scaftigs上的终止位置；</li>
+				<li>strand：链的方向，+表示正义链，-表示反义链；</li>
+				<li>taxonomy：基因所在Scaftigs的物种分类，不同层级的分类用分号分隔；</li>
+				<li>kegg_desc(bestHit)：基因在KEGG注释中的功能描述，取的最好的比对结果（打分值最高）；</li>
+				<li>kegg_anno(classA:classB:classC)s：KEGG的功能分类，不同的分类用分号分隔，每一个分类有包含三个层级的分类，用冒号分隔；</li>
+				<li>eggNOG_anno(classA)s：eggNOG的第一层级功能分类，每一个分类代表一个字母，多个字母表示多个分类；</li>
+				<li>CAZy_anno(classB)s：CAZy第二层级分类，不同的分类用分隔分隔；</li>
+			</ul>			
+		</div>
+	</body>
+</html>

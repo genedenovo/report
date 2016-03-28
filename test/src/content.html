@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!-- 基本信息 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>基迪奥生物 结题报告</title>
+		
+		<!-- CSS文档 -->
+		<link rel="stylesheet" type="text/css" href="css/report.css" />
+		<link rel="stylesheet" type="text/css" href="css/jumpto.css" />
+		<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css" />
+		
+		<!-- JS脚本 -->
+		<script src="js/jquery-1.9.1-min.js"></script>
+		<script src="js/modernizr-min.js"></script>
+		<script src="js/jquery.jumpto-min.js"></script>
+		<script src="js/jquery.nicescroll-min.js"></script>
+		<script src="js/easyResponsiveTabs-min.js"></script>
+		<script src="js/show_help-min.js"></script>
+		
+	</head>
+	<body>
+		<div id="report_body">
+<section id="introduction" class="normal_cont">
+<h3 >1 技术简介</h3>
+<h5 >1.1  实验简介</h5>
+<table class="pic_table">
+	<tr>
+		<td style="width: 50%"><a href="image/flow_001.png" target="_blank"><img src="image/flow_001.png" /></td>
+		<td class="pic_table_desc" style="width: 50%"><p>样品提取总RNA后，去除核糖体RNA，然后用Rnase R酶降解线性RNA。得到的环状RNA中加入fragmentation buffer使其片断成为短片段，再以片断后的环状RNA为模板，
+用六碱基随机引物（random hexamers）合成cDNA第一链，并加入缓冲液、dNTPs、RNase H和DNA polymerase I合成cDNA第二链，
+经过QiaQuick PCR试剂盒纯化并加EB缓冲液洗脱经末端修复、加碱基A，加测序接头，再经琼脂糖凝胶电泳回收目的大小片段，并进行PCR扩增，
+从而完成整个文库制备工作，构建好的文库用Illumina HiSeq<sup>TM</sup> 2500进行测序。
+</p></td>
+	</tr>
+	<tr>
+		<td>Fig 1-1-1 实验流程图</td>
+		<td></td>
+	</tr>
+</table>
+<h5 >1.2  信息分析简介</h5>
+<table class="pic_table">
+	<tr>
+		<td style="width: 50%"><a href="image/flow_002.png" target="_blank"><img src="image/flow_002.png" /></td>
+	</tr>
+	<tr>
+		<td>Fig 1-2-1 信息分析流程图</td>
+	</tr>
+</table>
+<p class="head">
+	<a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
+	<a href="http://www.genedenovo.com" title="访问公司官网" target="_blank">广州基迪奥生物科技有限公司</a>
+	<hr />
+</p>
+<br /><br />
+
+</section>
+<section class="normal_cont" id="seq_stat">
+<h3 >2 测序评估<a href="doc/seq_stat.html" target="help_page" onclick="show_help();"><img src="image/help.png" class="help_logo"></a></h3>
+<h5 >2.1  测序质量评估<a href="doc/seq_stat.html#sub_1" target="help_page" onclick="show_help();"><img src="image/help.png" class="help_logo"></a></h5>
+<table class="hl_table">
+	<caption>Tab 2-1-1 scaftigs物种注释及丰度表</caption>
+	<tr><th>Scaftig_id</th><th>A_avgDepth</th><th>B1_avgDepth</th><th>B2_avgDepth</th><th class="abbrTab" data=12>A_relativeAbundance</th><th class="abbrTab" data=12>B1_relativeAbundance</th><th class="abbrTab" data=12>B2_relativeAbundance</th><th>Kingdom</th><th>Phylum</th><th>Class</th><th>Order</th><th>Family</th><th>Genus</th><th>Species</th></tr>
+<tr><td>UCLUST_0_A_001</td><td>9.34</td><td>0</td><td>0</td><td>0.008531</td><td>0.000000</td><td>0.000000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>UCLUST_1_B2_01</td><td>5.71</td><td>2.88</td><td>10.49</td><td>0.005215</td><td>0.015315</td><td>0.024288</td><td>Bacteria</td><td>Proteobacteria</td><td class="abbrTab" data=12>Gammaproteobacteria</td><td class="abbrTab" data=12>Enterobacteriales</td><td class="abbrTab" data=12>Enterobacteriaceae</td><td></td><td></td></tr>
+<tr><td>UCLUST_2_A_002</td><td>6.98</td><td>0</td><td>0</td><td>0.006375</td><td>0.000000</td><td>0.000000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>UCLUST_3_A_003</td><td>9.51</td><td>0</td><td>0</td><td>0.008686</td><td>0.000000</td><td>0.000000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>UCLUST_4_A_004</td><td>8.64</td><td>0</td><td>0</td><td>0.007891</td><td>0.000000</td><td>0.000000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>UCLUST_5_A_005</td><td>6.28</td><td>0</td><td>0</td><td>0.005736</td><td>0.000000</td><td>0.000000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>UCLUST_6_A_006</td><td>7.54</td><td>0</td><td>0</td><td>0.006887</td><td>0.000000</td><td>0.000000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>UCLUST_7_A_007</td><td>6.79</td><td>0</td><td>0</td><td>0.006202</td><td>0.000000</td><td>0.000000</td><td></td><td></td><td></td><td>Caudovirales</td><td>Siphoviridae</td><td>Hk578likevirus</td><td class="abbrTab" data=12>Sodalis phage SO1</td></tr>
+<tr><td>UCLUST_8_A_008</td><td>11.42</td><td>0</td><td>0</td><td>0.010431</td><td>0.000000</td><td>0.000000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>UCLUST_9_A_009</td><td>6.27</td><td>0</td><td>0</td><td>0.005727</td><td>0.000000</td><td>0.000000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+ 
+</table>
+<h5 >2.2  碱基组成与质量分析</h5>
+<div id="parentVerticalTab1" class="VerticalTab">
+	<ul id="resp-tabs-list1" class="resp-tabs-list hor_1">
+		<li>A</li>
+		<li>B</li>
+		<li>C</li>
+
+	</ul>
+	<div id="resp-tabs-container1" class="resp-tabs-container hor_1">
+		<div>
+			<div height="80%"><a href="../01.reads/01.filter/A.readsClass.png" target="_blank"><img src="../01.reads/01.filter/A.readsClass.png" /></a></div>
+			<div height="20%"><p>样品A clean data 分布图</p></div>
+		</div>
+		<div>
+			<div height="80%"><a href="../01.reads/01.filter/B1.readsClass.png" target="_blank"><img src="../01.reads/01.filter/B1.readsClass.png" /></a></div>
+			<div height="20%"><p>样品B1 clean data 分布图</p></div>
+		</div>
+		<div>
+			<div height="80%"><a href="../01.reads/01.filter/B2.readsClass.png" target="_blank"><img src="../01.reads/01.filter/B2.readsClass.png" /></a></div>
+			<div height="20%"><p>样品B2 clean data 分布图</p></div>
+		</div>
+
+	</div>
+	<div>
+	<p class="img_title">Fig 2-2-1 </p>
+</div>
+
+</div>
+<p class="head">
+	<a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
+	<a href="http://www.genedenovo.com" title="访问公司官网" target="_blank">广州基迪奥生物科技有限公司</a>
+	<hr />
+</p>
+<br /><br />
+
+</section>
+<section id="seq_stat" class="normal_cont">
+<h3 >3 测序评估<a href="doc/seq_stat.html" target="help_page" onclick="show_help();"><img src="image/help.png" class="help_logo"></a></h3>
+<h5 >3.1  测序质量评估<a href="doc/seq_stat.html#sub_1" target="help_page" onclick="show_help();"><img src="image/help.png" class="help_logo"></a></h5>
+<div id="parentVerticalTab2" class="VerticalTab">
+	<ul id="resp-tabs-list2" class="resp-tabs-list hor_2">
+		<li>A</li>
+		<li>B1</li>
+		<li>B2</li>
+
+	</ul>
+	<div id="resp-tabs-container2" class="resp-tabs-container hor_2">
+		<div>
+			<a href="../01.reads/01.filter//A.readsClass.png" target="_blank"><img src="../01.reads/01.filter//A.readsClass.png" /></a>
+		</div>
+		<div>
+			<a href="../01.reads/01.filter//B1.readsClass.png" target="_blank"><img src="../01.reads/01.filter//B1.readsClass.png" /></a>
+		</div>
+		<div>
+			<a href="../01.reads/01.filter//B2.readsClass.png" target="_blank"><img src="../01.reads/01.filter//B2.readsClass.png" /></a>
+		</div>
+
+	</div>
+	<div>
+	<p class="img_title">Fig 3-1-1 </p>
+</div>
+
+</div>
+<h5 >3.2  碱基组成与质量分析<a href="doc/seq_stat.html#sub_3" target="help_page" onclick="show_help();"><img src="image/help.png" class="help_logo"></a></h5>
+<div id="parentVerticalTab3" class="VerticalTab">
+	<ul id="resp-tabs-list3" class="resp-tabs-list hor_3">
+		<li>A</li>
+		<li>B1</li>
+		<li>B2</li>
+
+	</ul>
+	<div id="resp-tabs-container3" class="resp-tabs-container hor_3">
+<div>
+<table class="pic_table">
+		<tr>
+			<td>
+				<a href="../01.reads/01.filter//A_clean.old.png" target="_blank"><img src="../01.reads/01.filter//A_clean.old.png" /></a>
+				<p>样品 <span class="sample_lab_strong">A</span> <span class="pic_table_strong">过滤前</span> 碱基组成分布图</p>
+			</td>
+			<td>
+				<a href="../01.reads/01.filter//A_clean.new.png" target="_blank"><img src="../01.reads/01.filter//A_clean.new.png" /></a>
+				<p>样品 <span class="sample_lab_strong">A</span> <span class="pic_table_strong">过滤后</span> 碱基组成分布图</p>
+			</td>
+		</tr>
+</table>
+</div>
+<div>
+<table class="pic_table">
+		<tr>
+			<td>
+				<a href="../01.reads/01.filter//B1_clean.old.png" target="_blank"><img src="../01.reads/01.filter//B1_clean.old.png" /></a>
+				<p>样品 <span class="sample_lab_strong">B1</span> <span class="pic_table_strong">过滤前</span> 碱基组成分布图</p>
+			</td>
+			<td>
+				<a href="../01.reads/01.filter//B1_clean.new.png" target="_blank"><img src="../01.reads/01.filter//B1_clean.new.png" /></a>
+				<p>样品 <span class="sample_lab_strong">B1</span> <span class="pic_table_strong">过滤后</span> 碱基组成分布图</p>
+			</td>
+		</tr>
+</table>
+</div>
+<div>
+<table class="pic_table">
+		<tr>
+			<td>
+				<a href="../01.reads/01.filter//B2_clean.old.png" target="_blank"><img src="../01.reads/01.filter//B2_clean.old.png" /></a>
+				<p>样品 <span class="sample_lab_strong">B2</span> <span class="pic_table_strong">过滤前</span> 碱基组成分布图</p>
+			</td>
+			<td>
+				<a href="../01.reads/01.filter//B2_clean.new.png" target="_blank"><img src="../01.reads/01.filter//B2_clean.new.png" /></a>
+				<p>样品 <span class="sample_lab_strong">B2</span> <span class="pic_table_strong">过滤后</span> 碱基组成分布图</p>
+			</td>
+		</tr>
+</table>
+</div>
+
+	</div>
+	<div>
+	<p class="img_title">Fig 3-2-1 </p>
+</div>
+
+</div>
+<h5 >3.3  过滤信息统计</h5>
+				<table class="hl_table">
+					<caption>Tab 3-3-1 过滤前后碱基信息统计表<a href="doc/seq_stat.html#sub_4_1" target="help_page" onclick="show_help();"><img src="image/help.png" class="help_logo"></a></caption>
+					<tr><th rowspan=2>Sample</th><th colspan=5>Before Filter</th><th colspan=5>After Filter</th></tr>
+					<tr><th>Clean Data(bp)</th><th>Q20(%)</th><th>Q30(%)</th><th>N(%)</th><th>GC(%)</th><th>HQ Clean Data(bp)</th><th>Q20(%)</th><th>Q30(%)</th><th>N(%)</th><th>GC(%)</th></tr>
+				<tr><td>A</td><td> 6250000 (100.00%) </td><td> 5955162 (95.28%) </td><td> 5659488 (90.55%) </td><td> 52 (0.00%) </td><td> 3526970 (56.43%) </td><td> 6249500 (99.99%) </td><td> 5954718 (95.28%) </td><td> 5659109 (90.55%) </td><td> 52 (0.00%) </td><td> 3526653 (56.43%) </td></tr>
+				<tr><td>B1</td><td> 6250000 (100.00%) </td><td> 5919289 (94.71%) </td><td> 5604058 (89.66%) </td><td> 41 (0.00%) </td><td> 3094553 (49.51%) </td><td> 6249500 (99.99%) </td><td> 5918859 (94.71%) </td><td> 5603675 (89.67%) </td><td> 41 (0.00%) </td><td> 3094304 (49.51%) </td></tr>
+				<tr><td>B2</td><td> 6250000 (100.00%) </td><td> 5966228 (95.46%) </td><td> 5681793 (90.91%) </td><td> 81 (0.00%) </td><td> 3460031 (55.36%) </td><td> 6249250 (99.99%) </td><td> 5965484 (95.46%) </td><td> 5681064 (90.91%) </td><td> 81 (0.00%) </td><td> 3459625 (55.36%) </td></tr>
+
+				</table>
+				
+				<p><br /></p>
+				
+				<table class="hl_table">
+					<caption>Tab 3-3-2 Reads 过滤信息统计表<a href="doc/seq_stat.html#sub_4_2" target="help_page" onclick="show_help();"><img src="image/help.png" class="help_logo"></a></caption>
+					<tr><th>Sample</th><th>Clean Reads Num</th><th>HQ Clean Reads Num(%)</th><th>Read Length</th><th>Adapter(%)</th><th>Low Quality(%)</th><th>Poly A(%)</th><th>N(%)</th></tr>
+				<tr><td>A</td><td> 50000 </td><td> 49996 (99.99%) </td><td> 125+125 </td><td> 2 (0.01%) </td><td> 0 (0%) </td><td> 0 (0%) </td><td> 0 (0%) </td></tr>
+				<tr><td>B1</td><td> 50000 </td><td> 49996 (99.99%) </td><td> 125+125 </td><td> 2 (0.01%) </td><td> 0 (0%) </td><td> 0 (0%) </td><td> 0 (0%) </td></tr>
+				<tr><td>B2</td><td> 50000 </td><td> 49994 (99.99%) </td><td> 125+125 </td><td> 3 (0.01%) </td><td> 0 (0%) </td><td> 0 (0%) </td><td> 0 (0%) </td></tr>
+
+				</table>
+<br />
+			</section>
+<p class="head">
+	<a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
+	<a href="http://www.genedenovo.com" title="访问公司官网" target="_blank">广州基迪奥生物科技有限公司</a>
+	<hr />
+</p>
+<br /><br />
+
+</section>
+<section id="assembly" class="normal_cont">
+<h3 >4 组装</h3>
+<p >assembly result</p>
+<table class="pic_table">
+	<tr>
+		<td style="width: 50%"><a href="../02.assembly/A/A.scaftigs.fasta.length_distribution.png" target="_blank"><img src="../02.assembly/A/A.scaftigs.fasta.length_distribution.png" /></a></td>
+		<td style="width: 50%"><a href="../02.assembly/B1/B1.scaftigs.fasta.length_distribution.png" target="_blank"><img src="../02.assembly/B1/B1.scaftigs.fasta.length_distribution.png" /></a></td>
+	</tr>
+	<tr>
+		<td>Fig 4-0-1 样本<span class="pic_table_strong">A</span>组装结果长度分布</td>
+		<td>Fig 4-0-2 样本<span class="pic_table_strong">B1</span>组装结果长度分布<br />说明：X轴表示Scaftigs的长度值，大于3000统一看做3000；左侧的Y轴（Frequence#）表示Scaftigs的数目（频数）， 右侧的Y轴（Percentage%）表示Scaftigs数目占Scaftigs总数的百分比。</td>
+	</tr>
+</table>
+<ul  >
+<li>scaftigs文件(fasta格式): <a href="../02.assembly/A/A.scaftigs.fasta" target="_blank">A.scaftigs.fasta</a></li>
+<li>scaftigs长度统计文件: <a href="../02.assembly/A/A.scaftigs.fasta.length" target="_blank">A.scaftigs.fasta.length</a></li>
+</ul>
+<p class="head">
+	<a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
+	<a href="http://www.genedenovo.com" title="访问公司官网" target="_blank">广州基迪奥生物科技有限公司</a>
+	<hr />
+</p>
+<br /><br />
+
+</section>
+		</div>
+		
+		<div id="goTop" style="display:none;">
+			<a title="返回顶部" class="backtotop">
+				<img class="back-top" src="image/goTop.jpg">
+			</a>
+		</div>
+		
+		<!-- 帮助文档窗口 -->
+		<div id="show_help">
+			<h3>帮助文档</h3>
+			<iframe id="help_page" name="help_page" src="http://www.genedenovo.com/"></iframe>
+		</div>
+		
+		<!-- JS插件初始化 -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#report_body").jumpto({
+					innerWrapper: "section",
+					firstLevel: "> h3",
+					secondLevel: "> h5",
+					offset: 0,
+					anchorTopPadding: 0,
+					animate: 600,
+					showTitle: "目录",
+					closeButton: false
+				});
+				for (var i = 1; i <= 9; i++){
+					$('#resp-tabs-list' + i).niceScroll({cursoropacitymax:0.5,cursorwidth:"8px"});
+					$('#resp-tabs-container' + i).niceScroll({cursoropacitymax:0.5,cursorwidth:"8px"});
+					$('#parentVerticalTab' + i).easyResponsiveTabs({
+						type: 'vertical', //Types: default, vertical, accordion
+						width: 'auto', //auto or any width like 600px
+						fit: true, // 100% fit in a container
+						closed: 'accordion', // Start closed if in accordion view
+						tabidentify: 'hor_' + i, // The tab groups identifier
+						activate: function(event) { // Callback function if tab is switched
+							var $tab = $(this);
+							var $info = $('#nested-tabInfo2');
+							var $name = $('span', $info);
+							$name.text($tab.text());
+							$info.show();
+						}
+					});
+				}
+			});
+			
+			/****表格悬浮显示全部内容****/
+			function messshow (info) {
+			var str='<div class="topBg"><div class="toppicBox"><div class="inBox" style="text-align:center;"><br><textarea class="pinfo" cols=56>'+info+'</textarea><br><br></div><img class="topClose" width="27" height="27" src="image/topclose.png" onclick="topclose()"></div></div>';
+				  $("body").append(str);}
+
+			function topclose(){
+			$(".topBg").remove();
+			}
+
+			$(function(){
+				$(".abbrTab").each(function(){
+				var len=$(this).attr("data");
+				var mess=$(this).text();
+				$(this).attr("title",mess);
+				if(mess.length>len-1){
+				mess=mess.substring(0,len-1);
+				mess +='<span class="brief">...</span>';
+			}
+				$(this).html(mess);
+
+				});
+
+				$(".brief").click(function(){
+				var info=$(this).parent().attr("title");
+				  messshow (info);
+				 });
+			});
+			
+			$('.hl_table tr').has('td').each(function(){
+				$(this).attr('onmouseover', 'this.style.backgroundColor = "#DDDDDD"');
+				$(this).attr('onmouseout', 'this.style.backgroundColor = "#FFFFFF"');
+			});
+			
+			$('.jumpto-first').css('maxHeight', ($(window).height()*0.98 - 48) + 'px');
+			$('.jumpto-first').niceScroll({cursoropacitymax:0.5,cursorwidth:"6px",cursorborder:"0px"});
+
+			$(".logo").click(function(){$(window).scrollTop(0);});
+		</script>
+	</body>
+</html>	

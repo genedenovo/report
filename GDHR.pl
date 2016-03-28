@@ -57,6 +57,7 @@ $report->seq_stat(-dir=>"01.reads/01.filter/");
 
 $section = $report->section(id=>"assembly");
 $section->menu("组装");
+$section->desc("assembly result");
 $section->img2html2(-file1=>"../02.assembly/A/A.scaftigs.fasta.length_distribution.png",
 	-file2=>"../02.assembly/B1/B1.scaftigs.fasta.length_distribution.png",
 	-name1=>"样本<span class=\"pic_table_strong\">A</span>组装结果长度分布",
@@ -66,6 +67,6 @@ $section->img2html2(-file1=>"../02.assembly/A/A.scaftigs.fasta.length_distributi
 @files = ("../02.assembly/A/A.scaftigs.fasta","../02.assembly/A/A.scaftigs.fasta.length");
 @desc = ("scaftigs文件(fasta格式)","scaftigs长度统计文件");
 $section->files2list(-files=>\@files,-desc=>\@desc);
-	
+
 $report->write();
 $report->pack(-format=>"zip");
