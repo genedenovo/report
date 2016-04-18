@@ -385,7 +385,7 @@ sub seq_stat
 	
 	# fetch the filter_fq result dir which must be defined 
 	my $dir = $opts{'-dir'} or ERROR("-dir must be defined in function <seq_stat>");
-	my @stat_files = glob("$outdir/$dir/*_clean.stat");
+	my @stat_files = glob("$dir/*.stat");
 	my @samples = $opts{'-samples'} ? @{$opts{'-samples'}} : fetch_samples(@stat_files);
 
 	my $section = $class->section(id=>"seq_stat");
@@ -572,7 +572,7 @@ sub fetch_samples
 	my @samples = map 
 	{
 		my $fname = basename($_);
-		my $sname = $1 if ($fname =~ /(.+)_clean.stat/);
+		my $sname = $1 if ($fname =~ /(.+)(_clean)?\.stat/);
 		$sname;
 	} @files;
 	
