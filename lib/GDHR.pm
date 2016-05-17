@@ -81,6 +81,7 @@ sub init_report
 	$class->{submenu_cnt} = 0;
 	$class->{img_cnt} = 0;
 	$class->{tab_cnt} = 0;
+	$class->{brief} = {};
 
 	# the report 's pipe type
 	my $pipe = $opts{'-pipe'} || "补充";
@@ -220,6 +221,8 @@ sub pack
 	my ($class,%opts) = @_;
 	
 	my $outdir = $class->{path}->{outdir};
+	chop $outdir if ($outdir =~ /\/$/);
+
 	my $format = $opts{'-format'} || "bz2";
 	
 	my $cmd = "";
@@ -280,6 +283,7 @@ HTML
 
 sub main_html_tail
 {
+	my $class = shift;
 	my $tail = <<HTML;
 		</div>
 		
@@ -308,7 +312,7 @@ sub main_html_tail
 					showTitle: "目录",
 					closeButton: false
 				});
-				for (var i = 1; i <= 9; i++){
+				for (var i = 1; i <= $class->{resp_tabs_cnt}; i++){
 					\$('#resp-tabs-list' + i).niceScroll({cursoropacitymax:0.5,cursorwidth:"8px"});
 					\$('#resp-tabs-container' + i).niceScroll({cursoropacitymax:0.5,cursorwidth:"8px"});
 					\$('#parentVerticalTab' + i).easyResponsiveTabs({
@@ -385,7 +389,7 @@ sub seq_stat
 	
 	# fetch the filter_fq result dir which must be defined 
 	my $dir = $opts{'-dir'} or ERROR("-dir must be defined in function <seq_stat>");
-	my @stat_files = glob("$dir/*.stat");
+	my @stat_files = glob("$outdir/$dir/*.stat");
 	my @samples = $opts{'-samples'} ? @{$opts{'-samples'}} : fetch_samples(@stat_files);
 
 	my $section = $class->section(id=>"seq_stat");
@@ -572,7 +576,21 @@ sub fetch_samples
 	my @samples = map 
 	{
 		my $fname = basename($_);
-		my $sname = $1 if ($fname =~ /(.+)(_clean)?\.stat/);
+		my $sname;
+		
+		if ($fname =~ /(.+)_clean\.stat/)
+		{
+			$sname = $1;
+		}
+		elsif ($fname =~ /(.+)\.stat/)
+		{
+			$sname = $1;
+		}
+		else 
+		{
+			WARN("your read stat file name is not support now, [$fname]");
+		}
+
 		$sname;
 	} @files;
 	

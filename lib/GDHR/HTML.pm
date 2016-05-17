@@ -14,6 +14,11 @@ Date: 2016-01-13 11:36:57
 Date: 01/20/2016 01:52:16 PM
 Update: add the help tag for each function
 
+=head2 v1.2 
+
+Date: 05/17/2016 09:00:55 AM
+Update: 
+
 =head1 Name
 
 HTML -- used to edit the content report html file 
@@ -138,6 +143,12 @@ sub desc
 
 	my $attrs = opts2attrs(%opts);
 	my $help = &help(%opts);
+	
+	if ($opts{'-pre'})
+	{
+		$str = "<pre>$str</pre>";
+	}
+	
 	my $html = qq(<p $attrs>$str$help</p>\n);
 	
 	$class->add_html($html);
@@ -197,11 +208,19 @@ sub tsv2html
 	my $tab = "";
 	open IN,$file or die "$file $!";
 	
+	if ($opts{'-skip'})
+	{
+		map { my $tmp = <IN>; }  1 .. $opts{'-skip'};
+	}
+	
 	if ($opts{'-header'})
 	{
 		my $header = <IN>;
 		my @values = split /\t/,$header;
 		chomp $values[-1];
+		
+		@values = &omits_some_columns(\%opts,@values);
+
 		@values = map {
 			my $len = length $_;
 			if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
@@ -216,15 +235,18 @@ sub tsv2html
 		
 		$tab .= "<tr>" . ${ [ join "",@values ]}[0] . "</tr>\n"
 	}
-	
+
 	my $i = 0;
 	while(<IN>)
 	{
+		next if (/^#/);
+
 		$i ++;
 		last if $i > $top;
 
 		my @values = split /\t/;
 		chomp $values[$#values];
+		@values = &omits_some_columns(\%opts,@values);
 
 		@values = map {
 			my $len = length $_;
@@ -247,6 +269,7 @@ sub tsv2html
 	<caption>$order $name$help</caption>
 	$tab 
 </table>
+<br />
 HTML
 	
 	$class->add_html($tab_html);
@@ -273,7 +296,7 @@ sub img2html
 		<td class="pic_table_desc" style="width: 50%"><p>$opts{'-desc'}</p></td>
 	</tr>
 	<tr>
-		<td>$order $name$help</td>
+		<td class="img_title">$order $name$help</td>
 		<td></td>
 	</tr>
 </table>
@@ -288,9 +311,10 @@ HTML
 		<td style="width: 50%"><a href="$dir" target="_blank"><img src="$dir" /></td>
 	</tr>
 	<tr>
-		<td>$order $name$help</td>
+		<td class="img_title">$order $name$help</td>
 	</tr>
 </table>
+<br />
 HTML
 	}
 	
@@ -313,16 +337,6 @@ sub img2html2
 	my $order1 = $class->img_order();
 	my $order2 = $class->img_order();
 	
-	if ($desc1)
-	{
-		$name1 .= "<br />$desc1";
-	}
-
-	if ($desc2)
-	{
-		$name2 .= "<br />$desc2";
-	}
-	
 	my $help1 = $opts{'-help1'} ? &help('-help'=>$opts{'-help1'}) : "";
 	my $help2 = $opts{'-help2'} ? &help('-help'=>$opts{'-help2'}) : "";
 
@@ -333,10 +347,15 @@ sub img2html2
 		<td style="width: 50%"><a href="$file2" target="_blank"><img src="$file2" /></a></td>
 	</tr>
 	<tr>
-		<td>$order1 $name1$help1</td>
-		<td>$order2 $name2$help2</td>
+		<td class="img_title">$order1 $name1$help1</td>
+		<td class="img_title">$order2 $name2$help2</td>
+	</tr>
+	<tr>
+		<td align="left">$desc1</td>
+		<td align="left">$desc2</td>
 	</tr>
 </table>
+<br />
 HTML
 
 	$class->add_html($html);
@@ -419,6 +438,7 @@ $images_div
 	</div>
 	$name
 </div>
+<br />
 HTML
 	$class->add_html($html);
 }
@@ -522,6 +542,7 @@ $images_div
 	</div>
 	$name
 </div>
+<br />
 HTML
 	$class->add_html($html);
 }
@@ -550,7 +571,7 @@ sub add_html
 sub opts2attrs
 {
 	my %opts = @_;
-	my %besides = (parent=>1,help=>1,files=>1,desc=>1);
+	my %besides = (parent=>1,help=>1,files=>1,desc=>1,pre=>1);
 
 	my @attrs = map {
 		my $name = $_;
@@ -611,4 +632,37 @@ sub tab_order
 	$class->{parent}->{tab_cnt} ++;
 	my $order = "Tab $class->{parent}->{menu_cnt}-$class->{parent}->{submenu_cnt}-$class->{parent}->{tab_cnt}";
 	return $order;
+}
+
+sub omits_some_columns
+{
+	my ($hash,@values) = @_;
+	
+	return @values unless $hash->{'-omits'};
+
+	my @tmp = split /,/,$hash->{'-omits'};
+	my @omits;
+	foreach (@tmp)
+	{
+		if (/^\d+$/)
+		{
+			push @omits , [$_,$_];
+		}
+		elsif (/(\d+)\s*[:-]\s*(\d+)/) 
+		{
+			my ($start,$end) = ($1,$2);
+			ERROR("the omits values defined is error, [$start > $end] !") if ($end < $start);
+			push @omits , [$start,$end];
+		}
+	}
+	
+	foreach (sort {$b->[0] <=> $a->[0]} @omits)
+	{
+		my ($start,$end) = @$_;
+		my $len = $end - $start + 1;
+		
+		splice(@values,$start-1,$len,("..."));
+	}
+	
+	return @values;
 }
