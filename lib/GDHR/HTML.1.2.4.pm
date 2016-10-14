@@ -94,25 +94,9 @@ HTML
 </p>
 <br /><br />
 HTML
-	$hash->{tail} = "</section>\n";
+	$hash->{tail} = "$split_line\n</section>\n";
 	$hash->{main} = "";
 	$hash->{parent} = $parent;
-	
-	if ($opts{'-break'})
-	{
-		$hash->{head} = <<HTML;
-<div style="page-break-after:always;"></div>";
-$split_line
-$hash->{head}
-HTML
-	}
-	elsif ($opts{'-page_head'})
-	{
-		$hash->{head} = <<HTML;
-$split_line
-$hash->{head}
-HTML
-	}
 
 	bless $hash , $class;
 	return $hash;
@@ -575,27 +559,6 @@ HTML
 	$class->add_html($html);
 }
 
-#-------------------------------------------------------------------------------
-# force add a page break
-#-------------------------------------------------------------------------------
-sub break 
-{
-	my $class = shift;
-	my $split_line = <<HTML;
-<p class="head">
-	<a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
-	<a href="http://www.genedenovo.com" title="访问公司官网" target="_blank">广州基迪奥生物科技有限公司</a>
-	<hr />
-</p>
-<br /><br />
-HTML
-	my $html = <<HTML;
-<div style="page-break-after:always;"></div>
-$split_line
-HTML
-	$class->add_html($html);
-}
-
 # return the inner code of HTML object
 sub innerHTML 
 {
@@ -620,7 +583,7 @@ sub add_html
 sub opts2attrs
 {
 	my %opts = @_;
-	my %besides = (parent=>1,help=>1,files=>1,desc=>1,pre=>1,break=>1,"page_head"=>1);
+	my %besides = (parent=>1,help=>1,files=>1,desc=>1,pre=>1);
 
 	my @attrs = map {
 		my $name = $_;

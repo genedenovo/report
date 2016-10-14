@@ -18,9 +18,7 @@ use GDHR;
 
 my $dir = shift;
 
-my $outdir = "reads";
-my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"Reads QC Report");
-
-$report->seq_stat(-dir=>$dir);
+my $report = GDHR->new('-outdir'=>$dir,-pipe=>"Reads QC Report");
+$report->seq_stat(-dir=>"./");
 $report->write();
 $report->pack(-format=>"zip")

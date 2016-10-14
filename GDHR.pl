@@ -36,14 +36,14 @@ HTML
 my $outdir = "test";
 my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"meta Genome");
 
-my $section = $report->section(id=>"introduction");
+my $section = $report->section(id=>"introduction",-page_head=>1);
 $section->menu("技术简介");
 $section->submenu("实验简介");
 $section->img2html(-file=>"image/flow_001.png",-name=>"实验流程图",-desc=>$flow1_desc);
 $section->submenu("信息分析简介");
 $section->img2html(-file=>"image/flow_002.png",-name=>"信息分析流程图");
 
-$section = $report->section(id=>"seq_stat");
+$section = $report->section(id=>"seq_stat",-break=>1);
 $section->menu("测序评估",-help=>"seq_stat.html");
 $section->submenu("测序质量评估",-help=>"seq_stat.html#sub_1");
 $section->tsv2html(-file=>"$outdir/05.taxonomy/all.scaftigs.profiling.xls",-name=>"scaftigs物种注释及丰度表",-header=>1,-max_chars=>12);
@@ -52,6 +52,8 @@ my @names = ("A","B","C");
 my @files = ("../01.reads/01.filter/A.readsClass.png","../01.reads/01.filter/B1.readsClass.png","../01.reads/01.filter/B2.readsClass.png");
 my @desc = ("样品A clean data 分布图","样品B1 clean data 分布图","样品B2 clean data 分布图");
 $section->imgs2html(-files=>\@files,-names=>\@names,-desc=>\@desc,-id=>3);
+
+$section->break;
 
 $report->seq_stat(-dir=>"01.reads/01.filter/");
 

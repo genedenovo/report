@@ -46,6 +46,7 @@ p.head {text-align: right; color: grey;}
 p.img_title {text-align: center; color: #009933; font-size: 16px; font-weight: bold; margin-top: 8px; }
 p.img_note {text-align: center; color: black; margin-bottom: 8px; }
 
+
 table {
 	width: 100%;
 	border: 0px;
@@ -67,6 +68,8 @@ table caption{
 	color: #009933;
 	margin-bottom: 8px;
 }
+
+td.img_title {text-align: center; color: #009933; font-size: 16px; font-weight: bold; margin-top: 8px; }
 
 h3 {
 	font-size: 18px;
