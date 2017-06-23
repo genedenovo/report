@@ -1,7 +1,0 @@
-CLASS	A	B1	B2
-GH:Glycoside Hydrolases	38.7060	0.7788	7.3614
-GT:Glycosyl Transferases	7.8493	0.0000	0.0000
-PL:Polysaccharide Lyases	0	0	0
-CE:Carbohydrate Esterases	3.5439	0.5614	1.2719
-AA:Auxiliary Activities	0	0	0
-CBM:Carbohydrate-Binding Modules	8.0193	0.3732	5.8850

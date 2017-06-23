@@ -1,7 +1,0 @@
-KEGG_A_class	KEGG_B_class	Pathway	Count (12)	Pathway ID	Genes	KOs
-Environmental Information Processing	Membrane transport	ABC transporters	6	ko02010	gene_10;gene_11;gene_12;gene_35;gene_8;gene_9	K01995+K01996+K01999+K10112+K01997+K01998
-Metabolism	Metabolism of cofactors and vitamins	Nicotinate and nicotinamide metabolism	2	ko00760	gene_45;gene_46	K00325+K00324
-Metabolism	Metabolism of cofactors and vitamins	Vitamin B6 metabolism	1	ko00750	gene_26	K00868
-Metabolism	Carbohydrate metabolism	Amino sugar and nucleotide sugar metabolism	1	ko00520	gene_37	K00884
-Metabolism	Nucleotide metabolism	Purine metabolism	1	ko00230	gene_25	K01951
-Metabolism	Carbohydrate metabolism	Galactose metabolism	1	ko00052	gene_40	K08302
