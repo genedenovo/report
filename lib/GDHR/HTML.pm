@@ -19,6 +19,10 @@ Update: add the help tag for each function
 Date: 05/17/2016 09:00:55 AM
 Update: 
 
+=head2 v1.2.6
+
+Date: 06/08/2017 11:37:14 AM
+
 =head1 Name
 
 HTML -- used to edit the content report html file 
@@ -101,7 +105,7 @@ HTML
 	if ($opts{'-break'})
 	{
 		$hash->{head} = <<HTML;
-<div style="page-break-after:always;"></div>";
+<div style="page-break-after:always;"></div>
 $split_line
 $hash->{head}
 HTML
@@ -243,7 +247,7 @@ sub tsv2html
 			my $len = length $_;
 			if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
 			{
-				qq(<th class="abbrTab" data=$opts{'-max_chars'}>$_</th></thead>);
+				qq(<th class="abbrTab" data=$opts{'-max_chars'}>$_</th>);
 			}
 			else 
 			{
@@ -400,13 +404,14 @@ sub imgs2html
 	# defined the img title and its description
 	my $name = $opts{'-name'} || "";
 	my $note = $opts{'-note'} || "";
+	my $help = &help(%opts);
 	my $order = $class->img_order();
 	if ($note)
 	{
 		$name = <<TEMP;
 <div>
-	<p class="img_title">$order $name</p>
-	<p class="img_note">$note</p>
+	<p class="img_title">$order $name$help</p>
+	<p class="img_note">$note</p><br /><br />
 </div>
 TEMP
 	}
@@ -414,7 +419,7 @@ TEMP
 	{
 		$name = <<TEMP;
 <div>
-	<p class="img_title">$order $name</p>
+	<p class="img_title">$order $name$help</p>
 </div>
 TEMP
 	}
@@ -485,14 +490,14 @@ sub imgs2html2
 	# defined the img title and its description
 	my $name = $opts{'-name'} || "";
 	my $note = $opts{'-note'} || "";
+	my $help = &help(%opts);
 	my $order = $class->img_order();
 	if ($note)
 	{
 		$name = <<TEMP;
 <div>
-	<p class="img_title">$order $name</p>
-	<br />
-	<p class="img_note">$note</p>
+	<p class="img_title">$order $name$help</p>
+	<p class="img_note">$note</p><br /><br />
 </div>
 TEMP
 	}
@@ -500,7 +505,7 @@ TEMP
 	{
 		$name = <<TEMP;
 <div>
-	<p class="img_title">$order $name</p>
+	<p class="img_title">$order $name$help</p>
 </div>
 TEMP
 	}
@@ -670,7 +675,7 @@ sub img_order
 	my $class = shift;
 	
 	$class->{parent}->{img_cnt} ++;
-	my $order = "Fig $class->{parent}->{menu_cnt}-$class->{parent}->{submenu_cnt}-$class->{parent}->{img_cnt}";
+	my $order = qq(Fig <span style="color:red">$class->{parent}->{menu_cnt}-$class->{parent}->{submenu_cnt}-$class->{parent}->{img_cnt}</span>);
 	
 	return $order;
 }
@@ -679,7 +684,7 @@ sub tab_order
 {
 	my $class = shift;
 	$class->{parent}->{tab_cnt} ++;
-	my $order = "Tab $class->{parent}->{menu_cnt}-$class->{parent}->{submenu_cnt}-$class->{parent}->{tab_cnt}";
+	my $order = qq(Tab <span style="color:red">$class->{parent}->{menu_cnt}-$class->{parent}->{submenu_cnt}-$class->{parent}->{tab_cnt}</span>);
 	return $order;
 }
 

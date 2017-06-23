@@ -36,6 +36,11 @@ Update: add the packaged section, like seq_stat, pathway enrich, annotation etc.
 Date: 03/28/2016 03:45:00 PM
 Update: fix the bug of desc which can't work
 
+=head2 v1.2.6
+
+Date: 2017/06/05
+Update: set the order of func_table to default 
+
 =cut
 
 use strict;
@@ -370,7 +375,7 @@ sub main_html_tail
 				  messshow (info);
 				 });
 				
-				\$(".func_table").DataTable({"scrollX": true} );
+				\$(".func_table").DataTable({"ordering": false,"scrollX": true} );
 			});
 			
 			\$('.hl_table tr').has('td').each(function(){
@@ -407,7 +412,7 @@ sub seq_stat
 	my @stat_files = glob("$outdir/$dir/*.stat");
 	my @samples = $opts{'-samples'} ? @{$opts{'-samples'}} : fetch_samples(@stat_files);
 
-	my $section = $class->section(id=>"seq_stat");
+	my $section = $class->section(id=>"seq_stat",-page_head=>1);
 	
 	$section->menu("测序评估",-help=>"seq_stat.html");
 	$section->submenu("测序质量评估",-help=>"seq_stat.html#sub_1");
@@ -446,16 +451,17 @@ sub stat_reads
 		while (my $line = <IN>)
 		{
 			chomp $line;
-			$flag = 1 if ($line =~ /^before\ filter/);
+			$flag = 1 if ($line =~ /^after\ filter/);
+            $flag = 2 if ($line =~ /^filter\ step\ info/);
 			my @data = split /\s+/,$line;
-			if ($flag){
+            if (0 == $flag){
 				if ($line =~ /^total\s+reads\s+nt/){
 					$useful{b_r_n} = $data[3];
-				}
+                }
 				if ($line =~ /^total\s+reads\s+\d+/){
 					$useful{b_r} = $data[3]+$data[4];
 				}
-				if ($line =~ /^reads\s+len/){
+				if ($line =~ /^max\/min\s+len/){
 					$useful{len} = $data[2];
 				}
 				if ($line =~ /^Q20\s+number/){
@@ -482,12 +488,13 @@ sub stat_reads
 				if ($line =~ /^GC\s+percentage/){
 					$useful{b_GC_p} = $data[2];
 				}
+            }elsif (2 == $flag){
 				if ($line =~ /^clean\s+reads/){
 					$useful{c_r_p} = $data[-1];
-				}
+                }
 				if ($line =~ /filter\s+adapter/){
 					$useful{adp_n} = $data[-2]+$data[-4];
-					$data[-1] =~ s/\%$//;
+                    $data[-1] =~ s/\%$//;
 					$data[-3] =~ s/\%$//;
 					$useful{adp_p} = $data[-1]+$data[-3];
 					$useful{adp_p} .= "%";
@@ -496,12 +503,12 @@ sub stat_reads
 				if ($line =~ /low\s+quality/){
 					$useful{lq_n} = $data[-2];
 					$useful{lq_p} = "($data[-1])";
-				}
+                }
 				if ($line =~ /poly\s+A/){
-					if($line =~ /\<y\/n\>\ \:\ y/){
+					if($line =~ /\<yes\/no\>\ \:\ yes/){
 						$useful{pla_n} = $data[-2];
 						$useful{pla_p} = "($data[-1])";
-					}else{
+                    }else{
 						$useful{pla_n} = "0";
 						$useful{pla_p} = "(0%)";
 					}
@@ -510,13 +517,13 @@ sub stat_reads
 					$useful{fN_n} = $data[-2];
 					$useful{fN_p} = $data[-1];
 				}
-			}else{
+            }else{
 				if ($line =~ /^total\s+reads\s+nt/){
 					$useful{a_r_n} = $data[3];
-				}
+                }
 				if ($line =~ /^total\s+reads\s+\d+/){
 					$useful{a_r} = $data[3]+$data[4];
-				}
+                }
 				if ($line =~ /^Q20\s+number/){
 					$useful{a_q20_n} = $data[2];
 				}
@@ -552,7 +559,8 @@ sub stat_reads
 		$reads_stat_line1 .= <<TEMP;
 				<tr><td>$sample</td><td> $useful{b_r_n} ($useful{b_r_p}) </td><td> $useful{b_q20_n} ($useful{b_q20_p}) </td><td> $useful{b_q30_n} ($useful{b_q30_p}) </td><td> $useful{b_N_n} ($useful{b_N_p}) </td><td> $useful{b_GC_n} ($useful{b_GC_p}) </td><td> $useful{a_r_n} ($useful{a_r_p}) </td><td> $useful{a_q20_n} ($useful{a_q20_p}) </td><td> $useful{a_q30_n} ($useful{a_q30_p}) </td><td> $useful{a_N_n} ($useful{a_N_p}) </td><td> $useful{a_GC_n} ($useful{a_GC_p}) </td></tr>
 TEMP
-		$reads_stat_line2 .= <<TEMP;
+        
+        $reads_stat_line2 .= <<TEMP;
 				<tr><td>$sample</td><td> $useful{b_r} </td><td> $useful{a_r} ($useful{c_r_p}) </td><td> $useful{len} </td><td> $useful{adp_n} $useful{adp_p} </td><td> $useful{lq_n} $useful{lq_p} </td><td> $useful{pla_n} $useful{pla_p} </td><td> $useful{fN_n} ($useful{fN_p}) </td></tr>
 TEMP
 	}
