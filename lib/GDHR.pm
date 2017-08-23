@@ -496,7 +496,7 @@ sub stat_reads
 					$useful{adp_n} = $data[-2]+$data[-4];
                     $data[-1] =~ s/\%$//;
 					$data[-3] =~ s/\%$//;
-					$useful{adp_p} = $data[-1]+$data[-3];
+					$useful{adp_p} = $data[-1];
 					$useful{adp_p} .= "%";
 					$useful{adp_p} = "(".$useful{adp_p}.")";
 				}
