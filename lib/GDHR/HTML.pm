@@ -128,7 +128,7 @@ sub menu
 	my ($class,$str,%opts) = @_;
 	
 	$class->{parent}->{menu_cnt} ++;
-	$class->{parent}->{submenu_cnt} = 0;
+	$class->{parent}->{submenu_cnt} = 1;
 	$class->{parent}->{img_cnt} = 0;
 	$class->{parent}->{tab_cnt} = 0;
 	my $order  = $class->{parent}->{menu_cnt};
@@ -145,10 +145,10 @@ sub submenu
 {
 	my ($class,$str,%opts) = @_;
 	
-	$class->{parent}->{submenu_cnt} ++;
 	$class->{parent}->{img_cnt} = 0;
 	$class->{parent}->{tab_cnt} = 0;
 	my $order = "$class->{parent}->{menu_cnt}.$class->{parent}->{submenu_cnt} ";
+	$class->{parent}->{submenu_cnt} ++;
 
 	my $attrs = opts2attrs(%opts);
 	my $help = &help(%opts);
