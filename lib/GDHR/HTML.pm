@@ -675,7 +675,8 @@ sub img_order
 	my $class = shift;
 	
 	$class->{parent}->{img_cnt} ++;
-	my $order = qq(Fig <span style="color:red">$class->{parent}->{menu_cnt}-$class->{parent}->{submenu_cnt}-$class->{parent}->{img_cnt}</span>);
+	my $submenu_cnt = $class->{parent}->{submenu_cnt} - 1;
+	my $order = qq(Fig <span style="color:red">$class->{parent}->{menu_cnt}-$submenu_cnt-$class->{parent}->{img_cnt}</span>);
 	
 	return $order;
 }
@@ -684,7 +685,8 @@ sub tab_order
 {
 	my $class = shift;
 	$class->{parent}->{tab_cnt} ++;
-	my $order = qq(Tab <span style="color:red">$class->{parent}->{menu_cnt}-$class->{parent}->{submenu_cnt}-$class->{parent}->{tab_cnt}</span>);
+	my $submenu_cnt = $class->{parent}->{submenu_cnt} - 1;
+	my $order = qq(Tab <span style="color:red">$class->{parent}->{menu_cnt}-$submenu_cnt-$class->{parent}->{tab_cnt}</span>);
 	return $order;
 }
 
