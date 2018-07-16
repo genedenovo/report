@@ -389,6 +389,12 @@ sub main_html_tail
 			});
 			
 			\$(".logo").click(function(){\$(window).scrollTop(0);});
+
+			var width = \$('.func_table:eq(0)').parents('section').width()
+				\$(".func_table caption").css('width',width);
+				\$(".func_table").parents('.dataTables_scrollBody').scroll(function(){
+				\$(this).parent().find('caption').css('margin-left',\$(this).scrollLeft());
+			});
 		</script>
 	</body>
 </html>	
