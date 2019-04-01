@@ -95,9 +95,26 @@ sub init_report
 	# the main index name 
 	my $name = $opts{'-name'} || "index";
 	$class->{name} = $name;
-
-	# copy the config files to outdir
+	
+    # copy the config files to outdir
 	$class->cp_conf_files();
+    
+    # the company info
+    my $company = $opts{'-company'} || "基迪奥生物";
+    my $fullname = $company eq "基迪奥生物" ? "广州基迪奥生物科技有限公司" : $company;
+    my $url     = $opts{'-url'} || "http://www.genedenovo.com";
+    $class->{company} = $company;
+    $class->{company_fullname} = $fullname;
+    $class->{url} = $url;
+    $class->{logo} = "genedenovo_logo.png";
+    unless ($company eq "基迪奥生物"){
+        system("rm -f $outdir/src/image/genedenovo_logo.png");
+    }
+
+    if ($opts{'-logo'}){
+        system("cp $opts{'-logo'} $outdir/src/image");
+        $class->{logo} = basename($opts{'-logo'});
+    }
 	
 	# create the main html file
 	$class->init_index_html();
@@ -122,6 +139,7 @@ sub init_index_html
 {
 	my $class = shift;
 	my $pipe = $class->{pipe};
+    my $company = $class->{company};
 	my $outdir = $class->{path}->{outdir};
 	
 	my $html = <<HTML;
@@ -130,7 +148,7 @@ sub init_index_html
 	<head>
 		<!-- 基本信息 -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>基迪奥生物 结题报告</title>
+		<title>$company 结题报告</title>
 		
 		<!-- CSS文档 -->
 		<link rel="stylesheet" type="text/css" href="src/css/index.css" />
@@ -143,7 +161,7 @@ sub init_index_html
 		<section>
 			<div id="header_banner">
 				<div id="banner_logo"></div>
-				<div id="banner_title">基迪奥生物 <span> $pipe分析 </span> 结题报告</div>
+				<div id="banner_title">$company <span> $pipe分析 </span> 结题报告</div>
 				<div id="banner_bg_image"></div>
 			</div>
 		</section>
@@ -260,14 +278,16 @@ sub pack
 }
 
 sub main_html_head
-{	
+{
+    my $class = shift;
+    my $company = $class->{company};
 	my $head = <<HTML;
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
 		<!-- 基本信息 -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>基迪奥生物 结题报告</title>
+		<title>$company 结题报告</title>
 		
 		<!-- CSS文档 -->
 		<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css" />
@@ -294,6 +314,7 @@ HTML
 sub main_html_tail
 {
 	my $class = shift;
+    my $url = $class->{url};
 	my $tail = <<HTML;
 		</div>
 		
@@ -306,7 +327,7 @@ sub main_html_tail
 		<!-- 帮助文档窗口 -->
 		<div id="show_help">
 			<h3>帮助文档</h3>
-			<iframe id="help_page" name="help_page" src="http://www.genedenovo.com/"></iframe>
+			<iframe id="help_page" name="help_page" src="$url"></iframe>
 		</div>
 		
 		<!-- JS插件初始化 -->

@@ -81,6 +81,9 @@ HTML
 sub section
 {
 	my ($class,$parent,%opts) = @_;
+    my $company = $parent->{company_fullname};
+    my $url = $parent->{url};
+
 	$opts{'class'} ||= "normal_cont";
 	
 	my $hash = {};
@@ -93,7 +96,7 @@ HTML
 	my $split_line = <<HTML;
 <p class="head">
 	<a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
-	<a href="http://www.genedenovo.com" title="访问公司官网" target="_blank">广州基迪奥生物科技有限公司</a>
+	<a href="$url" title="访问公司官网" target="_blank">$company</a>
 	<hr />
 </p>
 <br /><br />
@@ -181,7 +184,8 @@ sub files2list
 	
 	my $files = $opts{'-files'} or ERROR("-files must be defined in function <files2list>");
 	my $desc = $opts{'-desc'} or ERROR("-desc must be defined in function <files2list>");
-	my @fnames = map { basename($_) } @$files;
+    my $short_dir = $opts{'-short_dir'} // 0 ;
+	my @fnames = map { $short_dir ? basename($_) : s/^\.\.//r; } @$files;
 
 	my @lies = map { qq(<li>$desc->[$_]: <a href="$files->[$_]" target="_blank">$fnames[$_]</a></li>) } 0 .. $#$files;
 	my $li = join "\n" , @lies;
@@ -199,7 +203,80 @@ HTML
 
 sub matrix2html
 {
+	my ($class,%opts) = @_;
+
+    my $top = $opts{top} ? $opts{top} : $opts{'-top'} ? $opts{'-top'} : 10;
+	my $name = $opts{'-name'} or ERROR("-name must be defined in function <matrix2html>");
+	$opts{'-header'} = 1 if (! defined $opts{header});
+	my $matrix = $opts{'-matrix'} or ERROR("-matrix must be defined in function <matrix2html>");
+	my $help = &help(%opts);
+	my $class_name = $opts{'-class'} || "func_table";
+	my $width = $opts{'-width'} || "100%";
+    
+	my $order = $class->tab_order();
+
+	my $tab = "";
+
+    map { shift @$matrix } 1 .. $opts{'-skip'} if $opts{'-skip'};
 	
+    if ($opts{'-header'})
+	{
+		my $header = shift @$matrix;
+		my @values = @$header;
+		@values = &omits_some_columns(\%opts,@values);
+
+		@values = map {
+			my $len = length $_;
+			if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
+			{
+				qq(<th class="abbrTab" data=$opts{'-max_chars'}>$_</th>);
+			}
+			else 
+			{
+				"<th>$_</th>"
+			}
+		} @values;
+		
+		$tab .= "<thead><tr>" . ${ [ join "",@values ]}[0] . "</tr></thead>\n"
+	}
+	
+	$tab .= "<tbody>\n";
+	
+    my $i = 0;
+	foreach (@$matrix)
+	{
+		$i ++;
+		last if $i > $top;
+
+		my @values = @$_;
+		@values = &omits_some_columns(\%opts,@values);
+
+		@values = map {
+			my $len = length $_;
+			if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
+			{
+				qq(<td class="abbrTab" data=$opts{'-max_chars'}>$_</td>);
+			}
+			else 
+			{
+				"<td>$_</td>";
+			}
+		} @values;
+
+		$tab .= "<tr>" . ${ [ join "",@values ]}[0] . "</tr>\n";
+	}
+	
+	$tab .= "</tbody>\n";
+	
+    my $tab_html = <<HTML;
+<table class="$class_name nowrap" width="$width">
+	<caption>$order $name$help</caption>
+	$tab 
+</table>
+<br />
+HTML
+	
+	$class->add_html($tab_html);
 }
 
 # fetch the top lines of table, and turn it to html table
@@ -308,6 +385,7 @@ sub img2html
 	
 	my $dir = $opts{'-file'} or ERROR("-file must be defined in function <img2html>");
 	my $name = $opts{'-name'} or ERROR("-name must be defined in function <img2html>");
+    my $width = $opts{'-width'} || "50%";
 	my $help = &help(%opts);
 	
 	my $order = $class->img_order();
@@ -318,7 +396,7 @@ sub img2html
 		$html = <<HTML;
 <table class="pic_table">
 	<tr>
-		<td style="width: 50%"><a href="$dir" target="_blank"><img src="$dir" /></td>
+		<td style="width: $width"><a href="$dir" target="_blank"><img src="$dir" /></td>
 		<td class="pic_table_desc" style="width: 50%"><p>$opts{'-desc'}</p></td>
 	</tr>
 	<tr>
@@ -334,7 +412,7 @@ HTML
 		$html = <<HTML;
 <table class="pic_table">
 	<tr>
-		<td style="width: 50%"><a href="$dir" target="_blank"><img src="$dir" /></td>
+		<td><a href="$dir" target="_blank"><img src="$dir" width="$width"/></td>
 	</tr>
 	<tr>
 		<td class="img_title">$order $name$help</td>
@@ -586,10 +664,12 @@ HTML
 sub break 
 {
 	my $class = shift;
+    my $company = $class->{parent}->{company_fullname};
+    my $url = $class->{parent}->{url};
 	my $split_line = <<HTML;
 <p class="head">
 	<a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
-	<a href="http://www.genedenovo.com" title="访问公司官网" target="_blank">广州基迪奥生物科技有限公司</a>
+	<a href="$url" title="访问公司官网" target="_blank">$company</a>
 	<hr />
 </p>
 <br /><br />

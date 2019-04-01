@@ -15,13 +15,32 @@ use FindBin qw($Bin);
 use lib "$Bin/lib/";
 use GDHR;
 
+my $array = [
+["ID","Name","Age","Height"],
+[1,"Peng",31,170],
+[2,"Xing",29,175],
+[3,"Yao",6,124]
+];
+
 my $outdir = "test";
-my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"meta Genome");
+my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"meta Genome",-company=>"OS",-url=>"http://www.omicshare.com");
 
 my $section = $report->section(id=>"introduction",-page_head=>1);
 $section->menu("h1");
 $section->submenu("h2");
 $section->tsv2html(-file=>"/Bio/User/aipeng/project/tmp/pca/target/6.GO_enrich_heatmap/DEGs/DEGs_enrich/G_72hvsG_0h.DEG_GO_enrichment_result_all.xls",-name=>"test",-header=>1,-max_chars=>12);
+$section->matrix2html(-matrix=>$array,-name=>"family",-header=>1);
+$section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
 $section->break;
+
+my $diff_sec = $report->section(id=>"diff");
+$diff_sec->menu("edgeR");
+$diff_sec->menu("DEseq2");
+
+$section->menu("h3");
+$section->submenu("h3_sub");
+
+$diff_sec->submenu("enrich");
+
 $report->write();
 $report->pack(-format=>"zip");
