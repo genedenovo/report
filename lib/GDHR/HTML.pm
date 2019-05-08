@@ -139,7 +139,6 @@ sub menu
 	my $attrs = opts2attrs(%opts);
 	my $help = &help(%opts);
 	my $html = qq(<h3 $attrs>$order $str$help</h3>\n);
-
 	$class->add_html($html);
 }
 
@@ -152,10 +151,27 @@ sub submenu
 	$class->{parent}->{tab_cnt} = 0;
 	my $order = "$class->{parent}->{menu_cnt}.$class->{parent}->{submenu_cnt} ";
 	$class->{parent}->{submenu_cnt} ++;
+	$class->{parent}->{ssubmenu_cnt} = 1;
 
 	my $attrs = opts2attrs(%opts);
 	my $help = &help(%opts);
 	my $html = qq(<h5 $attrs>$order $str$help</h5>\n);
+	$class->add_html($html);
+}
+
+# add the <h6> to HTML object
+sub ssubmenu {
+    my ($class,$str,%opts) = @_;
+
+    $class->{parent}->{img_cnt} = 0;
+	$class->{parent}->{tab_cnt} = 0;
+	my $submenu_order = $class->{parent}->{submenu_cnt} - 1;
+    my $order = "$class->{parent}->{menu_cnt}.$submenu_order.$class->{parent}->{ssubmenu_cnt} ";
+	$class->{parent}->{ssubmenu_cnt} ++;
+	
+    my $attrs = opts2attrs(%opts);
+	my $help = &help(%opts);
+	my $html = qq(<h4 $attrs>$order $str$help</h4>\n);
 	$class->add_html($html);
 }
 
