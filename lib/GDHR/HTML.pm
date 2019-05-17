@@ -401,7 +401,7 @@ sub img2html
 	
 	my $dir = $opts{'-file'} or ERROR("-file must be defined in function <img2html>");
 	my $name = $opts{'-name'} or ERROR("-name must be defined in function <img2html>");
-    my $width = $opts{'-width'} || "50%";
+    my $width = $opts{'-width'} || "auto";
 	my $help = &help(%opts);
 	
 	my $order = $class->img_order();
