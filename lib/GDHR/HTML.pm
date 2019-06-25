@@ -331,7 +331,10 @@ sub tsv2html
 	if ($opts{'-header'})
 	{
 		my $header = <IN>;
-		my @values = split /\t/,$header;
+		unless ($header){
+            ERROR("$file is empty, please check it !");
+        }
+        my @values = split /\t/,$header;
 		chomp $values[-1];
 		
 		@values = &omits_some_columns(\%opts,@values);
@@ -412,7 +415,7 @@ sub img2html
 		$html = <<HTML;
 <table class="pic_table">
 	<tr>
-		<td style="width: $width"><a href="$dir" target="_blank"><img src="$dir" /></td>
+		<td style="width: $width"><a href="$dir" target="_blank"><img data-src="$dir" /></td>
 		<td class="pic_table_desc" style="width: 50%"><p>$opts{'-desc'}</p></td>
 	</tr>
 	<tr>
@@ -437,8 +440,9 @@ HTML
 <br />
 HTML
 	}
+    
 	
-	$class->add_html($html);
+    $class->add_html($html);
 }
 
 # add two images to the html
@@ -466,9 +470,9 @@ sub img2html2
 	my $html = <<HTML;
 <table class="pic_table">
 	<tr>
-		<td style="width: $width%"><a href="$file1" target="_blank"><img src="$file1" /></a></td>
+		<td style="width: $width%"><a href="$file1" target="_blank"><img data-src="$file1" /></a></td>
 		<td style="width: $space%"></td>
-		<td style="width: $width%"><a href="$file2" target="_blank"><img src="$file2" /></a></td>
+		<td style="width: $width%"><a href="$file2" target="_blank"><img data-src="$file2" /></a></td>
 	</tr>
 	<tr>
 		<td class="img_title">$order1 $name1$help1</td>
@@ -539,7 +543,7 @@ TEMP
 		{
 			$images_div .= <<TEMP;
 		<div>
-			<div height="80%"><a href="$_" target="_blank"><img src="$_" /></a></div>
+			<div height="80%"><a href="$_" target="_blank"><img data-src="$_" /></a></div>
 			<div height="20%"><p>$opts{'-desc'}->[$i]</p></div>
 		</div>
 TEMP
@@ -548,7 +552,7 @@ TEMP
 		{
 			$images_div .= <<TEMP;
 		<div>
-			<a href="$_" target="_blank"><img src="$_" /></a>
+			<a href="$_" target="_blank"><img data-src="$_" /></a>
 		</div>
 TEMP
 		}
@@ -567,7 +571,17 @@ $images_div
 </div>
 <br />
 HTML
-	$class->add_html($html);
+
+    $class->{parent}->{container_cnt} ++;
+    my $conid = $class->{parent}->{container_cnt};
+    $class->{parent}->{getPic} .= "\t\t\t\taddPic(res.container$conid, $conid)\n";
+    my $imgsrc = join ",\n" , (map { qq("$_") } @$images);
+    $class->{parent}->{json} .= <<JSON;
+"container$conid":[
+$imgsrc
+],
+JSON
+    $class->add_html($html);
 }
 
 # add multi images to the html with two columns
@@ -619,8 +633,10 @@ TEMP
 	}
 	
 	my $images_div = "";
+    my @tabs;
 	foreach (0 .. $#$images1)
 	{
+        my @tds;
 		if ($opts{'-desc1'} && $opts{'-desc2'})
 		{
 			$images_div .= <<TEMP;
@@ -628,17 +644,18 @@ TEMP
 <table class="pic_table">
 		<tr>
 			<td>
-				<a href="$images1->[$_]" target="_blank"><img src="$images1->[$_]" /></a>
+				<a href="$images1->[$_]" target="_blank"><img data-src="$images1->[$_]" /></a>
 				<p>$desc1->[$_]</p>
 			</td>
 			<td>
-				<a href="$images2->[$_]" target="_blank"><img src="$images2->[$_]" /></a>
+				<a href="$images2->[$_]" target="_blank"><img data-src="$images2->[$_]" /></a>
 				<p>$desc2->[$_]</p>
 			</td>
 		</tr>
 </table>
 </div>
 TEMP
+            @tds = (qq("$images1->[$_]"),qq("$desc1->[$_]"),qq("$images2->[$_]"),qq("$desc2->[$_]"));
 		}
 		else 
 		{
@@ -647,16 +664,23 @@ TEMP
 <table class="pic_table">
 		<tr>
 			<td>
-				<a href="$images1->[$_]" target="_blank"><img src="$images1->[$_]" /></a>
+				<a href="$images1->[$_]" target="_blank"><img data-src="$images1->[$_]" /></a>
 			</td>
 			<td>
-				<a href="$images2->[$_]" target="_blank"><img src="$images2->[$_]" /></a>
+				<a href="$images2->[$_]" target="_blank"><img data-src="$images2->[$_]" /></a>
 			</td>
 		</tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
 </table>
 </div>
 TEMP
+            @tds = (qq("$images1->[$_]"),qq(""),qq("$images2->[$_]"),qq(""));
 		}
+        my $tds = join ",\n" , @tds;
+        push @tabs , qq("tb$_":[$tds]);
 	}
 
 	my $html = <<HTML;
@@ -671,7 +695,18 @@ $images_div
 </div>
 <br />
 HTML
-	$class->add_html($html);
+    
+    $class->{container_cnt} ++;
+    my $conid = $class->{container_cnt};
+    $class->{getPic} .= "\t\t\t\taddTabPic(res.container$conid, $conid)\n";
+    my $tabs = join ",\n" , @tabs;
+    $class->{json} .= <<JSON;
+"container$conid":{
+    $tabs
+},
+JSON
+    
+    $class->add_html($html);
 }
 
 #-------------------------------------------------------------------------------

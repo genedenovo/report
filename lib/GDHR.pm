@@ -86,6 +86,9 @@ sub init_report
 	$class->{submenu_cnt} = 0;
 	$class->{img_cnt} = 0;
 	$class->{tab_cnt} = 0;
+    $class->{container_cnt} = 0;
+    $class->{json}   = "";
+    $class->{getPic} = "";
 	$class->{brief} = {};
 
 	# the report 's pipe type
@@ -220,7 +223,7 @@ sub write
 	my $outdir = $class->{path}->{outdir};
 	
 	my $head = $class->main_html_head();
-	my $tail = $class->main_html_tail();
+	my $tail = $class->main_html_tail(%opts);
 	
 	my $html = $class->{html};
 	foreach my$section (@{$class->{section}})
@@ -233,7 +236,11 @@ sub write
 	print OUT $html;
 	print OUT $tail;
 	close OUT;
-	
+    
+    open JSON , ">" , "$outdir/src/js/pic.js" or die $!;
+    print JSON "getPic ({$class->{json}})";
+    close JSON;
+
 	timeLOG("The content html report 'content.html' was create done :)");
 }
 
@@ -314,7 +321,11 @@ HTML
 sub main_html_tail
 {
 	my $class = shift;
+    my %opts  = @_;
     my $url = $class->{url};
+    #my $lazy_load = $opts{'lazy_load'} ? $class->lazy_load() : "";
+    my $lazy_load = $class->lazy_load();
+
 	my $tail = <<HTML;
 		</div>
 		
@@ -417,13 +428,36 @@ sub main_html_tail
 				\$(this).parent().find('caption').css('margin-left',\$(this).scrollLeft());
 			});
 		</script>
+        
+        $lazy_load
+
 	</body>
-</html>	
+</html>
 HTML
 
 	return $tail;
 }
 
+
+sub lazy_load {
+    my $class = shift;
+    my $getPic = $class->{getPic};
+
+    my $js = <<JS;
+        <script src="./js/lazy_load_pre.js"></script>
+        <script type="text/javascript">
+            // fetch the data from json file
+            function getPic(res){
+                $getPic
+            }
+        </script>
+
+        <script src="./js/lazy_load_main.js"></script>
+        <script src="./pic.js?callback=getPic"></script>
+JS
+
+    return $js;
+}
 
 #-------------------------------------------------------------------------------
 #  the packaged section

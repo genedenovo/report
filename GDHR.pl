@@ -23,44 +23,47 @@ my $array = [
 ];
 
 my $outdir = "test";
-my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"meta Genome",-company=>"OS",-url=>"http://www.omicshare.com");
+my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"meta Genome",-url=>"http://www.omicshare.com");
 
 my $section = $report->section(id=>"introduction",-page_head=>1);
 
 $section->menu("h1");
 $section->submenu("h2");
+
 $section->tsv2html(-file=>"/Bio/User/aipeng/project/tmp/pca/target/6.GO_enrich_heatmap/DEGs/DEGs_enrich/G_72hvsG_0h.DEG_GO_enrichment_result_all.xls",-name=>"test",-header=>1,-max_chars=>12);
 $section->matrix2html(-matrix=>$array,-name=>"family",-header=>1);
 $section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
 $section->break;
 
-$section = $report->section(id=>"edgeR");
-$section->menu("edgeR");
-$section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
-$section->submenu("test");
-$section->ssubmenu("test ssubmenu");
-$section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
 
-$section = $report->section(id=>"DEseq2");
-$section->menu("DEseq2");
-$section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
+$section = $report->section(id=>"lazy_load");
+$section->menu("lazy load");
+$section->submenu("imgs2html");
 
-$section = $report->section(id=>"enrich");
-$section->menu("function");
-$section->submenu("enrich");
-$section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
-$section->ssubmenu("enrich.method");
-$section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
-$section->ssubmenu("enrich.figure");
-$section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
-$section->ssubmenu("enrich.result");
-$section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
+my @files = ("../assess/all.PCA.nosampleid.png","../assess/all.PCA.png","../assess/all.pearson.png");
+my @names = ("PCA plot without samples id","PCA plot with samples id","pearson heatmap");
+$section->imgs2html(-files=>\@files,-names=>\@names,-name=>"samples relation analysis");
 
-$section = $report->section(id=>"h3");
-$section->menu("h3");
-$section->submenu("h3_sub");
-$section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
 
+$section->submenu("imgs2html2");
+
+my @files1 = ();
+my @files2 = ();
+my @desc1 = ();
+my @desc2 = ();
+@names = ();
+my @imgs = map { basename($_) } glob ("test/circMap/*.png");
+
+for my $i (0 .. $#imgs){
+    if ($i % 2 == 1){
+        push @files1 , "../circMap/$imgs[$i]";
+        push @names , "circ map [$i]";
+    }else{
+        push @files2 , "../circMap/$imgs[$i]";
+    }
+}
+
+$section->imgs2html2(-files1=>\@files1,-files2=>\@files2,-names=>\@names,-name=>"circMap");
 
 $report->write();
 $report->pack(-format=>"zip");
