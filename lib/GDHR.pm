@@ -453,7 +453,7 @@ sub lazy_load {
         </script>
 
         <script src="./js/lazy_load_main.js"></script>
-        <script src="./pic.js?callback=getPic"></script>
+        <script src="./js/pic.js?callback=getPic"></script>
 JS
 
     return $js;

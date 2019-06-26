@@ -558,6 +558,8 @@ TEMP
 		}
 		$i ++;
 	}
+    
+    $images_div = "";
 
 	my $html = <<HTML;
 <div id="parentVerticalTab$resp_tabs_cnt" class="VerticalTab">
@@ -682,6 +684,8 @@ TEMP
         my $tds = join ",\n" , @tds;
         push @tabs , qq("tb$_":[$tds]);
 	}
+    
+    $images_div = "";
 
 	my $html = <<HTML;
 <div id="parentVerticalTab$resp_tabs_cnt" class="VerticalTab">
@@ -696,11 +700,11 @@ $images_div
 <br />
 HTML
     
-    $class->{container_cnt} ++;
-    my $conid = $class->{container_cnt};
-    $class->{getPic} .= "\t\t\t\taddTabPic(res.container$conid, $conid)\n";
+    $class->{parent}->{container_cnt} ++;
+    my $conid = $class->{parent}->{container_cnt};
+    $class->{parent}->{getPic} .= "\t\t\t\taddTabPic(res.container$conid, $conid)\n";
     my $tabs = join ",\n" , @tabs;
-    $class->{json} .= <<JSON;
+    $class->{parent}->{json} .= <<JSON;
 "container$conid":{
     $tabs
 },
