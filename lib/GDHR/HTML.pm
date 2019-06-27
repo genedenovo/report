@@ -574,12 +574,10 @@ $images_div
 <br />
 HTML
 
-    $class->{parent}->{container_cnt} ++;
-    my $conid = $class->{parent}->{container_cnt};
-    $class->{parent}->{getPic} .= "\t\t\t\taddPic(res.container$conid, $conid)\n";
+    $class->{parent}->{getPic} .= "\t\t\t\taddPic(res.container$resp_tabs_cnt, $resp_tabs_cnt)\n";
     my $imgsrc = join ",\n" , (map { qq("$_") } @$images);
     $class->{parent}->{json} .= <<JSON;
-"container$conid":[
+"container$resp_tabs_cnt":[
 $imgsrc
 ],
 JSON
@@ -700,12 +698,10 @@ $images_div
 <br />
 HTML
     
-    $class->{parent}->{container_cnt} ++;
-    my $conid = $class->{parent}->{container_cnt};
-    $class->{parent}->{getPic} .= "\t\t\t\taddTabPic(res.container$conid, $conid)\n";
+    $class->{parent}->{getPic} .= "\t\t\t\taddTabPic(res.container$resp_tabs_cnt, $resp_tabs_cnt)\n";
     my $tabs = join ",\n" , @tabs;
     $class->{parent}->{json} .= <<JSON;
-"container$conid":{
+"container$resp_tabs_cnt":{
     $tabs
 },
 JSON
