@@ -51,7 +51,6 @@ our @ISA = qw(Exporter);
 
 use File::Basename qw/basename/;
 
-use lib "$ENV{GDHR_PATH}/lib";
 use GDHR::DEBUG;
 use GDHR;
 
