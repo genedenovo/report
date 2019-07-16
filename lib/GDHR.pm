@@ -58,7 +58,8 @@ sub new
 	my ($class,%opts) = @_;
 	
 	# check the ENV
-	my $root = $ENV{'GDHR_PATH'} or die "GDHR_PATH is not defined in your ENV!";
+	# my $root = $ENV{'GDHR_PATH'} or die "GDHR_PATH is not defined in your ENV!";
+    my $root = dirname(__FILE__) . "/../";
 	
 	my $report = {};
 	$report->{path}->{root} = $root;
