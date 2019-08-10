@@ -57,105 +57,105 @@ use GDHR;
 # return the object of HTML
 sub new
 {
-	my ($class,$parent,%opts) = @_;
-	$opts{'-class'} ||= "normal_cont";
-	$opts{'-tag'} ||= "div";
-	my $tag = $opts{'-tag'};
-	
-	my $hash = {};
-	my $attrs = opts2attrs(%opts);
-	
-	$hash->{head} = <<HTML;
+    my ($class,$parent,%opts) = @_;
+    $opts{'-class'} ||= "normal_cont";
+    $opts{'-tag'} ||= "div";
+    my $tag = $opts{'-tag'};
+    
+    my $hash = {};
+    my $attrs = opts2attrs(%opts);
+    
+    $hash->{head} = <<HTML;
 <$tag $attrs>
 HTML
 
-	$hash->{tail} = "</$tag>\n";
-	$hash->{main} = "";
-	
-	bless $hash , $class;
-	return $hash;
+    $hash->{tail} = "</$tag>\n";
+    $hash->{main} = "";
+    
+    bless $hash , $class;
+    return $hash;
 }
 
 # return the object of HTML with tag 'section'
 sub section
 {
-	my ($class,$parent,%opts) = @_;
+    my ($class,$parent,%opts) = @_;
     my $company = $parent->{company_fullname};
     my $url = $parent->{url};
 
-	$opts{'class'} ||= "normal_cont";
-	
-	my $hash = {};
-	my $attrs = opts2attrs(%opts);
-	
-	$hash->{head} = <<HTML;
+    $opts{'class'} ||= "normal_cont";
+    
+    my $hash = {};
+    my $attrs = opts2attrs(%opts);
+    
+    $hash->{head} = <<HTML;
 <section $attrs>
 HTML
 
-	my $split_line = <<HTML;
+    my $split_line = <<HTML;
 <p class="head">
-	<a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
-	<a href="$url" title="访问公司官网" target="_blank">$company</a>
-	<hr />
+    <a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
+    <a href="$url" title="访问公司官网" target="_blank">$company</a>
+    <hr />
 </p>
 <br /><br />
 HTML
-	$hash->{tail} = "</section>\n";
-	$hash->{main} = "";
-	$hash->{parent} = $parent;
-	
-	if ($opts{'-break'})
-	{
-		$hash->{head} = <<HTML;
+    $hash->{tail} = "</section>\n";
+    $hash->{main} = "";
+    $hash->{parent} = $parent;
+    
+    if ($opts{'-break'})
+    {
+        $hash->{head} = <<HTML;
 <div style="page-break-after:always;"></div>
 $split_line
 $hash->{head}
 HTML
-	}
-	elsif ($opts{'-page_head'})
-	{
-		$hash->{head} = <<HTML;
+    }
+    elsif ($opts{'-page_head'})
+    {
+        $hash->{head} = <<HTML;
 $split_line
 $hash->{head}
 HTML
-	}
+    }
 
-	bless $hash , $class;
-	return $hash;
+    bless $hash , $class;
+    return $hash;
 }
 
 # add the <h3> to HTML object
 sub menu
 {
-	my ($class,$str,%opts) = @_;
-	
-	$class->{parent}->{menu_cnt} ++;
-	$class->{parent}->{submenu_cnt} = 1;
-	$class->{parent}->{img_cnt} = 0;
-	$class->{parent}->{tab_cnt} = 0;
-	my $order  = $class->{parent}->{menu_cnt};
+    my ($class,$str,%opts) = @_;
+    
+    $class->{parent}->{menu_cnt} ++;
+    $class->{parent}->{submenu_cnt} = 1;
+    $class->{parent}->{img_cnt} = 0;
+    $class->{parent}->{tab_cnt} = 0;
+    my $order  = $class->{parent}->{menu_cnt};
 
-	my $attrs = opts2attrs(%opts);
-	my $help = &help(%opts);
-	my $html = qq(<h3 $attrs>$order $str$help</h3>\n);
-	$class->add_html($html);
+    my $attrs = opts2attrs(%opts);
+    my $help = &help(%opts);
+    my $html = qq(<h3 $attrs>$order $str$help</h3>\n);
+    $class->add_html($html);
 }
 
 # add the <h5> to HTML object
 sub submenu
 {
-	my ($class,$str,%opts) = @_;
-	
-	$class->{parent}->{img_cnt} = 0;
-	$class->{parent}->{tab_cnt} = 0;
-	my $order = "$class->{parent}->{menu_cnt}.$class->{parent}->{submenu_cnt} ";
-	$class->{parent}->{submenu_cnt} ++;
-	$class->{parent}->{ssubmenu_cnt} = 1;
+    my ($class,$str,%opts) = @_;
+    
+    $class->{parent}->{img_cnt} = 0;
+    $class->{parent}->{tab_cnt} = 0;
+    my $order = "$class->{parent}->{menu_cnt}.$class->{parent}->{submenu_cnt} ";
+    $class->{parent}->{submenu_cnt} ++;
+    $class->{parent}->{ssubmenu_cnt} = 1;
 
-	my $attrs = opts2attrs(%opts);
-	my $help = &help(%opts);
-	my $html = qq(<h5 $attrs>$order $str$help</h5>\n);
-	$class->add_html($html);
+    my $attrs = opts2attrs(%opts);
+    my $help = &help(%opts);
+    my $html = qq(<h5 $attrs>$order $str$help</h5>\n);
+    $class->add_html($html);
 }
 
 # add the <h6> to HTML object
@@ -163,412 +163,419 @@ sub ssubmenu {
     my ($class,$str,%opts) = @_;
 
     $class->{parent}->{img_cnt} = 0;
-	$class->{parent}->{tab_cnt} = 0;
-	my $submenu_order = $class->{parent}->{submenu_cnt} - 1;
+    $class->{parent}->{tab_cnt} = 0;
+    my $submenu_order = $class->{parent}->{submenu_cnt} - 1;
     my $order = "$class->{parent}->{menu_cnt}.$submenu_order.$class->{parent}->{ssubmenu_cnt} ";
-	$class->{parent}->{ssubmenu_cnt} ++;
-	
+    $class->{parent}->{ssubmenu_cnt} ++;
+    
     my $attrs = opts2attrs(%opts);
-	my $help = &help(%opts);
-	my $html = qq(<h4 $attrs>$order $str$help</h4>\n);
-	$class->add_html($html);
+    my $help = &help(%opts);
+    my $html = qq(<h4 $attrs>$order $str$help</h4>\n);
+    $class->add_html($html);
 }
 
 # add <p> to HTML object
 sub desc
 {
-	my ($class,$str,%opts) = @_;
+    my ($class,$str,%opts) = @_;
 
-	my $attrs = opts2attrs(%opts);
-	my $help = &help(%opts);
-	
-	if ($opts{'-pre'})
-	{
-		$str = "<pre>$str</pre>";
-	}
-	
-	my $html = qq(<p $attrs>$str$help</p>\n);
-	
-	$class->add_html($html);
+    my $attrs = opts2attrs(%opts);
+    my $help = &help(%opts);
+    
+    if ($opts{'-pre'})
+    {
+        $str = "<pre>$str</pre>";
+    }
+    
+    my $html = qq(<p $attrs>$str$help</p>\n);
+    
+    $class->add_html($html);
 }
 
 # turn files list to <ul> and <li>, with file description (must be defined)
 sub files2list
 {
-	my ($class,%opts) = @_;
-	
-	my $files = $opts{'-files'} or ERROR("-files must be defined in function <files2list>");
-	my $desc = $opts{'-desc'} or ERROR("-desc must be defined in function <files2list>");
+    my ($class,%opts) = @_;
+    
+    my $files = $opts{'-files'} or ERROR("-files must be defined in function <files2list>");
+    my $desc = $opts{'-desc'} or ERROR("-desc must be defined in function <files2list>");
     my $short_dir = $opts{'-short_dir'} // 0 ;
-	my @fnames = map { $short_dir ? basename($_) : s/^\.\.//r; } @$files;
+    my @fnames = map { $short_dir ? basename($_) : s/^\.\.//r; } @$files;
 
-	my @lies = map { qq(<li>$desc->[$_]: <a href="$files->[$_]" target="_blank">$fnames[$_]</a></li>) } 0 .. $#$files;
-	my $li = join "\n" , @lies;
-	
-	my $attrs = opts2attrs(%opts);
+    my @lies = map { qq(<li>$desc->[$_]: <a href="$files->[$_]" target="_blank">$fnames[$_]</a></li>) } 0 .. $#$files;
+    my $li = join "\n" , @lies;
+    
+    my $attrs = opts2attrs(%opts);
 
-	my $html = <<HTML;
+    my $html = <<HTML;
 <ul $attrs>
 $li
 </ul>
 HTML
 
-	$class->add_html($html);
+    $class->add_html($html);
 }
 
 sub matrix2html
 {
-	my ($class,%opts) = @_;
+    my ($class,%opts) = @_;
 
     my $top = $opts{top} ? $opts{top} : $opts{'-top'} ? $opts{'-top'} : 10;
-	my $name = $opts{'-name'} or ERROR("-name must be defined in function <matrix2html>");
-	$opts{'-header'} = 1 if (! defined $opts{header});
-	my $matrix = $opts{'-matrix'} or ERROR("-matrix must be defined in function <matrix2html>");
-	my $help = &help(%opts);
-	my $class_name = $opts{'-class'} || "func_table";
-	my $width = $opts{'-width'} || "100%";
+    my $name = $opts{'-name'} or ERROR("-name must be defined in function <matrix2html>");
+    $opts{'-header'} = 1 if (! defined $opts{header});
+    my $matrix = $opts{'-matrix'} or ERROR("-matrix must be defined in function <matrix2html>");
+    my $help = &help(%opts);
+    my $class_name = $opts{'-class'} || "func_table";
+    my $width = $opts{'-width'} || "100%";
     
-	my $order = $class->tab_order();
+    my $order = $class->tab_order();
 
-	my $tab = "";
+    my $tab = "";
 
     map { shift @$matrix } 1 .. $opts{'-skip'} if $opts{'-skip'};
-	
+    
     if ($opts{'-header'})
-	{
-		my $header = shift @$matrix;
-		my @values = @$header;
-		@values = &omits_some_columns(\%opts,@values);
+    {
+        my $header = shift @$matrix;
+        my @values = @$header;
+        @values = &omits_some_columns(\%opts,@values);
 
-		@values = map {
-			my $len = length $_;
-			if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
-			{
-				qq(<th class="abbrTab" data=$opts{'-max_chars'}>$_</th>);
-			}
-			else 
-			{
-				"<th>$_</th>"
-			}
-		} @values;
-		
-		$tab .= "<thead><tr>" . ${ [ join "",@values ]}[0] . "</tr></thead>\n"
-	}
-	
-	$tab .= "<tbody>\n";
-	
+        @values = map {
+            my $len = length $_;
+            if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
+            {
+                qq(<th class="abbrTab" data=$opts{'-max_chars'}>$_</th>);
+            }
+            else 
+            {
+                "<th>$_</th>"
+            }
+        } @values;
+        
+        $tab .= "<thead><tr>" . ${ [ join "",@values ]}[0] . "</tr></thead>\n"
+    }
+    
+    $tab .= "<tbody>\n";
+    
     my $i = 0;
-	foreach (@$matrix)
-	{
-		$i ++;
-		last if $i > $top;
+    foreach (@$matrix)
+    {
+        $i ++;
+        last if $i > $top;
 
-		my @values = @$_;
-		@values = &omits_some_columns(\%opts,@values);
+        my @values = @$_;
+        @values = &omits_some_columns(\%opts,@values);
 
-		@values = map {
-			my $len = length $_;
-			if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
-			{
-				qq(<td class="abbrTab" data=$opts{'-max_chars'}>$_</td>);
-			}
-			else 
-			{
-				"<td>$_</td>";
-			}
-		} @values;
+        @values = map {
+            my $len = length $_;
+            if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
+            {
+                qq(<td class="abbrTab" data=$opts{'-max_chars'}>$_</td>);
+            }
+            else 
+            {
+                "<td>$_</td>";
+            }
+        } @values;
 
-		$tab .= "<tr>" . ${ [ join "",@values ]}[0] . "</tr>\n";
-	}
-	
-	$tab .= "</tbody>\n";
-	
+        $tab .= "<tr>" . ${ [ join "",@values ]}[0] . "</tr>\n";
+    }
+    
+    $tab .= "</tbody>\n";
+    
     my $tab_html = <<HTML;
 <table class="$class_name nowrap" width="$width">
-	<caption>$order $name$help</caption>
-	$tab 
+    <caption>$order $name$help</caption>
+    $tab 
 </table>
 <br />
 HTML
-	
-	$class->add_html($tab_html);
+    
+    $class->add_html($tab_html);
 }
 
 # fetch the top lines of table, and turn it to html table
 sub tsv2html
 {
-	my ($class,%opts) = @_;
-	
-	# parse the options
-	my $top = 10;
-	if ($opts{top})
-	{
-		$top = $opts{top};
-	}
-	elsif ($opts{'-top'})
-	{
-		$top = $opts{'-top'};
-	}
-	
-	my $name = $opts{'-name'} or ERROR("-name must be defined in function <tsv2html>");
-	$opts{'-header'} = 1 if (! defined $opts{header});
-	my $file = $opts{'-file'} or ERROR("-file must be defined in function <tsv2html>");
-	my $help = &help(%opts);
-	my $class_name = $opts{'-class'} || "func_table";
-	my $width = $opts{'-width'} || "100%";
-	
-	my $order = $class->tab_order();
+    my ($class,%opts) = @_;
+    
+    # parse the options
+    my $top = 10;
+    if ($opts{top})
+    {
+        $top = $opts{top};
+    }
+    elsif ($opts{'-top'})
+    {
+        $top = $opts{'-top'};
+    }
+    
+    my $name = $opts{'-name'} or ERROR("-name must be defined in function <tsv2html>");
+    $opts{'-header'} = 1 if (! defined $opts{header});
+    my $file = $opts{'-file'} or ERROR("-file must be defined in function <tsv2html>");
+    my $help = &help(%opts);
+    my $class_name = $opts{'-class'} || "func_table";
+    my $width = $opts{'-width'} || "100%";
+    
+    my $order = $class->tab_order();
 
-	my $tab = "";
-	open IN,$file or die "$file $!";
-	
-	if ($opts{'-skip'})
-	{
-		map { my $tmp = <IN>; }  1 .. $opts{'-skip'};
-	}
-	
-	if ($opts{'-header'})
-	{
-		my $header = <IN>;
-		unless ($header){
+    my $tab = "";
+    open IN,$file or die "$file $!";
+    my $ncol = 0;
+    
+    if ($opts{'-skip'})
+    {
+        map { my $tmp = <IN>; }  1 .. $opts{'-skip'};
+    }
+    
+    if ($opts{'-header'})
+    {
+        my $header = <IN>;
+        unless ($header){
             ERROR("$file is empty, please check it !");
         }
         my @values = split /\t/,$header;
-		chomp $values[-1];
-		
-		@values = &omits_some_columns(\%opts,@values);
+        chomp $values[-1];
+        
+        @values = &omits_some_columns(\%opts,@values);
+        $ncol = scalar @values;
 
-		@values = map {
-			my $len = length $_;
-			if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
-			{
-				qq(<th class="abbrTab" data=$opts{'-max_chars'}>$_</th>);
-			}
-			else 
-			{
-				"<th>$_</th>"
-			}
-		} @values;
-		
-		$tab .= "<thead><tr>" . ${ [ join "",@values ]}[0] . "</tr></thead>\n"
-	}
-	
-	$tab .= "<tbody>\n";
+        @values = map {
+            my $len = length $_;
+            if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
+            {
+                qq(<th class="abbrTab" data=$opts{'-max_chars'}>$_</th>);
+            }
+            else 
+            {
+                "<th>$_</th>"
+            }
+        } @values;
+        
+        $tab .= "<thead><tr>" . ${ [ join "",@values ]}[0] . "</tr></thead>\n"
+    }
+    
+    $tab .= "<tbody>\n";
 
-	my $i = 0;
-	while(<IN>)
-	{
-		next if (/^#/);
+    my $i = 0;
+    while(<IN>)
+    {
+        next if (/^#/);
 
-		$i ++;
-		last if $i > $top;
+        $i ++;
+        last if $i > $top;
 
-		my @values = split /\t/;
-		chomp $values[$#values];
-		@values = &omits_some_columns(\%opts,@values);
+        my @values = split /\t/;
+        chomp $values[$#values];
+        @values = &omits_some_columns(\%opts,@values);
+        if ($ncol && $ncol != $#values+1){
+            ERROR("the number of columns is not equals to the header in LINE $.",$file);
+        }elsif (! $ncol){
+            $ncol = scalar @values;
+        }
 
-		@values = map {
-			my $len = length $_;
-			if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
-			{
-				qq(<td class="abbrTab" data=$opts{'-max_chars'}>$_</td>);
-			}
-			else 
-			{
-				"<td>$_</td>";
-			}
-		} @values;
+        @values = map {
+            my $len = length $_;
+            if ($opts{'-max_chars'} &&  $len - 4 > $opts{'-max_chars'} )
+            {
+                qq(<td class="abbrTab" data=$opts{'-max_chars'}>$_</td>);
+            }
+            else 
+            {
+                "<td>$_</td>";
+            }
+        } @values;
 
-		$tab .= "<tr>" . ${ [ join "",@values ]}[0] . "</tr>\n";
-	}
-	close IN;
-	
-	$tab .= "</tbody>\n";
+        $tab .= "<tr>" . ${ [ join "",@values ]}[0] . "</tr>\n";
+    }
+    close IN;
+    
+    $tab .= "</tbody>\n";
 
-	my $tab_html = <<HTML;
+    my $tab_html = <<HTML;
 <table class="$class_name nowrap" width="$width">
-	<caption>$order $name$help</caption>
-	$tab 
+    <caption>$order $name$help</caption>
+    $tab 
 </table>
 <br />
 HTML
-	
-	$class->add_html($tab_html);
+    
+    $class->add_html($tab_html);
 }
 
 # add one image to the html 
 sub img2html
 {
-	my ($class,%opts) = @_;
-	
-	my $dir = $opts{'-file'} or ERROR("-file must be defined in function <img2html>");
-	my $name = $opts{'-name'} or ERROR("-name must be defined in function <img2html>");
+    my ($class,%opts) = @_;
+    
+    my $dir = $opts{'-file'} or ERROR("-file must be defined in function <img2html>");
+    my $name = $opts{'-name'} or ERROR("-name must be defined in function <img2html>");
     my $width = $opts{'-width'} || "auto";
-	my $help = &help(%opts);
-	
-	my $order = $class->img_order();
+    my $help = &help(%opts);
+    
+    my $order = $class->img_order();
 
-	my $html;
-	if ($opts{'-desc'})
-	{
-		$html = <<HTML;
+    my $html;
+    if ($opts{'-desc'})
+    {
+        $html = <<HTML;
 <table class="pic_table">
-	<tr>
-		<td style="width: $width"><a href="$dir" target="_blank"><img data-src="$dir" /></td>
-		<td class="pic_table_desc" style="width: 50%"><p>$opts{'-desc'}</p></td>
-	</tr>
-	<tr>
-		<td class="img_title">$order $name$help</td>
-		<td></td>
-	</tr>
+    <tr>
+        <td style="width: $width"><a href="$dir" target="_blank"><img data-src="$dir" /></td>
+        <td class="pic_table_desc" style="width: 50%"><p>$opts{'-desc'}</p></td>
+    </tr>
+    <tr>
+        <td class="img_title">$order $name$help</td>
+        <td></td>
+    </tr>
 </table>
 HTML
-		
-	}
-	else 
-	{
-		$html = <<HTML;
+        
+    }
+    else 
+    {
+        $html = <<HTML;
 <table class="pic_table">
-	<tr>
-		<td><a href="$dir" target="_blank"><img src="$dir" width="$width"/></td>
-	</tr>
-	<tr>
-		<td class="img_title">$order $name$help</td>
-	</tr>
+    <tr>
+        <td><a href="$dir" target="_blank"><img src="$dir" width="$width"/></td>
+    </tr>
+    <tr>
+        <td class="img_title">$order $name$help</td>
+    </tr>
 </table>
 <br />
 HTML
-	}
+    }
     
-	
+    
     $class->add_html($html);
 }
 
 # add two images to the html
 sub img2html2
 {
-	my ($class,%opts) = @_;
+    my ($class,%opts) = @_;
 
-	my $file1 = $opts{'-file1'} or ERROR("-file1 must be defined in function <img2html>");
-	my $name1 = $opts{'-name1'} or ERROR("-name1 must be defined in function <img2html>");
-	my $file2 = $opts{'-file2'} or ERROR("-file2 must be defined in function <img2html>");
-	my $name2 = $opts{'-name2'} or ERROR("-name2 must be defined in function <img2html>");
-	
-	my $desc1 = $opts{'-desc1'} || "";
-	my $desc2 = $opts{'-desc2'} || "";
-	
-	my $order1 = $class->img_order();
-	my $order2 = $class->img_order();
-	
-	my $help1 = $opts{'-help1'} ? &help('-help'=>$opts{'-help1'}) : "";
-	my $help2 = $opts{'-help2'} ? &help('-help'=>$opts{'-help2'}) : "";
-	
-	my $space = $opts{'-space'} || 10;
-	my $width = (100 - $space) / 2;
+    my $file1 = $opts{'-file1'} or ERROR("-file1 must be defined in function <img2html>");
+    my $name1 = $opts{'-name1'} or ERROR("-name1 must be defined in function <img2html>");
+    my $file2 = $opts{'-file2'} or ERROR("-file2 must be defined in function <img2html>");
+    my $name2 = $opts{'-name2'} or ERROR("-name2 must be defined in function <img2html>");
+    
+    my $desc1 = $opts{'-desc1'} || "";
+    my $desc2 = $opts{'-desc2'} || "";
+    
+    my $order1 = $class->img_order();
+    my $order2 = $class->img_order();
+    
+    my $help1 = $opts{'-help1'} ? &help('-help'=>$opts{'-help1'}) : "";
+    my $help2 = $opts{'-help2'} ? &help('-help'=>$opts{'-help2'}) : "";
+    
+    my $space = $opts{'-space'} || 10;
+    my $width = (100 - $space) / 2;
 
-	my $html = <<HTML;
+    my $html = <<HTML;
 <table class="pic_table">
-	<tr>
-		<td style="width: $width%"><a href="$file1" target="_blank"><img data-src="$file1" /></a></td>
-		<td style="width: $space%"></td>
-		<td style="width: $width%"><a href="$file2" target="_blank"><img data-src="$file2" /></a></td>
-	</tr>
-	<tr>
-		<td class="img_title">$order1 $name1$help1</td>
-		<td style="width: $space%"></td>
-		<td class="img_title">$order2 $name2$help2</td>
-	</tr>
-	<tr>
-		<td align="left">$desc1</td>
-		<td style="width: $space%"></td>
-		<td align="left">$desc2</td>
-	</tr>
+    <tr>
+        <td style="width: $width%"><a href="$file1" target="_blank"><img data-src="$file1" /></a></td>
+        <td style="width: $space%"></td>
+        <td style="width: $width%"><a href="$file2" target="_blank"><img data-src="$file2" /></a></td>
+    </tr>
+    <tr>
+        <td class="img_title">$order1 $name1$help1</td>
+        <td style="width: $space%"></td>
+        <td class="img_title">$order2 $name2$help2</td>
+    </tr>
+    <tr>
+        <td align="left">$desc1</td>
+        <td style="width: $space%"></td>
+        <td align="left">$desc2</td>
+    </tr>
 </table>
 <br />
 HTML
 
-	$class->add_html($html);
+    $class->add_html($html);
 }
 
 # add multi images to the html 
 sub imgs2html
 {
-	my ($class,%opts) = @_;
+    my ($class,%opts) = @_;
 
-	my $images = $opts{'-files'} or ERROR("-files must be defined in function <imgs2html>");
-	my $names = $opts{'-names'} or ERROR("-names must be defined in function <imgs2html>");
-	
-	# defined the img title and its description
-	my $name = $opts{'-name'} || "";
-	my $note = $opts{'-note'} || "";
-	my $help = &help(%opts);
-	my $order = $class->img_order();
-	if ($note)
-	{
-		$name = <<TEMP;
+    my $images = $opts{'-files'} or ERROR("-files must be defined in function <imgs2html>");
+    my $names = $opts{'-names'} or ERROR("-names must be defined in function <imgs2html>");
+    
+    # defined the img title and its description
+    my $name = $opts{'-name'} || "";
+    my $note = $opts{'-note'} || "";
+    my $help = &help(%opts);
+    my $order = $class->img_order();
+    if ($note)
+    {
+        $name = <<TEMP;
 <div>
-	<p class="img_title">$order $name$help</p>
-	<p class="img_note">$note</p><br /><br />
+    <p class="img_title">$order $name$help</p>
+    <p class="img_note">$note</p><br /><br />
 </div>
 TEMP
-	}
-	else 
-	{
-		$name = <<TEMP;
+    }
+    else 
+    {
+        $name = <<TEMP;
 <div>
-	<p class="img_title">$order $name$help</p>
+    <p class="img_title">$order $name$help</p>
 </div>
 TEMP
-	}
+    }
 
-	my $resp_tabs_cnt = $class->{parent}->{resp_tabs_cnt};
-	$class->{parent}->{resp_tabs_cnt} ++;
+    my $resp_tabs_cnt = $class->{parent}->{resp_tabs_cnt};
+    $class->{parent}->{resp_tabs_cnt} ++;
 
-	ERROR("the number of names is not equal to the number of images") unless $#$names == $#$images;
+    ERROR("the number of names is not equal to the number of images") unless $#$names == $#$images;
 
-	my $names_li = "";
-	foreach (@$names)
-	{
-		$names_li .= <<TEMP;
-		<li>$_</li>
+    my $names_li = "";
+    foreach (@$names)
+    {
+        $names_li .= <<TEMP;
+        <li>$_</li>
 TEMP
-	}
-	
-	my $images_div = "";
-	my $i = 0;
-	foreach (@$images)
-	{
-		if ($opts{'-desc'})
-		{
-			$images_div .= <<TEMP;
-		<div>
-			<div height="80%"><a href="$_" target="_blank"><img data-src="$_" /></a></div>
-			<div height="20%"><p>$opts{'-desc'}->[$i]</p></div>
-		</div>
+    }
+    
+    my $images_div = "";
+    my $i = 0;
+    foreach (@$images)
+    {
+        if ($opts{'-desc'})
+        {
+            $images_div .= <<TEMP;
+        <div>
+            <div height="80%"><a href="$_" target="_blank"><img data-src="$_" /></a></div>
+            <div height="20%"><p>$opts{'-desc'}->[$i]</p></div>
+        </div>
 TEMP
-		}
-		else 
-		{
-			$images_div .= <<TEMP;
-		<div>
-			<a href="$_" target="_blank"><img data-src="$_" /></a>
-		</div>
+        }
+        else 
+        {
+            $images_div .= <<TEMP;
+        <div>
+            <a href="$_" target="_blank"><img data-src="$_" /></a>
+        </div>
 TEMP
-		}
-		$i ++;
-	}
+        }
+        $i ++;
+    }
     
     $images_div = "";
 
-	my $html = <<HTML;
+    my $html = <<HTML;
 <div id="parentVerticalTab$resp_tabs_cnt" class="VerticalTab">
-	<ul id="resp-tabs-list$resp_tabs_cnt" class="resp-tabs-list hor_$resp_tabs_cnt">
+    <ul id="resp-tabs-list$resp_tabs_cnt" class="resp-tabs-list hor_$resp_tabs_cnt">
 $names_li
-	</ul>
-	<div id="resp-tabs-container$resp_tabs_cnt" class="resp-tabs-container hor_$resp_tabs_cnt">
+    </ul>
+    <div id="resp-tabs-container$resp_tabs_cnt" class="resp-tabs-container hor_$resp_tabs_cnt">
 $images_div
-	</div>
-	$name
+    </div>
+    $name
 </div>
 <br />
 HTML
@@ -586,89 +593,89 @@ JSON
 # add multi images to the html with two columns
 sub imgs2html2
 {
-	my ($class,%opts) = @_;
+    my ($class,%opts) = @_;
 
-	my $images1 = $opts{'-files1'} or ERROR("-files1 must be defined in function <imgs2html>");
-	my $images2 = $opts{'-files2'} or ERROR("-files2 must be defined in function <imgs2html>");
-	my $desc1 = $opts{'-desc1'};
-	my $desc2 = $opts{'-desc2'};
-	my $names = $opts{'-names'} or ERROR("-names must be defined in function <imgs2html>");
-	
-	# defined the img title and its description
-	my $name = $opts{'-name'} || "";
-	my $note = $opts{'-note'} || "";
-	my $help = &help(%opts);
-	my $order = $class->img_order();
-	if ($note)
-	{
-		$name = <<TEMP;
+    my $images1 = $opts{'-files1'} or ERROR("-files1 must be defined in function <imgs2html>");
+    my $images2 = $opts{'-files2'} or ERROR("-files2 must be defined in function <imgs2html>");
+    my $desc1 = $opts{'-desc1'};
+    my $desc2 = $opts{'-desc2'};
+    my $names = $opts{'-names'} or ERROR("-names must be defined in function <imgs2html>");
+    
+    # defined the img title and its description
+    my $name = $opts{'-name'} || "";
+    my $note = $opts{'-note'} || "";
+    my $help = &help(%opts);
+    my $order = $class->img_order();
+    if ($note)
+    {
+        $name = <<TEMP;
 <div>
-	<p class="img_title">$order $name$help</p>
-	<p class="img_note">$note</p><br /><br />
+    <p class="img_title">$order $name$help</p>
+    <p class="img_note">$note</p><br /><br />
 </div>
 TEMP
-	}
-	else 
-	{
-		$name = <<TEMP;
+    }
+    else 
+    {
+        $name = <<TEMP;
 <div>
-	<p class="img_title">$order $name$help</p>
+    <p class="img_title">$order $name$help</p>
 </div>
 TEMP
-	}
+    }
 
-	my $resp_tabs_cnt = $class->{parent}->{resp_tabs_cnt};
-	$class->{parent}->{resp_tabs_cnt} ++;
+    my $resp_tabs_cnt = $class->{parent}->{resp_tabs_cnt};
+    $class->{parent}->{resp_tabs_cnt} ++;
 
-	ERROR("the number of names is not equal to the number of images1") unless $#$names == $#$images1;
-	ERROR("the number of names is not equal to the number of images2") unless $#$names == $#$images2;
+    ERROR("the number of names is not equal to the number of images1") unless $#$names == $#$images1;
+    ERROR("the number of names is not equal to the number of images2") unless $#$names == $#$images2;
 
-	my $names_li = "";
-	foreach (@$names)
-	{
-		$names_li .= <<TEMP;
-		<li>$_</li>
+    my $names_li = "";
+    foreach (@$names)
+    {
+        $names_li .= <<TEMP;
+        <li>$_</li>
 TEMP
-	}
-	
-	my $images_div = "";
+    }
+    
+    my $images_div = "";
     my @tabs;
-	foreach (0 .. $#$images1)
-	{
+    foreach (0 .. $#$images1)
+    {
         my @tds;
-		if ($opts{'-desc1'} && $opts{'-desc2'})
-		{
-			$images_div .= <<TEMP;
+        if ($opts{'-desc1'} && $opts{'-desc2'})
+        {
+            $images_div .= <<TEMP;
 <div>
 <table class="pic_table">
-		<tr>
-			<td>
-				<a href="$images1->[$_]" target="_blank"><img data-src="$images1->[$_]" /></a>
-				<p>$desc1->[$_]</p>
-			</td>
-			<td>
-				<a href="$images2->[$_]" target="_blank"><img data-src="$images2->[$_]" /></a>
-				<p>$desc2->[$_]</p>
-			</td>
-		</tr>
+        <tr>
+            <td>
+                <a href="$images1->[$_]" target="_blank"><img data-src="$images1->[$_]" /></a>
+                <p>$desc1->[$_]</p>
+            </td>
+            <td>
+                <a href="$images2->[$_]" target="_blank"><img data-src="$images2->[$_]" /></a>
+                <p>$desc2->[$_]</p>
+            </td>
+        </tr>
 </table>
 </div>
 TEMP
             @tds = (qq("$images1->[$_]"),qq("$desc1->[$_]"),qq("$images2->[$_]"),qq("$desc2->[$_]"));
-		}
-		else 
-		{
-			$images_div .= <<TEMP;
+        }
+        else 
+        {
+            $images_div .= <<TEMP;
 <div>
 <table class="pic_table">
-		<tr>
-			<td>
-				<a href="$images1->[$_]" target="_blank"><img data-src="$images1->[$_]" /></a>
-			</td>
-			<td>
-				<a href="$images2->[$_]" target="_blank"><img data-src="$images2->[$_]" /></a>
-			</td>
-		</tr>
+        <tr>
+            <td>
+                <a href="$images1->[$_]" target="_blank"><img data-src="$images1->[$_]" /></a>
+            </td>
+            <td>
+                <a href="$images2->[$_]" target="_blank"><img data-src="$images2->[$_]" /></a>
+            </td>
+        </tr>
         <tr>
             <td></td>
             <td></td>
@@ -677,22 +684,22 @@ TEMP
 </div>
 TEMP
             @tds = (qq("$images1->[$_]"),qq(""),qq("$images2->[$_]"),qq(""));
-		}
+        }
         my $tds = join ",\n" , @tds;
         push @tabs , qq("tb$_":[$tds]);
-	}
+    }
     
     $images_div = "";
 
-	my $html = <<HTML;
+    my $html = <<HTML;
 <div id="parentVerticalTab$resp_tabs_cnt" class="VerticalTab">
-	<ul id="resp-tabs-list$resp_tabs_cnt" class="resp-tabs-list hor_$resp_tabs_cnt">
+    <ul id="resp-tabs-list$resp_tabs_cnt" class="resp-tabs-list hor_$resp_tabs_cnt">
 $names_li
-	</ul>
-	<div id="resp-tabs-container$resp_tabs_cnt" class="resp-tabs-container hor_$resp_tabs_cnt">
+    </ul>
+    <div id="resp-tabs-container$resp_tabs_cnt" class="resp-tabs-container hor_$resp_tabs_cnt">
 $images_div
-	</div>
-	$name
+    </div>
+    $name
 </div>
 <br />
 HTML
@@ -713,142 +720,142 @@ JSON
 #-------------------------------------------------------------------------------
 sub break 
 {
-	my $class = shift;
+    my $class = shift;
     my $company = $class->{parent}->{company_fullname};
     my $url = $class->{parent}->{url};
-	my $split_line = <<HTML;
+    my $split_line = <<HTML;
 <p class="head">
-	<a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
-	<a href="$url" title="访问公司官网" target="_blank">$company</a>
-	<hr />
+    <a href="#" title = "返回首页"><img class="logo" align="left" src="../src/image/genedenovo_logo.png" width=150 heigth=70/></a>
+    <a href="$url" title="访问公司官网" target="_blank">$company</a>
+    <hr />
 </p>
 <br /><br />
 HTML
-	my $html = <<HTML;
+    my $html = <<HTML;
 <div style="page-break-after:always;"></div>
 $split_line
 HTML
-	$class->add_html($html);
+    $class->add_html($html);
 }
 
 # return the inner code of HTML object
 sub innerHTML 
 {
-	my $class = shift;
-	my $html = $class->{head} . $class->{main} . $class->{tail};
-	return $html;
+    my $class = shift;
+    my $html = $class->{head} . $class->{main} . $class->{tail};
+    return $html;
 }
 
 # add the html code to HTML object
 sub add_html
 {
-	my $class = shift;
-	my $str = shift;
-	
-	my $main = $class->{main};
-	$main .= $str;
-	
-	$class->{main} = $main;
+    my $class = shift;
+    my $str = shift;
+    
+    my $main = $class->{main};
+    $main .= $str;
+    
+    $class->{main} = $main;
 }
 
 # turn options to attributes of html tag
 sub opts2attrs
 {
-	my %opts = @_;
-	my %besides = (parent=>1,help=>1,files=>1,desc=>1,pre=>1,break=>1,"page_head"=>1);
+    my %opts = @_;
+    my %besides = (parent=>1,help=>1,files=>1,desc=>1,pre=>1,break=>1,"page_head"=>1);
 
-	my @attrs = map {
-		my $name = $_;
-		my $val = $opts{$name};
-		
-		if (substr($name,0,1) eq "-")
-		{
-			$name = substr($name,1);
-		}
-		
-		if ( $besides{$name} )
-		{
-			"";
-		}
-		elsif ($val =~ /^\d+$/)
-		{
-			"$name=$val";
-		}
-		else 
-		{
-			qq($name="$val")
-		}
-	} keys %opts;
-	
-	my $attrs = join " " , @attrs;
-	
-	return $attrs;
+    my @attrs = map {
+        my $name = $_;
+        my $val = $opts{$name};
+        
+        if (substr($name,0,1) eq "-")
+        {
+            $name = substr($name,1);
+        }
+        
+        if ( $besides{$name} )
+        {
+            "";
+        }
+        elsif ($val =~ /^\d+$/)
+        {
+            "$name=$val";
+        }
+        else 
+        {
+            qq($name="$val")
+        }
+    } keys %opts;
+    
+    my $attrs = join " " , @attrs;
+    
+    return $attrs;
 }
 
 # return the help code
 sub help 
 {
-	my %opts = @_;
+    my %opts = @_;
 
-	if ($opts{'-help'})
-	{
-		return qq(<a href="doc/$opts{'-help'}" target="help_page" onclick="show_help();"><img src="image/help.png" class="help_logo"></a>);
-	}
-	else 
-	{
-		return "";
-	}
+    if ($opts{'-help'})
+    {
+        return qq(<a href="doc/$opts{'-help'}" target="help_page" onclick="show_help();"><img src="image/help.png" class="help_logo"></a>);
+    }
+    else 
+    {
+        return "";
+    }
 }
 
 sub img_order
 {
-	my $class = shift;
-	
-	$class->{parent}->{img_cnt} ++;
-	my $submenu_cnt = $class->{parent}->{submenu_cnt} - 1;
-	my $order = qq(Fig <span style="color:red">$class->{parent}->{menu_cnt}-$submenu_cnt-$class->{parent}->{img_cnt}</span>);
-	
-	return $order;
+    my $class = shift;
+    
+    $class->{parent}->{img_cnt} ++;
+    my $submenu_cnt = $class->{parent}->{submenu_cnt} - 1;
+    my $order = qq(Fig <span style="color:red">$class->{parent}->{menu_cnt}-$submenu_cnt-$class->{parent}->{img_cnt}</span>);
+    
+    return $order;
 }
 
 sub tab_order 
 {
-	my $class = shift;
-	$class->{parent}->{tab_cnt} ++;
-	my $submenu_cnt = $class->{parent}->{submenu_cnt} - 1;
-	my $order = qq(Tab <span style="color:red">$class->{parent}->{menu_cnt}-$submenu_cnt-$class->{parent}->{tab_cnt}</span>);
-	return $order;
+    my $class = shift;
+    $class->{parent}->{tab_cnt} ++;
+    my $submenu_cnt = $class->{parent}->{submenu_cnt} - 1;
+    my $order = qq(Tab <span style="color:red">$class->{parent}->{menu_cnt}-$submenu_cnt-$class->{parent}->{tab_cnt}</span>);
+    return $order;
 }
 
 sub omits_some_columns
 {
-	my ($hash,@values) = @_;
-	
-	return @values unless $hash->{'-omits'};
+    my ($hash,@values) = @_;
+    
+    return @values unless $hash->{'-omits'};
 
-	my @tmp = split /,/,$hash->{'-omits'};
-	my @omits;
-	foreach (@tmp)
-	{
-		if (/^\d+$/)
-		{
-			push @omits , [$_,$_];
-		}
-		elsif (/(\d+)\s*[:-]\s*(\d+)/) 
-		{
-			my ($start,$end) = ($1,$2);
-			ERROR("the omits values defined is error, [$start > $end] !") if ($end < $start);
-			push @omits , [$start,$end];
-		}
-	}
-	
-	foreach (sort {$b->[0] <=> $a->[0]} @omits)
-	{
-		my ($start,$end) = @$_;
-		my $len = $end - $start + 1;
-		
-		splice(@values,$start-1,$len,("..."));
-	}
-	
-	return @values;
+    my @tmp = split /,/,$hash->{'-omits'};
+    my @omits;
+    foreach (@tmp)
+    {
+        if (/^\d+$/)
+        {
+            push @omits , [$_,$_];
+        }
+        elsif (/(\d+)\s*[:-]\s*(\d+)/) 
+        {
+            my ($start,$end) = ($1,$2);
+            ERROR("the omits values defined is error, [$start > $end] !") if ($end < $start);
+            push @omits , [$start,$end];
+        }
+    }
+    
+    foreach (sort {$b->[0] <=> $a->[0]} @omits)
+    {
+        my ($start,$end) = @$_;
+        my $len = $end - $start + 1;
+        
+        splice(@values,$start-1,$len,("..."));
+    }
+    
+    return @values;
 }
