@@ -23,14 +23,14 @@ my $array = [
 ];
 
 my $outdir = "test";
-my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"meta Genome",-url=>"http://www.omicshare.com");
+my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"meta Genome",nonlazy=>1,-url=>"http://www.omicshare.com");
 
 my $section = $report->section(id=>"introduction",-page_head=>1);
 
 $section->menu("h1");
 $section->submenu("h2");
 
-$section->tsv2html(-file=>"/Bio/User/aipeng/project/tmp/pca/target/6.GO_enrich_heatmap/DEGs/DEGs_enrich/G_72hvsG_0h.DEG_GO_enrichment_result_all.xls",-name=>"test",-header=>1,-max_chars=>12);
+$section->tsv2html(-file=>"/Bio/User/aipeng/project/tmp/pca/target/6.GO_enrich_heatmap/DEGs/DEGs.GO_enrich.qvalue.xls",-name=>"test",-header=>1,-max_chars=>12);
 $section->matrix2html(-matrix=>$array,-name=>"family",-header=>1);
 $section->img2html(-file=>"Rosa_longicuspis-Unigene.length.png",-name=>"Length of Unigene",-width=>"60%");
 $section->break;

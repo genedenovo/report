@@ -119,6 +119,8 @@ sub init_report
         system("cp $opts{'-logo'} $outdir/src/image");
         $class->{logo} = basename($opts{'-logo'});
     }
+    
+    $class->{nonlazy} = $opts{nonlazy } ? 1 : 0;
 	
 	# create the main html file
 	$class->init_index_html();
@@ -237,10 +239,12 @@ sub write
 	print OUT $html;
 	print OUT $tail;
 	close OUT;
-    
-    open JSON , ">" , "$outdir/src/js/pic.js" or die $!;
-    print JSON "getPic ({$class->{json}})";
-    close JSON;
+
+    unless ($class->{nonlazy}){
+        open JSON , ">" , "$outdir/src/js/pic.js" or die $!;
+        print JSON "getPic ({$class->{json}})";
+        close JSON;
+    }
 
 	timeLOG("The content html report 'content.html' was create done :)");
 }

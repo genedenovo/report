@@ -84,7 +84,7 @@ sub section
     my $url = $parent->{url};
 
     $opts{'class'} ||= "normal_cont";
-    
+
     my $hash = {};
     my $attrs = opts2attrs(%opts);
     
@@ -103,7 +103,8 @@ HTML
     $hash->{tail} = "</section>\n";
     $hash->{main} = "";
     $hash->{parent} = $parent;
-    
+    $hash->{nonlazy} = $parent->{nonlazy};
+
     if ($opts{'-break'})
     {
         $hash->{head} = <<HTML;
@@ -413,6 +414,8 @@ sub img2html
     my $width = $opts{'-width'} || "auto";
     my $help = &help(%opts);
     
+    my $src = $class->{'nonlazy'} ? "src" : "data-src";
+
     my $order = $class->img_order();
 
     my $html;
@@ -421,7 +424,7 @@ sub img2html
         $html = <<HTML;
 <table class="pic_table">
     <tr>
-        <td style="width: $width"><a href="$dir" target="_blank"><img data-src="$dir" /></td>
+        <td style="width: $width"><a href="$dir" target="_blank"><img $src="$dir" /></td>
         <td class="pic_table_desc" style="width: 50%"><p>$opts{'-desc'}</p></td>
     </tr>
     <tr>
@@ -437,7 +440,7 @@ HTML
         $html = <<HTML;
 <table class="pic_table">
     <tr>
-        <td><a href="$dir" target="_blank"><img src="$dir" width="$width"/></td>
+        <td><a href="$dir" target="_blank"><img $src="$dir" width="$width"/></td>
     </tr>
     <tr>
         <td class="img_title">$order $name$help</td>
@@ -472,13 +475,15 @@ sub img2html2
     
     my $space = $opts{'-space'} || 10;
     my $width = (100 - $space) / 2;
+    
+    my $src = $class->{'nonlazy'} ? "src" : "data-src";
 
     my $html = <<HTML;
 <table class="pic_table">
     <tr>
-        <td style="width: $width%"><a href="$file1" target="_blank"><img data-src="$file1" /></a></td>
+        <td style="width: $width%"><a href="$file1" target="_blank"><img $src="$file1" /></a></td>
         <td style="width: $space%"></td>
-        <td style="width: $width%"><a href="$file2" target="_blank"><img data-src="$file2" /></a></td>
+        <td style="width: $width%"><a href="$file2" target="_blank"><img $src="$file2" /></a></td>
     </tr>
     <tr>
         <td class="img_title">$order1 $name1$help1</td>
@@ -543,13 +548,14 @@ TEMP
     
     my $images_div = "";
     my $i = 0;
+    my $src = $class->{'nonlazy'} ? "src" : "data-src";
     foreach (@$images)
     {
         if ($opts{'-desc'})
         {
             $images_div .= <<TEMP;
         <div>
-            <div height="80%"><a href="$_" target="_blank"><img data-src="$_" /></a></div>
+            <div height="80%"><a href="$_" target="_blank"><img $src="$_" /></a></div>
             <div height="20%"><p>$opts{'-desc'}->[$i]</p></div>
         </div>
 TEMP
@@ -558,14 +564,14 @@ TEMP
         {
             $images_div .= <<TEMP;
         <div>
-            <a href="$_" target="_blank"><img data-src="$_" /></a>
+            <a href="$_" target="_blank"><img $src="$_" /></a>
         </div>
 TEMP
         }
         $i ++;
     }
     
-    $images_div = "";
+    $images_div = "" unless $class->{'nonlazy'};
 
     my $html = <<HTML;
 <div id="parentVerticalTab$resp_tabs_cnt" class="VerticalTab">
@@ -631,6 +637,7 @@ TEMP
     ERROR("the number of names is not equal to the number of images2") unless $#$names == $#$images2;
 
     my $names_li = "";
+    my $src = $class->{'nonlazy'} ? "src" : "data-src";
     foreach (@$names)
     {
         $names_li .= <<TEMP;
@@ -650,11 +657,11 @@ TEMP
 <table class="pic_table">
         <tr>
             <td>
-                <a href="$images1->[$_]" target="_blank"><img data-src="$images1->[$_]" /></a>
+                <a href="$images1->[$_]" target="_blank"><img $src="$images1->[$_]" /></a>
                 <p>$desc1->[$_]</p>
             </td>
             <td>
-                <a href="$images2->[$_]" target="_blank"><img data-src="$images2->[$_]" /></a>
+                <a href="$images2->[$_]" target="_blank"><img $src="$images2->[$_]" /></a>
                 <p>$desc2->[$_]</p>
             </td>
         </tr>
@@ -670,10 +677,10 @@ TEMP
 <table class="pic_table">
         <tr>
             <td>
-                <a href="$images1->[$_]" target="_blank"><img data-src="$images1->[$_]" /></a>
+                <a href="$images1->[$_]" target="_blank"><img $src="$images1->[$_]" /></a>
             </td>
             <td>
-                <a href="$images2->[$_]" target="_blank"><img data-src="$images2->[$_]" /></a>
+                <a href="$images2->[$_]" target="_blank"><img $src="$images2->[$_]" /></a>
             </td>
         </tr>
         <tr>
@@ -689,7 +696,7 @@ TEMP
         push @tabs , qq("tb$_":[$tds]);
     }
     
-    $images_div = "";
+    $images_div = "" unless $class->{nonlazy};
 
     my $html = <<HTML;
 <div id="parentVerticalTab$resp_tabs_cnt" class="VerticalTab">
