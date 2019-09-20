@@ -120,7 +120,7 @@ sub init_report
         $class->{logo} = basename($opts{'-logo'});
     }
     
-    $class->{nonlazy} = $opts{nonlazy } ? 1 : 0;
+    $class->{nonlazy} = $opts{'-nonlazy'} || $opts{nonlazy} ? 1 : 0;
 	
 	# create the main html file
 	$class->init_index_html();
