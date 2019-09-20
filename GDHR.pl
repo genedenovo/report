@@ -23,7 +23,7 @@ my $array = [
 ];
 
 my $outdir = "test";
-my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"meta Genome",nonlazy=>1,-url=>"http://www.omicshare.com");
+my $report = GDHR->new('-outdir'=>$outdir,-pipe=>"meta Genome",-nonlazy=>1,-url=>"http://www.omicshare.com");
 
 my $section = $report->section(id=>"introduction",-page_head=>1);
 
