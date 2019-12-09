@@ -199,7 +199,7 @@ HTML
 	open OUT , ">" , "$outdir/index.html" or die $!;
 	print OUT $html;
 	close OUT;
-	timeLOG("The index html report 'content.html' was create done :)");
+	timeLOG("The index html report 'index.html' was create done :)");
 }
 
 sub init_main_html
@@ -427,11 +427,15 @@ sub main_html_tail
 			
 			\$(".logo").click(function(){\$(window).scrollTop(0);});
 
-			var width = \$('.func_table:eq(0)').parents('section').width()
-				\$(".func_table caption").css('width',width);
-				\$(".func_table").parents('.dataTables_scrollBody').scroll(function(){
-				\$(this).parent().find('caption').css('margin-left',\$(this).scrollLeft());
-			});
+			var width = \$('.func_table:eq(0)').parents('section').width();
+            if (width < 200)
+            {
+                width = 1000;
+            }
+			\$(".func_table caption").css('width',width);
+			\$(".func_table").parents('.dataTables_scrollBody').scroll(function(){
+			\$(this).parent().find('caption').css('margin-left',\$(this).scrollLeft());
+        });
 		</script>
         
         $lazy_load
