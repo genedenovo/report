@@ -159,7 +159,7 @@ sub submenu
     $class->add_html($html);
 }
 
-# add the <h6> to HTML object
+# add the <h4> to HTML object
 sub ssubmenu {
     my ($class,$str,%opts) = @_;
 
@@ -171,7 +171,7 @@ sub ssubmenu {
     
     my $attrs = opts2attrs(%opts);
     my $help = &help(%opts);
-    my $html = qq(<h6 $attrs>$order $str$help</h6>\n);
+    my $html = qq(<h4 $attrs>$order $str$help</h4>\n);
     $class->add_html($html);
 }
 
